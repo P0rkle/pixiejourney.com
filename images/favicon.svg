@@ -1,0 +1,32 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simplified 2x2 mood grid for favicon -->
+  <rect width="32" height="32" fill="#FFF8F3"/>
+  
+  <!-- Rotate -3 degrees -->
+  <g transform="rotate(-3 16 16)">
+    
+    <!-- Border -->
+    <rect x="4" y="4" width="24" height="24" fill="none" stroke="#806048" stroke-width="2"/>
+    
+    <!-- Dividers -->
+    <line x1="16" y1="4" x2="16" y2="28" stroke="#806048" stroke-width="2"/>
+    <line x1="4" y1="16" x2="28" y2="16" stroke="#806048" stroke-width="2"/>
+    
+    <!-- Top left: Great (yellow) -->
+    <rect x="4" y="4" width="12" height="12" fill="#ffe9b3"/>
+    <circle cx="10" cy="10" r="1" fill="#806048"/>
+    
+    <!-- Top right: Good (mint) -->
+    <rect x="16" y="4" width="12" height="12" fill="#d0e6db"/>
+    <circle cx="22" cy="10" r="1" fill="#806048"/>
+    
+    <!-- Bottom left: Okay (peach) -->
+    <rect x="4" y="16" width="12" height="12" fill="#f7e2d9"/>
+    <circle cx="10" cy="22" r="1" fill="#806048"/>
+    
+    <!-- Bottom right: Low (blue) -->
+    <rect x="16" y="16" width="12" height="12" fill="#c5dde8"/>
+    <circle cx="22" cy="22" r="1" fill="#806048"/>
+    
+  </g>
+</svg>

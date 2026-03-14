@@ -1,0 +1,852 @@
+PIXIE JOURNEY WEBSITE CONTENT AUDIT
+====================================
+Generated: 2026-02-01
+Pages: 9
+
+
+================================================================================
+PAGE 1: HOME (index.html)
+================================================================================
+
+[HEADER - All Pages]
+- Logo: Pixie Journey
+- Nav: Features | Pricing | About | FAQ | Get Free PDFs (CTA)
+
+[HERO]
+- Tagline: "Your life, honestly visualized."
+- Sub-tagline: "Plan • Track • Prepare"
+- Title: "Track Your Life Beautifully"
+- Subtitle: "Stickers, not dropdowns. Pixels, not boring charts."
+- Pitch: "Your whole year at a glance, tracked with adorable stickers. iOS app coming Q1 2026."
+- Buttons: "Get Free PDFs" | "Join Waitlist"
+- Launch notice: "Launching Q1 2026 • iOS • Australia first"
+
+[EASY ENTRY - Sticker Demo]
+- Title: "Tap a Sticker. Done."
+- Subtitle: "No endless dropdowns. No typing when you're tired. Just tap how you're feeling and watch your pixel light up."
+- Demo: "How's your mood today?"
+- Stickers: Great | Good | Okay | Low | Terrible
+- Note: "Tap • Done • Move on"
+- Support: "Want to add a note? Go for it. Too tired? That's completely okay."
+
+[ABOUT CARD]
+- Title: "What is Pixie Journey?"
+- Body: "A planner + tracker app with adorable stickers. Log your mood, sleep, and daily habits in seconds. See your year in colour with our year-in-pixels calendar."
+- Body: "We're designed for people whose days don't fit into neat boxes. Track what matters to YOU—not what some app thinks you should track."
+- Notice: "iOS app coming Q1 2026"
+- Link: "Read Our Story →"
+
+[APP TEASER]
+- Title: "Sneak Peek"
+- Features:
+  • Mood stickers — 5 kawaii faces
+  • Sleep tracking — quality, not just hours
+  • Energy levels — see what drains you
+  • 19 categories in Life tier
+  • Year-in-pixels calendar
+  • Your data stays private
+- Link: "See All Features →"
+
+[NO GUILT]
+- Title: "No Streaks. No Guilt. No Pressure."
+- Body: "Missed a day? A week? A whole month?"
+- List:
+  • We don't shame you
+  • We don't break your streak
+  • We don't send notifications that make you feel worse
+- Body: "Go back and log whenever you're ready. Or take the time you need. We understand."
+- Quote: "Your worst day is when tracking matters most. So we made sure it works even then."
+
+[MEET LALAH]
+- Title: "Meet Lalah"
+- Intro: "Your tiny tracking companion who makes logging actually comforting."
+- List:
+  • Celebrates your wins
+  • Supports you on tough days
+  • Helps you see patterns emerge
+  • Never judges, only understands
+- Body: "Lalah doesn't nag. She doesn't make you feel bad. She's just here to help you see your patterns."
+
+[BULLET JOURNAL COMPARISON]
+- Title: "Like a Bullet Journal, But It Remembers"
+- Subtitle: "Love the aesthetic of bullet journaling? Find it hard to keep up when life gets messy?"
+
+Paper Bullet Journal:
+  ✓ Beautiful year-in-pixels
+  ✓ Kawaii sticker aesthetic
+  ✓ Satisfying to fill in
+  ✗ Guilt when you forget
+  ✗ Lost pages = lost data
+  ✗ Hand-drawing grids at 11pm
+
+Pixie Journey:
+  ✓ Beautiful year-in-pixels
+  ✓ Kawaii sticker aesthetic
+  ✓ Satisfying to fill in
+  ✓ No guilt when you forget
+  ✓ Data never lost
+  ✓ No setup required
+  "All the pretty, none of the pressure."
+
+[PRICING PREVIEW]
+- Title: "Start Free. Upgrade When Ready."
+
+Free Forever ($0):
+  • 4 tracking categories
+  • Year-in-pixels calendar
+  • No credit card required
+  • Includes: Mood, Sleep, Hydration, Fertility
+
+Life Tier ($19.99 → $14.99 Waitlist):
+  • All 19 categories
+  • No ads anywhere
+  • Export your data
+
+Clinical (Coming Q2 2026 - TBA):
+  • 31+ medical conditions
+  • Medical reports
+  • Pattern detection
+
+- Link: "View Full Pricing →"
+
+[FREE PRINTABLES]
+- Title: "Free Printable Trackers"
+- Subtitle: "Beautiful mood, sleep & habit tracker PDFs for your bullet journal. Download now while you wait for the app!"
+- Cards: Mood Tracker | Sleep Tracker | Weekly Planner | Sleep Jar
+- Note: "Print-ready PDFs. Works with GoodNotes & Notability too."
+
+[FAQ PREVIEW]
+- Title: "Quick Questions"
+
+Q: When does the app launch?
+A: Q1 2026 for iOS in Australia. Global expansion after.
+
+Q: How does waitlist pricing work?
+A: All waitlist members get Lifetime tier for $14.99 instead of $19.99. This pricing is locked in for you—no time limit.
+
+Q: Can I go back and log past days?
+A: Absolutely. No guilt, no limits. Log whenever you're ready.
+
+Q: Is my data private?
+A: Yes. Your data stays yours. We don't sell it, we don't share it.
+
+- Link: "View All Questions →"
+
+[EMAIL CAPTURE - PDFs]
+- Title: "Get the Free PDFs"
+- Body: "Enter your email to receive the download link."
+- Note: "No spam. One delivery email, then optional updates. Unsubscribe anytime."
+- License: "Personal use + classroom/clinic printing allowed. Not for resale or redistribution."
+
+[WAITLIST]
+- Title: "Join the Waitlist"
+- Body: "Get notified at launch + lock in special pricing:"
+- Benefits:
+  • Launch day notification (Q1 2026)
+  • Lifetime tier: $14.99 (save $5)
+  • Referral rewards (earn free months)
+- Optional checkboxes:
+  □ Mental health tracking
+  □ Chronic illness management
+  □ Fertility tracking
+  □ General wellness & self-care
+  □ Bullet journal lover
+  □ I'd like to beta test (iOS, Australia only)
+- Note: "Your email stays private. Unsubscribe anytime. We only email for real updates."
+
+[FOOTER - All Pages]
+- Brand: "Pixie Journey"
+- Tagline: "Track your life beautifully. No guilt, no streaks, no pressure."
+- Product: Features | Pricing | About | FAQ
+- Legal: Privacy Policy | Terms of Service | Privacy & Safety
+- Support: hello@pixiejourney.com
+- Copyright: © 2026 Pixie Journey. All rights reserved.
+- Made with: "Made with ♥ in Australia"
+
+
+================================================================================
+PAGE 2: FEATURES (features.html)
+================================================================================
+
+[BREADCRUMB] Home > Features
+
+[PAGE HEADER]
+- Title: "Track Everything That Matters"
+- Subtitle: "From mood and sleep to appointments and errands—all in one beautiful place."
+
+[HOW IT WORKS]
+- Title: "How Pixie Journey Works"
+
+1. Tap a Sticker
+   "See visual stickers representing different states. Tap the one that matches your day."
+
+2. Add Context (Optional)
+   "Want to add a note? Great. Too tired? Skip it. Both are completely okay."
+
+3. See Your Patterns
+   "Watch your year-in-pixels calendar fill up. Spot patterns at a glance."
+
+[FREE TIER - 4 Categories]
+- Title: "Free Forever Categories"
+- Subtitle: "Start tracking the essentials—no payment required, no time limit, no catch. These 4 core categories are free forever."
+
+• Mood Tracking
+  "Track your emotional state with 5 kawaii mood faces. See patterns emerge over weeks and months."
+
+• Sleep Quality
+  "Track how well you slept—not just how long. See how sleep quality affects your mood and energy."
+
+• Hydration
+  "Simple hydration tracking. Log how much water you're drinking and see how it affects your wellbeing."
+
+• Fertility Tracking
+  "Track your menstrual cycle, symptoms, and patterns. Always free because reproductive health shouldn't be paywalled."
+
+[LIFE TIER - 11 Wellness Categories]
+- Title: "Life Tier — Wellness Categories"
+- Subtitle: "Everything in Free, plus 11 wellness categories to understand your whole self. Life tier is $4.99/month or $19.99 lifetime ($14.99 for waitlist members)."
+
+• Energy Levels - "Track your energy throughout the day. See what drains you and what recharges you."
+• Exercise & Movement - "Track any movement that counts for YOU—from gentle stretching to intense workouts."
+• Meals & Eating - "Track meals and eating patterns. Not about calorie counting—about understanding your relationship with food."
+• Screen Time - "Track screen time and understand how it affects your mood, sleep, and energy."
+• Self-Care - "Track any act of self-care—from bubble baths to setting boundaries."
+• Social Connection - "Track social interaction and understand how it affects your wellbeing."
+• Gratitude - "Track moments of gratitude without toxic positivity. Some days are hard—that's okay too."
+• Weather - "Track weather and see how it affects your mood and energy. Great for SAD tracking."
+• Spending - "Simple spending awareness—not detailed budgeting, just understanding patterns."
+• Chores & Cleaning - "Track household tasks. On low energy days, brushing your teeth counts as a win."
+• Creativity - "Track creative activities—art, music, writing, crafting, anything that lets you express yourself."
+
+[LIFE TIER - 4 Planning Categories]
+- Title: "Life Tier — Planning Categories"
+- Subtitle: "The only health tracker that also helps you organize your life. Track wellness AND plan your days in one beautiful place."
+
+• Appointments - "Track doctor visits, therapy sessions, dentist appointments, and any other scheduled commitments."
+• Work Tasks - "Track work productivity and understand how work affects your wellbeing (and vice versa)."
+• Errands - "Track shopping, banking, post office runs, and other life admin. See when you're overloading yourself."
+• Events & Social Occasions - "Track parties, celebrations, gatherings, and special occasions."
+
+- Unique Feature: "Unique to Pixie Journey — No other health tracker offers planning categories!"
+
+[CLINICAL TIER PREVIEW]
+- Title: "Clinical Tier — Coming Q2 2026"
+- Subtitle: "Everything in Life tier, PLUS 31+ medical condition categories with advanced tracking features for chronic illness and complex health management."
+
+Conditions include:
+  Pain management | Migraine & headaches | GI/digestive issues | Chronic fatigue | Anxiety symptoms | Depression markers | Mania tracking | Panic attacks | Medications & adherence | Sleep disturbances | + 20 more conditions
+
+Advanced Clinical Features:
+  • Multi-symptom quick logging
+  • Automatic timestamps for every entry
+  • Medical reports for healthcare providers
+  • Pattern detection for early warning signs
+  • Behavioral marker tracking
+  • Multi-entry per day with timestamps
+
+- Pricing: To be announced closer to launch
+- Launch: Q2 2026 (April–June 2026)
+
+[VISUALIZATIONS]
+- Title: "See Your Patterns at a Glance"
+- Subtitle: "Beautiful visualizations that help you understand yourself better."
+
+• Year-in-Pixels Calendar - "See your entire year on one screen. Each day is a tiny colored pixel based on what you logged."
+• Week View - "Zoom in on your week. See all categories side-by-side."
+• Month Grid - "Traditional calendar view with your pixels. Perfect for spotting monthly patterns."
+• Day Detail - "Tap any day to see everything you logged. Add notes, edit entries, or just reflect."
+
+[CTA]
+- Title: "Ready to Start Tracking?"
+- Subtitle: "Join the waitlist and get special launch pricing: Lifetime tier for $14.99 (save $5)"
+- Summary:
+  ✓ 4 categories free forever
+  ✓ Upgrade to 19 categories anytime
+  ✓ No guilt, no streaks, no pressure
+
+
+================================================================================
+PAGE 3: PRICING (pricing.html)
+================================================================================
+
+[BREADCRUMB] Home > Pricing
+
+[PAGE HEADER]
+- Title: "Start Free. Upgrade When Ready."
+- Subtitle: "Track 4 things free forever. Upgrade to Life tier for all 19 categories."
+- Toggle: Monthly | Lifetime (Save $5)
+
+[PRICING CARDS]
+
+FREE FOREVER ($0 forever):
+  • 4 tracking categories
+  • Year-in-pixels calendar
+  • Week and month views
+  • Go back and log anytime
+  • No credit card required
+  Free trackers: Mood, Sleep, Hydration, Fertility
+
+LIFE TIER (Most Popular):
+  Monthly: $4.99/month (Cancel anytime)
+  Lifetime: $19.99 → $14.99 (one-time, Use forever)
+  Waitlist special: Lifetime for $14.99 (save $5)
+  • All 19 tracking categories
+  • 11 wellness categories
+  • 4 planning categories
+  • No ads anywhere
+  • Export your data (CSV)
+  • Lifetime purchase option
+
+CLINICAL (Coming Q2 2026 - TBA):
+  • 31+ medical condition categories
+  • Multi-symptom quick logging
+  • Automatic timestamps
+  • Medical reports for doctors
+  • Pattern detection (optional)
+  • Behavioral marker tracking
+
+[PRICING FAQ]
+
+Q: Is Free tier really free?
+A: Yes! Free tier is completely free forever. No time limit, no credit card required, no hidden fees.
+
+Q: Monthly vs Lifetime?
+A: Monthly ($4.99): Pay as you go, cancel anytime.
+   Lifetime ($14.99 waitlist): Pay once, use forever. Better value after 3 months.
+
+Q: How does waitlist pricing work?
+A: All waitlist members get Lifetime tier for $14.99 instead of $19.99 (save $5). This pricing is locked in—no time limit.
+
+Q: Can I switch from monthly to lifetime?
+A: Yes! You can upgrade anytime. We'll credit your recent monthly payments toward the lifetime purchase.
+
+Q: What if I cancel Life tier?
+A: You automatically revert to Free tier. You keep all your data but can only actively log the 4 Free categories.
+
+Q: Can I get a refund?
+A: Monthly: No refunds for partial months. Lifetime: Generally no refunds, except as required by Australian Consumer Law.
+
+[WAITLIST HIGHLIGHT]
+- Title: "Waitlist Special: Save $5 on Lifetime"
+- Body: "Join the waitlist before launch and lock in the Lifetime tier for $14.99 instead of $19.99."
+- Benefits:
+  • $14.99 lifetime (save $5)
+  • Pricing locked in forever
+  • First to know when we launch
+- Note: "Plus, earn free months by referring friends!"
+
+
+================================================================================
+PAGE 4: ABOUT (about.html)
+================================================================================
+
+[BREADCRUMB] Home > About
+
+[PAGE HEADER]
+- Title: "About Pixie Journey"
+- Subtitle: "Built by people who get it, for people whose days don't fit neat boxes."
+
+[WHY WE BUILT THIS]
+"We've spent years trying to track health. Spreadsheets that felt like homework. Apps with 30-second dropdown marathons. Journals we'd abandon after three days of guilt when we missed one."
+
+"The problem? They were all designed by people who'd never experienced what happens when tracking feels impossible."
+
+"We built Pixie Journey because we desperately needed it. When your brain is foggy, when your energy is gone, when opening an app feels like climbing a mountain — that's exactly when tracking matters most. And that's exactly when traditional apps fail."
+
+[WHAT MAKES THIS DIFFERENT]
+"Existing apps are built for people whose days fit into neat boxes. They're not built for chronic illness, disability, neurodivergence, or just being human on a rough week."
+
+"We needed something that understood life is messy. That some days you can barely function. That guilt-based "streaks" are actively harmful when you're struggling."
+
+"We track what you do, not just how you feel. That's our north star."
+
+"Instead of endless dropdown menus, we let you tap a sticker. Want to add context? Great. Too tired today? That's fine too."
+
+"No pressure. No streaks. No shame."
+
+"Just your life, tracked beautifully, so you can see patterns emerge over time."
+
+[WHO THIS IS FOR]
+"We aim to support people managing chronic conditions who need to spot warning signs and understand their patterns."
+
+But it's also for:
+  • Anyone tracking single or multiple health symptoms
+  • People who love bullet journals but struggle to maintain them
+  • Humans who just want to understand themselves better
+  • Anyone tired of apps that make tracking feel like punishment
+
+"You don't need a diagnosis to deserve a tool that respects your energy levels."
+
+[THE TEAM]
+"Our team built this from both sides of chronic illness."
+
+"One team member lives with a chronic health condition and knows the frustration of apps that fail exactly when you need them most—when your brain is foggy, your energy is gone, and filling out forms feels impossible."
+
+"The other is a full-time carer who's watched tracking apps fail the person they love. Seen warning signs emerge too late because the tools couldn't capture what actually mattered."
+
+"Our team brings expertise in software development—one specializing in beautiful, intuitive design, the other in reliable backend architecture."
+
+"But more importantly, we understand what tracking tools get wrong. They're built for people whose brains cooperate, whose days fit neat boxes, who can handle guilt when they miss a day."
+
+"We built the tracker that works for real humans on their worst days."
+
+[WHAT'S NEXT]
+"We're launching the consumer app (Pixie Journey) in Q1 2026 for iOS in Australia. After that? The world. And eventually, clinical-grade features for people who need medical-quality reporting."
+
+"But first: pretty stickers, pixel calendars, and a tracking app that doesn't make you feel like garbage when you miss a day."
+
+"Because you deserve better than dropdown hell."
+
+
+================================================================================
+PAGE 5: FAQ (faq.html)
+================================================================================
+
+[BREADCRUMB] Home > FAQ
+
+[PAGE HEADER]
+- Title: "Frequently Asked Questions"
+
+--- THE APP ---
+
+Q: What is Pixie Journey?
+A: Pixie Journey is a health tracking app that uses cute stickers instead of boring dropdowns. Track your mood, sleep, energy, meals, and 15+ other categories with just a tap. See your whole year at a glance with our year-in-pixels calendar.
+
+Q: When does it launch?
+A: Q1 2026 (January-March 2026) for iOS in Australia. We'll expand to other countries and Android after the initial launch.
+
+Q: Can I go back and log past days?
+A: Absolutely! There's no time limit. Go back weeks, months, or years if you want. We don't do guilt-based "streaks" that punish you for missing days.
+
+Q: Do I have to add notes every day?
+A: Nope. Notes are completely optional. Tap a sticker, done. Some days you'll want to add context. Other days you won't have the energy. Both are completely okay.
+
+Q: What if I miss a week (or a month)?
+A: Then you miss a week. No shame, no broken streaks, no annoying notifications. Come back when you're ready. Lalah will be here.
+
+Q: Will there be an Android version?
+A: Yes, eventually. We're starting with iOS because it's faster to build and launch. Android will come after we stabilize the iOS version.
+
+--- PRICING & TIERS ---
+
+Q: Is Free tier really free?
+A: Yes! Free tier is completely free forever. No time limit, no credit card required, no hidden fees. Track 4 categories for as long as you want.
+
+Q: What's the difference between Free and Life tier?
+A: Free tier (4 categories): Mood, Sleep, Hydration, Fertility
+   Life tier (19 categories total): Everything in Free + Energy, Exercise, Meals, Screen Time, Self-Care, Social, Gratitude, Weather, Spending, Chores, Creativity, Appointments, Work Tasks, Errands, Events. Plus no ads and data export.
+
+Q: How does waitlist pricing work?
+A: All waitlist members get the Lifetime tier for $14.99 instead of the regular $19.99 (save $5). This pricing is locked in for you when we launch—no time limit, no rush, no countdown.
+
+Q: Lifetime vs subscription — which should I choose?
+A: Subscription ($4.99/month): Lower upfront cost, cancel anytime, good if you want to try it first.
+   Lifetime ($14.99 for waitlist): One-time payment, better value after 3 months, never worry about subscription renewals.
+
+Q: What happens to my data if I stop paying?
+A: If you cancel your Life tier subscription, you automatically move to the Free tier. You keep all your historical data, but can only actively log the 4 Free tier categories going forward. You can export all your data anytime before canceling.
+
+--- FEATURES & TRACKING ---
+
+Q: What can I track with Pixie Journey?
+A: Free tier: Mood, Sleep, Hydration, Fertility
+   Life tier: All Free categories PLUS Energy, Exercise, Meals, Screen Time, Self-Care, Social, Gratitude, Weather, Spending, Chores, Creativity, Appointments, Work Tasks, Errands, Events
+   Clinical tier (coming later): 31+ medical conditions including pain management, medications, migraine, anxiety, depression, and more.
+
+Q: What's "year-in-pixels"?
+A: A year-in-pixels calendar shows all 365 days of your year in a grid, with each day represented by a tiny colored pixel based on what you logged. At a glance, you can see patterns emerge—clusters of good days, tough weeks, seasonal changes. It's like seeing your whole year as a piece of art.
+
+Q: Can I export my data?
+A: Yes, with Life tier and above. You can export to CSV format to use in spreadsheets, share with doctors, or keep as backup.
+
+Q: Is there cloud sync?
+A: Optional. Your data stores locally on your device by default (privacy-first). You can optionally enable cloud sync to backup data or access from multiple devices.
+
+--- PRIVACY & SAFETY ---
+
+Q: Is my data private?
+A: Yes. Your health data stays yours. We don't sell it, we don't share it with advertisers, and we don't use it to train AI models. See our Privacy Policy for full details.
+
+Q: Where is my data stored?
+A: Your data is stored locally on your device by default. If you enable optional cloud sync, encrypted data is stored on Australian servers.
+
+Q: Can I delete my data?
+A: Yes, anytime. Go to Settings → Delete All Data. This is permanent and cannot be undone.
+
+--- FERTILITY & PERIOD TRACKING ---
+
+Q: Can I use this for birth control?
+A: NO. Pixie Journey is for cycle awareness only. It is NOT contraception and should NOT be used to prevent pregnancy. Use proven contraceptive methods if you don't want to get pregnant.
+
+Q: Why is fertility tracking free?
+A: We believe reproductive health information shouldn't be paywalled. Period tracking and basic fertility awareness data are free for everyone, forever.
+
+--- CLINICAL TIER ---
+
+Q: What's Clinical tier?
+A: Clinical tier adds 31+ medical condition categories with multi-symptom quick logging, automatic timestamps, medical reports for doctors, and pattern detection. It's for people managing chronic conditions who need medical-grade tracking.
+
+Q: When does Clinical tier launch?
+A: Q2 2026 (April-June 2026). Pricing will be announced closer to launch. Join the waitlist and indicate "Clinical tier interest" to be notified.
+
+--- TECHNICAL ---
+
+Q: What iOS version do I need?
+A: iOS 15 or later. We recommend iOS 16+ for best performance.
+
+Q: Does it work offline?
+A: Yes! The app works completely offline. Cloud sync requires internet, but all core tracking works without connection.
+
+Q: Why Australia only at first?
+A: We're an Australian company and need to ensure we comply with local privacy laws before expanding globally. Australia-first also lets us launch faster and iterate based on feedback.
+
+[CTA]
+- Title: "Still Have Questions?"
+- Body: "Email us at hello@pixiejourney.com"
+
+
+================================================================================
+PAGE 6: PRIVACY POLICY (privacy-policy.html)
+================================================================================
+
+[BREADCRUMB] Home > Privacy Policy
+
+[PAGE HEADER]
+- Title: "Privacy Policy"
+- Effective Date: [Launch Date]
+
+[LEGAL NOTICE]
+"NOTE: This document should be reviewed by a lawyer before launch. Fill in all [PLACEHOLDERS] with actual information."
+
+1. INTRODUCTION
+"Pixie Journey ("we," "us," "our") respects your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("App")."
+
+2. INFORMATION WE COLLECT
+
+2.1 Information You Provide:
+  • Account Information: Email address (required for account creation)
+  • Health Data: Any tracking data you log (mood, sleep, symptoms, etc.)
+  • Notes & Context: Any text notes you add to entries
+  • Optional Profile Info: Name, date of birth, location (if you choose to provide)
+
+2.2 Automatically Collected Information:
+  • Device Information: Device type, OS version, app version
+  • Usage Data: Features used, screens visited, time spent in app
+  • Log Data: IP address, timestamps, error logs
+
+2.3 Information We Do NOT Collect:
+  • We do NOT access your camera, microphone, or photos without explicit permission
+  • We do NOT track your location unless you explicitly enable it
+  • We do NOT collect data from other apps on your device
+
+3. HOW WE USE YOUR INFORMATION
+  • Provide and maintain the App
+  • Create and manage your account
+  • Store and sync your tracking data (if you enable cloud sync)
+  • Send you important updates about the App
+  • Improve the App based on usage patterns
+  • Provide customer support
+  • Comply with legal obligations
+
+4. DATA STORAGE & SECURITY
+
+4.1 Local Storage (Default):
+"By default, your tracking data is stored locally on your device only. We cannot access this data unless you enable cloud sync."
+
+4.2 Cloud Storage (Optional):
+  • Data is encrypted in transit (TLS/SSL)
+  • Data is stored on secure servers in Australia
+  • We use industry-standard security measures
+  • You can disable sync and delete cloud data anytime
+
+4.3 Security Measures:
+  • Encryption in transit and at rest
+  • Regular security audits
+  • Access controls and authentication
+  • Employee confidentiality agreements
+
+5. DATA SHARING & DISCLOSURE
+
+5.1 We Do NOT:
+  • Sell your data to third parties
+  • Share your health data with advertisers
+  • Use your data to train AI models
+  • Share your data with insurance companies
+
+5.2 We MAY Share Data:
+  • With Your Consent: If you explicitly authorize us to share
+  • Service Providers: Cloud hosting, payment processing, analytics
+  • Legal Requirements: If required by law or to protect rights and safety
+  • Business Transfers: In case of merger or acquisition (with notice to you)
+
+6. YOUR RIGHTS (AUSTRALIAN PRIVACY ACT)
+  • Access: Request a copy of your data
+  • Correction: Request correction of inaccurate data
+  • Deletion: Request deletion of your account and data
+  • Portability: Export your data in CSV format
+  • Opt-Out: Unsubscribe from marketing emails
+  • Complaint: Lodge a complaint with the OAIC
+
+Contact: privacy@pixiejourney.com
+
+7. CHILDREN'S PRIVACY
+"Pixie Journey is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe we have collected data from a child under 13, please contact us immediately."
+
+8. INTERNATIONAL USERS
+"Pixie Journey is based in Australia. If you access the App from outside Australia, your data may be transferred to and stored in Australia. By using the App, you consent to this transfer."
+
+9. CHANGES TO THIS POLICY
+"We may update this Privacy Policy. We will notify you of material changes via email or in-app notification. Continued use after changes constitutes acceptance."
+
+10. CONTACT US
+  • Email: privacy@pixiejourney.com
+  • Address: [COMPANY ADDRESS]
+  • OAIC Complaints: https://www.oaic.gov.au/privacy/privacy-complaints
+
+
+================================================================================
+PAGE 7: TERMS OF SERVICE (terms.html)
+================================================================================
+
+[BREADCRUMB] Home > Terms of Service
+
+[PAGE HEADER]
+- Title: "Terms of Service"
+- Effective Date: [Launch Date]
+
+[LEGAL NOTICE]
+"NOTE: This document should be reviewed by a lawyer before launch. Fill in all [PLACEHOLDERS] with actual information."
+
+1. AGREEMENT TO TERMS
+"By accessing or using Pixie Journey ("App"), you agree to these Terms of Service ("Terms"). If you don't agree, don't use the App."
+
+2. WHO CAN USE THE APP
+  • You must be at least 13 years old
+  • You must provide accurate information
+  • You must comply with all applicable laws
+  • One account per person (no sharing)
+
+3. YOUR ACCOUNT
+  • You're responsible for keeping your account secure
+  • Don't share your login credentials
+  • Notify us immediately if your account is compromised
+  • We may terminate accounts that violate these Terms
+
+4. SUBSCRIPTION & PAYMENT
+
+4.1 Pricing:
+  • Free tier: Free forever
+  • Life tier: $4.99/month or $19.99 lifetime ($14.99 for waitlist members)
+  • Clinical tier: Pricing TBA (launching Q2 2026)
+
+4.2 Payments:
+  • Processed through Apple App Store or Google Play Store
+  • Subscriptions auto-renew unless you cancel
+  • Lifetime purchases are one-time, non-recurring
+  • Prices subject to change with 30 days notice
+
+4.3 Cancellation & Refunds:
+  • Monthly: Cancel anytime via App Store/Play Store. No refunds for partial months.
+  • Lifetime: Generally no refunds, except as required by Australian Consumer Law
+
+5. MEDICAL DISCLAIMER
+READ THIS CAREFULLY:
+  • Pixie Journey is NOT a medical device
+  • It is NOT a substitute for professional medical advice
+  • It is NOT approved by the TGA (Therapeutic Goods Administration)
+  • Tracking data is for personal awareness only
+  • Always consult qualified healthcare providers for medical decisions
+
+Fertility Tracking Disclaimer:
+  • Pixie Journey is NOT contraception
+  • Do NOT use it to prevent pregnancy
+  • Use proven contraceptive methods if you don't want to get pregnant
+  • Fertility predictions are estimates only
+
+6. CRISIS SERVICES
+"Pixie Journey is NOT a crisis service. If you're in immediate danger, contact emergency services (000 in Australia)."
+
+7. YOUR DATA
+  • You own your tracking data
+  • We store it securely (see Privacy Policy)
+  • You can export or delete it anytime
+  • Deletion is permanent and irreversible
+
+8. ACCEPTABLE USE
+You agree NOT to:
+  • Violate any laws or regulations
+  • Impersonate others or provide false information
+  • Harass, abuse, or harm others
+  • Hack, reverse engineer, or compromise the App
+  • Upload malicious code or viruses
+  • Scrape or copy our content without permission
+
+9. INTELLECTUAL PROPERTY
+  • Pixie Journey owns all App content, code, designs, and trademarks
+  • You may not copy, modify, or distribute our content
+  • Screenshots of the App for personal sharing are okay
+
+10. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY LAW:
+  • We provide the App "as is" without warranties
+  • We're not liable for data loss, health outcomes, or financial loss
+  • Our total liability is limited to fees you paid in the past 12 months
+  • Australian Consumer Law guarantees still apply
+
+11. AUSTRALIAN CONSUMER LAW
+"Nothing in these Terms excludes, restricts, or modifies your rights under the Australian Consumer Law, including guarantees about acceptable quality, fitness for purpose, and services provided with due care and skill."
+
+12. CHANGES TO TERMS
+"We may update these Terms. We'll notify you of material changes via email or in-app notification. Continued use after changes constitutes acceptance."
+
+13. TERMINATION
+"We may suspend or terminate your account if you violate these Terms. You may terminate your account anytime in Settings."
+
+14. GOVERNING LAW
+"These Terms are governed by the laws of [STATE/TERRITORY], Australia."
+
+15. CONTACT US
+  • Email: legal@pixiejourney.com
+  • Address: [COMPANY ADDRESS]
+
+
+================================================================================
+PAGE 8: PRIVACY & SAFETY (privacy-safety.html)
+================================================================================
+
+[BREADCRUMB] Home > Privacy & Safety
+
+[PAGE HEADER]
+- Title: "Privacy & Safety"
+- Subtitle: "Your safety and privacy matter to us."
+
+[CRISIS RESOURCES]
+- Title: "In Crisis? Get Help Now"
+- Warning: "Pixie Journey is NOT a crisis service. If you're in immediate danger, please contact emergency services or a crisis helpline."
+
+Australia:
+  • Emergency: 000
+  • Lifeline (24/7): 13 11 14 | lifeline.org.au
+  • Beyond Blue (24/7): 1300 22 4636 | beyondblue.org.au
+  • Suicide Call Back Service (24/7): 1300 659 467
+  • Kids Helpline (ages 5-25): 1800 55 1800
+  • 1800RESPECT (DV/sexual violence): 1800 737 732
+
+United States:
+  • Emergency: 911
+  • 988 Suicide & Crisis Lifeline: Call/text 988
+  • Crisis Text Line: Text "HELLO" to 741741
+
+United Kingdom:
+  • Emergency: 999
+  • Samaritans (24/7): 116 123
+  • Shout: Text "SHOUT" to 85258
+
+New Zealand:
+  • Emergency: 111
+  • Lifeline (24/7): 0800 543 354
+  • 1737: Free call/text 1737
+
+[PRIVACY COMMITMENT]
+- Title: "Your Privacy Matters"
+- Body: "We built Pixie Journey with privacy as a core principle:"
+
+What We DON'T Do:
+  ✗ Sell your data to third parties
+  ✗ Share your health data with advertisers
+  ✗ Use your data to train AI models
+  ✗ Share data with insurance companies
+  ✗ Track you across other apps or websites
+
+What We DO:
+  ✓ Store your data locally on your device by default
+  ✓ Encrypt data in transit and at rest
+  ✓ Give you full control over your data
+  ✓ Let you export or delete your data anytime
+  ✓ Comply with Australian Privacy Act
+
+[DATA SECURITY]
+- Title: "How We Protect Your Data"
+
+Local Storage (Default):
+"By default, your tracking data lives only on your device. We can't see it, we can't access it. It's yours."
+
+Optional Cloud Sync:
+  • Data is encrypted in transit (TLS/SSL)
+  • Data is stored in Australia
+  • We use industry-standard security practices
+  • You can disable sync and delete cloud data anytime
+
+[SAFETY FOR VULNERABLE USERS]
+- Title: "Safety for Vulnerable Users"
+
+If You're in an Unsafe Situation:
+  • App Lock: Use your device's built-in app lock or biometric security
+  • Private Notes: Don't include identifying details if someone else might access your device
+  • Cloud Sync: Consider disabling if you're concerned about account access
+  • Export Regularly: Keep backups in a safe location only you control
+  • Delete Anytime: You can delete all data instantly in Settings
+
+Domestic Violence Resources:
+  • Australia: 1800RESPECT — 1800 737 732
+  • US: National Domestic Violence Hotline — 1-800-799-7233
+  • UK: National Domestic Abuse Helpline — 0808 2000 247
+
+[REPORT CONCERNS]
+- Title: "Report Safety or Privacy Concerns"
+  • Security issues: security@pixiejourney.com
+  • Privacy concerns: privacy@pixiejourney.com
+  • General support: hello@pixiejourney.com
+"We take all reports seriously and will respond within 48 hours."
+
+
+================================================================================
+PAGE 9: THANK YOU (thank-you.html)
+================================================================================
+
+[PAGE HEADER]
+- Title: "You're on the List!"
+- Body: "Welcome to the Pixie Journey community. Check your email for confirmation (check spam if you don't see it)."
+
+[WHAT HAPPENS NEXT]
+
+1. Check Your Email
+   "We just sent you a confirmation with all the details."
+
+2. Your Pricing is Locked In
+   "Lifetime tier: $14.99 (Save $5 off regular $19.99)"
+
+3. We'll Notify You at Launch
+   "Q1 2026 — you'll be among the first to know."
+
+4. Earn Free Months
+   "Refer 3 friends = 1 month free
+    10 friends = 3 months
+    25 friends = Lifetime FREE"
+
+[WHILE YOU WAIT]
+
+• Read Our Story - "Learn why we built Pixie Journey and what makes it different." → About Us
+• Explore Features - "See all 19 tracking categories and find what matters to you." → View Features
+• Got Questions? - "Find answers in our comprehensive FAQ." → Read FAQ
+• Free Printables - "Download our free mood & sleep tracker PDFs while you wait." → Get Free PDFs
+
+[FOOTER]
+"Questions? Email us at hello@pixiejourney.com"
+"Thanks for believing in what we're building."
+
+
+================================================================================
+END OF CONTENT AUDIT
+================================================================================
+
+PLACEHOLDERS TO FILL BEFORE LAUNCH:
+- [Launch Date] - Privacy Policy, Terms of Service
+- [COMPANY ADDRESS] - Privacy Policy, Terms of Service
+- [STATE/TERRITORY] - Terms of Service (governing law)
+
+EMAILS REFERENCED:
+- hello@pixiejourney.com (general)
+- privacy@pixiejourney.com (privacy)
+- security@pixiejourney.com (security)
+- legal@pixiejourney.com (legal)

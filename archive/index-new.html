@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixie Journey - Track Your Life Beautifully</title>
+  <meta name="description" content="A health tracking app that uses cute stickers instead of boring dropdowns. Track mood, sleep, energy, and more with just a tap.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles-new.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/pixie-journey-logo.svg" alt="Pixie Journey" class="logo-img">
+        <span>Pixie Journey</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#waitlist" class="btn-primary">Join Waitlist</a>
+    </div>
+
+    <button class="mobile-menu-toggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="floating-circles">
+    <div class="bg-circle bg-circle-1"></div>
+    <div class="bg-circle bg-circle-2"></div>
+    <div class="bg-circle bg-circle-3"></div>
+    <div class="bg-circle bg-circle-4"></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="pixel-title">Track Your Life Beautifully</h1>
+    <p class="hero-subtitle">
+      Stickers, not dropdowns. Pixels, not boring charts.<br>
+      Your whole year at a glance, tracked with adorable stickers.
+    </p>
+
+    <div class="hero-visual">
+      <img src="images/year-in-pixels-mockup.svg" alt="Year-in-pixels calendar" class="hero-image">
+    </div>
+
+    <div class="hero-cta">
+      <a href="#waitlist" class="btn-primary btn-large">
+        Join the Waitlist
+      </a>
+      <p class="launch-info">
+        Launching Q1 2026 • iOS • Australia first
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- EASY ENTRY SECTION -->
+<section class="easy-entry">
+  <h2 class="pixel-title">Tap a Sticker. Done. <i class="fa-solid fa-sparkles"></i></h2>
+  <p class="section-intro">
+    No endless dropdowns. No typing when you're tired.<br>
+    Just tap how you're feeling and watch your pixel light up.
+  </p>
+
+  <div class="entry-example">
+    <h3>How's your mood today?</h3>
+    <div class="sticker-row">
+      <!-- GREAT: squinty eyes, D-mouth solid, blush -->
+      <div class="sticker-demo">
+        <div class="sticker-mood sticker-great">
+          <div class="blush left"></div>
+          <div class="blush right"></div>
+          <div class="face">
+            <div class="eyes">
+              <div class="eye-squinty"></div>
+              <div class="eye-squinty"></div>
+            </div>
+            <div class="mouth-d"></div>
+          </div>
+        </div>
+        <div class="sticker-label">Great</div>
+      </div>
+      <!-- GOOD: squinty eyes, smile outline, blush -->
+      <div class="sticker-demo">
+        <div class="sticker-mood sticker-good">
+          <div class="blush left"></div>
+          <div class="blush right"></div>
+          <div class="face">
+            <div class="eyes">
+              <div class="eye-squinty"></div>
+              <div class="eye-squinty"></div>
+            </div>
+            <div class="mouth-smile"></div>
+          </div>
+        </div>
+        <div class="sticker-label">Good</div>
+      </div>
+      <!-- OKAY: dot eyes, flat line, blush -->
+      <div class="sticker-demo">
+        <div class="sticker-mood sticker-okay">
+          <div class="blush left"></div>
+          <div class="blush right"></div>
+          <div class="face">
+            <div class="eyes">
+              <div class="eye-dot"></div>
+              <div class="eye-dot"></div>
+            </div>
+            <div class="mouth-flat"></div>
+          </div>
+        </div>
+        <div class="sticker-label">Okay</div>
+      </div>
+      <!-- LOW: sad droopy eyes, small frown, NO blush -->
+      <div class="sticker-demo">
+        <div class="sticker-mood sticker-low">
+          <div class="face">
+            <div class="eyes">
+              <div class="eye-sad"></div>
+              <div class="eye-sad"></div>
+            </div>
+            <div class="mouth-small-frown"></div>
+          </div>
+        </div>
+        <div class="sticker-label">Low</div>
+      </div>
+      <!-- BAD: X eyes, big frown, NO blush -->
+      <div class="sticker-demo">
+        <div class="sticker-mood sticker-bad">
+          <div class="face">
+            <div class="eyes">
+              <div class="eye-x"></div>
+              <div class="eye-x"></div>
+            </div>
+            <div class="mouth-frown"></div>
+          </div>
+        </div>
+        <div class="sticker-label">Terrible</div>
+      </div>
+    </div>
+    <p class="entry-note">Tap • Done • Move on</p>
+  </div>
+
+  <p class="support-message">
+    Want to add a note? Go for it.<br>
+    Too tired? That's completely okay. <i class="fa-solid fa-heart" style="color: var(--mood-good);"></i>
+  </p>
+</section>
+
+<!-- CUSTOMISE & NO GUILT SECTION -->
+<section class="customise-section">
+  <div class="section-split">
+    
+    <!-- Part A: Customization -->
+    <div class="customize-content">
+      <h2 class="pixel-title title-compact">Your Life, Your Categories, Your Way <i class="fa-solid fa-wand-magic-sparkles"></i></h2>
+      <p>Track what matters to YOU—not what some app thinks you should track.</p>
+
+      <div class="tier-preview">
+        <h3>Start with Free Forever:</h3>
+        <ul class="free-list">
+          <li><i class="fa-solid fa-check"></i> Mood tracking</li>
+          <li><i class="fa-solid fa-check"></i> Sleep quality</li>
+          <li><i class="fa-solid fa-check"></i> Hydration</li>
+          <li><i class="fa-solid fa-check"></i> Fertility tracking</li>
+        </ul>
+
+        <h3>Upgrade to Life tier for 19 categories:</h3>
+        <div class="category-badges">
+          <span class="badge"><i class="fa-solid fa-bolt"></i> Energy</span>
+          <span class="badge"><i class="fa-solid fa-person-running"></i> Exercise</span>
+          <span class="badge"><i class="fa-solid fa-utensils"></i> Meals</span>
+          <span class="badge"><i class="fa-solid fa-mobile-screen"></i> Screen Time</span>
+          <span class="badge"><i class="fa-solid fa-spa"></i> Self-Care</span>
+          <span class="badge"><i class="fa-solid fa-users"></i> Social</span>
+          <span class="badge"><i class="fa-solid fa-star"></i> Gratitude</span>
+          <span class="badge"><i class="fa-solid fa-sun"></i> Weather</span>
+          <span class="badge"><i class="fa-solid fa-wallet"></i> Spending</span>
+          <span class="badge"><i class="fa-solid fa-broom"></i> Chores</span>
+          <span class="badge"><i class="fa-solid fa-palette"></i> Creativity</span>
+          <span class="badge"><i class="fa-solid fa-calendar-check"></i> Appointments</span>
+          <span class="badge"><i class="fa-solid fa-briefcase"></i> Work Tasks</span>
+          <span class="badge"><i class="fa-solid fa-cart-shopping"></i> Errands</span>
+          <span class="badge"><i class="fa-solid fa-champagne-glasses"></i> Events</span>
+        </div>
+
+        <p class="unique-feature">
+          <i class="fa-solid fa-star"></i> The only health tracker that also organizes your life
+        </p>
+      </div>
+    </div>
+
+    <!-- Part B: No Guilt -->
+    <div class="no-guilt-content">
+      <h2 class="pixel-title title-compact">No Streaks. No Guilt. No Pressure. <i class="fa-solid fa-shield-heart"></i></h2>
+      
+      <div class="guilt-free-message">
+        <p class="large-text">Missed a day? A week? A whole month?</p>
+        
+        <ul class="no-guilt-list">
+          <li>• We don't shame you.</li>
+          <li>• We don't break your streak.</li>
+          <li>• We don't send notifications that make you feel worse.</li>
+        </ul>
+
+        <p class="reassurance">
+          Go back and log whenever you're ready.<br>
+          Or take the time you need. Lalah understands. <i class="fa-solid fa-heart" style="color: var(--mood-good);"></i>
+        </p>
+      </div>
+
+      <div class="lalah-image">
+        <img src="images/lalah-happy.png" alt="Lalah the supportive pixie">
+      </div>
+
+      <blockquote class="philosophy-quote">
+        "Your worst day is when tracking matters most.<br>
+        So we made sure it works even then."
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- MEET LALAH SECTION -->
+<section class="meet-lalah">
+  <div class="floating-circles">
+    <div class="bg-circle bg-circle-1"></div>
+    <div class="bg-circle bg-circle-2"></div>
+  </div>
+  <div class="lalah-intro">
+    <div class="lalah-image-large">
+      <img src="images/lalah-happy.png" alt="Lalah, your tracking companion">
+    </div>
+    <div class="lalah-description">
+      <h2 class="pixel-title">Meet Lalah <i class="fa-solid fa-wand-magic-sparkles"></i></h2>
+      <p class="intro-text">
+        Your tiny tracking companion who makes logging actually comforting.
+      </p>
+
+      <div class="lalah-expressions">
+        <h3>Lalah's here to:</h3>
+        <ul>
+          <li><i class="fa-solid fa-face-smile"></i> Celebrate your wins</li>
+          <li><i class="fa-solid fa-hands-holding-heart"></i> Support you on tough days</li>
+          <li><i class="fa-solid fa-sparkles"></i> Help you see patterns emerge</li>
+          <li><i class="fa-solid fa-heart"></i> Never judge, only understand</li>
+        </ul>
+      </div>
+
+      <p class="lalah-promise">
+        Lalah doesn't nag. She doesn't make you feel bad.<br>
+        She's just here to help you see your patterns.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- BULLET JOURNAL COMPARISON -->
+<section class="bujo-comparison">
+  <div class="floating-circles">
+    <div class="bg-circle bg-circle-3"></div>
+    <div class="bg-circle bg-circle-4"></div>
+  </div>
+  <h2 class="pixel-title">Like a Bullet Journal, But It Remembers <i class="fa-solid fa-book"></i></h2>
+  <p class="section-intro">
+    Love the aesthetic of bullet journaling?<br>
+    Find it hard to keep up when life gets messy?
+  </p>
+
+  <div class="comparison-grid">
+    <div class="bujo-column">
+      <h3>Paper Bullet Journal</h3>
+      <ul class="comparison-list">
+        <li><i class="fa-solid fa-check"></i> Beautiful year-in-pixels</li>
+        <li><i class="fa-solid fa-check"></i> Kawaii sticker aesthetic</li>
+        <li><i class="fa-solid fa-check"></i> Satisfying to fill in</li>
+        <li class="con"><i class="fa-solid fa-xmark"></i> Guilt when you forget</li>
+        <li class="con"><i class="fa-solid fa-xmark"></i> Lost pages = lost data</li>
+        <li class="con"><i class="fa-solid fa-xmark"></i> Hand-drawing grids at 11pm</li>
+      </ul>
+    </div>
+
+    <div class="pixie-column">
+      <h3>Pixie Journey</h3>
+      <ul class="comparison-list">
+        <li><i class="fa-solid fa-check"></i> Beautiful year-in-pixels</li>
+        <li><i class="fa-solid fa-check"></i> Kawaii sticker aesthetic</li>
+        <li><i class="fa-solid fa-check"></i> Satisfying to fill in</li>
+        <li><i class="fa-solid fa-check"></i> No guilt when you forget</li>
+        <li><i class="fa-solid fa-check"></i> Data never lost</li>
+        <li><i class="fa-solid fa-check"></i> No setup required</li>
+      </ul>
+      <p class="comparison-tagline">
+        All the pretty, none of the pressure. <i class="fa-solid fa-heart" style="color: var(--outline-brown);"></i>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING PREVIEW -->
+<section class="pricing-preview">
+  <h2 class="pixel-title">Start Free. Upgrade When Ready.</h2>
+
+  <div class="pricing-cards-simple">
+    <!-- FREE -->
+    <div class="price-card">
+      <h3>Free Forever</h3>
+      <div class="price">$0</div>
+      <ul>
+        <li>4 tracking categories</li>
+        <li>Year-in-pixels calendar</li>
+        <li>No ads on logging</li>
+        <li>Track forever</li>
+      </ul>
+      <a href="#waitlist" class="btn-secondary">Start Free</a>
+    </div>
+
+    <!-- LIFE -->
+    <div class="price-card featured">
+      <div class="popular-badge">Most Popular</div>
+      <h3>Life Tier</h3>
+      <div class="price">
+        <span class="strike">$19.99</span>
+        <span class="sale">$14.99</span>
+      </div>
+      <p class="price-note">Waitlist special • Lifetime</p>
+      <ul>
+        <li>All 19 categories</li>
+        <li>No ads anywhere</li>
+        <li>Export your data</li>
+        <li>Lifetime option</li>
+      </ul>
+      <a href="#waitlist" class="btn-primary">Join Waitlist for $14.99</a>
+    </div>
+
+    <!-- CLINICAL -->
+    <div class="price-card locked">
+      <div class="locked-badge"><i class="fa-solid fa-lock"></i> Coming Q2 2026</div>
+      <h3>Clinical</h3>
+      <div class="price">TBA</div>
+      <ul>
+        <li>31+ medical conditions</li>
+        <li>Multi-symptom logging</li>
+        <li>Medical reports</li>
+        <li>Pattern detection</li>
+      </ul>
+      <a href="#waitlist" class="btn-secondary">Notify Me</a>
+    </div>
+  </div>
+
+  <div class="pricing-cta">
+    <a href="pricing.html">View Full Pricing →</a>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="about-preview">
+  <h2 class="pixel-title">Built By People Who Get It</h2>
+  <p class="about-intro">
+    We built Pixie Journey because we desperately needed it.
+  </p>
+
+  <p>
+    Our team built this from both sides of chronic illness. One team 
+    member lives with a chronic health condition. The other is a 
+    full-time carer who's watched tracking apps fail the person they love.
+  </p>
+
+  <p>
+    We understand what tracking tools get wrong: they're built for 
+    people whose brains cooperate, whose days fit neat boxes, who can 
+    handle guilt when they miss a day.
+  </p>
+
+  <p>
+    <strong>We built the tracker that works for real humans on their worst days.</strong>
+  </p>
+
+  <a href="about.html" class="btn-secondary">Read our full story →</a>
+</section>
+
+<!-- FAQ PREVIEW -->
+<section class="faq-preview">
+  <h2 class="pixel-title">Quick Questions</h2>
+
+  <div class="faq-quick">
+    <div class="faq-item-preview">
+      <h3>When does it launch?</h3>
+      <p>Q1 2026 for iOS in Australia. Global expansion after.</p>
+    </div>
+
+    <div class="faq-item-preview">
+      <h3>How does waitlist pricing work?</h3>
+      <p>All waitlist members get Lifetime tier for $14.99 instead of $19.99. This pricing is locked in for you - no time limit.</p>
+    </div>
+
+    <div class="faq-item-preview">
+      <h3>Can I go back and log past days?</h3>
+      <p>Absolutely. No guilt, no limits. Log whenever you're ready.</p>
+    </div>
+
+    <div class="faq-item-preview">
+      <h3>Is my data private?</h3>
+      <p>Yes. Your data stays yours. We don't sell it, we don't share it.</p>
+    </div>
+  </div>
+
+  <a href="faq.html" class="btn-secondary mt-lg">View all questions →</a>
+</section>
+
+<!-- FINAL CTA / WAITLIST FORM -->
+<section id="waitlist" class="waitlist-section">
+  <h2 class="pixel-title">Ready to Track Beautifully?</h2>
+  <p class="waitlist-benefits">
+    Join the waitlist for:
+  </p>
+
+  <div class="benefits-grid">
+    <div class="benefit">
+      <i class="fa-solid fa-bell"></i>
+      <span>Launch day notification (Q1 2026)</span>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-tag"></i>
+      <span>Lifetime tier: $14.99 (save $5)</span>
+    </div>
+    <div class="benefit">
+      <i class="fa-solid fa-gift"></i>
+      <span>Referral rewards (earn free months)</span>
+    </div>
+  </div>
+
+  <form class="waitlist-form" action="/api/waitlist" method="POST">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        placeholder="your@email.com"
+      >
+    </div>
+
+    <button type="submit" class="btn-primary btn-large btn-full">
+      Join the Waitlist
+    </button>
+
+    <div class="form-optional">
+      <p>Optional - Help us build something you'll love:</p>
+      
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="interest" value="mental-health">
+          Mental health tracking
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="chronic-illness">
+          Chronic illness management
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="fertility">
+          Fertility tracking
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="wellness">
+          General wellness & self-care
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="planning">
+          Planning & productivity tools
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="bujo">
+          Bullet journal lover
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="clinical">
+          Clinical features (31+ conditions, coming later)
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="beta">
+          I'd like to beta test the app (iOS, Australia only)
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location (optional):</label>
+        <select id="location" name="location">
+          <option value="">Select country</option>
+          <option value="AU">Australia</option>
+          <option value="US">United States</option>
+          <option value="GB">United Kingdom</option>
+          <option value="CA">Canada</option>
+          <option value="NZ">New Zealand</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="form-note">
+      Your email stays private. Unsubscribe anytime.<br>
+      We only email for real updates.
+    </p>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-content">
+    
+    <div class="footer-section">
+      <h3>Pixie Journey</h3>
+      <p>Track your life beautifully. No guilt, no streaks, no pressure.</p>
+      <div class="footer-logo">
+        <img src="images/pixie-journey-logo.svg" alt="Pixie Journey">
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Product</h3>
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy-safety.html">Privacy & Safety</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="mailto:hello@pixiejourney.com">hello@pixiejourney.com</a></li>
+        <li><a href="mailto:support@pixiejourney.com">support@pixiejourney.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Pixie Journey. All rights reserved.</p>
+    <p>Made with <i class="fa-solid fa-heart" style="color: var(--mood-good);"></i> in Australia</p>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+// Mobile menu toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+if (mobileMenuToggle) {
+  mobileMenuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+  });
+}
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href !== '#') {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>

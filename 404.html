@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Page Not Found | Pixie Journey</title>
+    <meta name="description" content="Oops! This page doesn't exist. Let Lalah help you find your way back.">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-mascot {
+            width: 260px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: search 4s ease-in-out infinite;
+            filter: drop-shadow(0 8px 24px rgba(122, 155, 144, 0.15));
+        }
+
+        @keyframes search {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-8px) rotate(-3deg); }
+            75% { transform: translateY(-8px) rotate(3deg); }
+        }
+
+        .error-code {
+            font-family: 'VT323', monospace;
+            font-size: 120px;
+            color: var(--primary-green, #7A9B90);
+            line-height: 1;
+            margin-bottom: 4px;
+            letter-spacing: 8px;
+            opacity: 0.85;
+        }
+
+        .error-title {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-brown);
+            margin-bottom: 12px;
+        }
+
+        .error-message {
+            font-size: 1.05rem;
+            color: var(--text-brown);
+            max-width: 440px;
+            margin-bottom: 32px;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        .error-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        .error-hint {
+            font-family: 'VT323', monospace;
+            font-size: 1rem;
+            color: var(--primary-green, #7A9B90);
+            margin-top: 24px;
+            opacity: 0.6;
+            letter-spacing: 1px;
+        }
+    </style>
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-cubes">
+                    <div class="cube cube-1"><div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-d"></div></div></div>
+                    <div class="cube cube-2"><div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-smile"></div></div></div>
+                    <div class="cube cube-3"><div class="face"><div class="eyes"><div class="eye-dot"></div><div class="eye-dot"></div></div><div class="mouth-flat"></div></div></div>
+                    <div class="cube cube-4"><div class="face"><div class="eyes"><div class="eye-sad"></div><div class="eye-sad"></div></div><div class="mouth-frown"></div></div></div>
+                </div>
+                <span class="logo-pixel">Pixie</span><span class="logo-journey">Journey</span>
+            </a>
+            <nav class="main-nav">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="free-tracking-pdfs.html" class="nav-cta">Get Free PDFs</a>
+            </nav>
+
+    <main id="main-content">
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 404 CONTENT -->
+    <div class="error-page">
+        <div class="floating-circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="circle circle-5"></div>
+        </div>
+
+        <img src="images/lalah-magnifying-glass.png" alt="Lalah searching with a magnifying glass" class="error-mascot">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Lalah searched everywhere!</h1>
+        <p class="error-message">She looked behind every sticker and under every pixel, but this page is nowhere to be found. Let's get you somewhere that exists.</p>
+        <div class="error-links">
+            <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-house"></i> Go Home</a>
+            <a href="free-tracking-pdfs.html" class="btn btn-secondary"><i class="fa-solid fa-gift"></i> Free Printables</a>
+            <a href="faq.html" class="btn btn-secondary"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+        </div>
+        <p class="error-hint">// page_not_found — maybe it's on a pixie adventure</p>
+    </div>
+
+    <!-- FOOTER -->
+        </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <p class="footer-brand">Pixie Journey</p>
+                    <p>Track your Life in Pixel</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy-safety.html">Privacy & Safety</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mailto:hello@pixiejourney.com">hello@pixiejourney.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pixie Journey. All rights reserved.</p>
+                <p>Made with <i class="fa-solid fa-heart" style="color: var(--salmon);"></i> in Australia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            var expanded = mainNav.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', expanded);
+        });
+    }
+    </script>
+</body>
+</html>

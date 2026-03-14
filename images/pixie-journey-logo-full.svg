@@ -1,0 +1,55 @@
+<svg width="200" height="240" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&amp;family=Nunito:wght@500&amp;display=swap');
+  </style>
+
+  <!-- Logo Grid (rotated -3deg like splash) -->
+  <g transform="rotate(-3 100 75)">
+    <!-- Pixel 1: GREAT (Gold) -->
+    <rect x="32" y="18" width="62" height="62" rx="12" fill="#ffe9b3" stroke="#806048" stroke-width="2.5"/>
+    <!-- Squinty eyes -->
+    <path d="M 48 42 Q 53 39 58 42" stroke="#806048" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 72 42 Q 77 39 82 42" stroke="#806048" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- D-mouth -->
+    <ellipse cx="63" cy="55" rx="5" ry="4" fill="#806048"/>
+    <!-- Blush -->
+    <ellipse cx="46" cy="50" rx="5" ry="3" fill="#EAA090" opacity="0.5"/>
+    <ellipse cx="80" cy="50" rx="5" ry="3" fill="#EAA090" opacity="0.5"/>
+
+    <!-- Pixel 2: GOOD (Mint) -->
+    <rect x="104" y="18" width="62" height="62" rx="12" fill="#d0e6db" stroke="#806048" stroke-width="2.5"/>
+    <!-- Squinty eyes -->
+    <path d="M 120 42 Q 125 39 130 42" stroke="#806048" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 144 42 Q 149 39 154 42" stroke="#806048" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Curved smile -->
+    <path d="M 127 55 Q 135 61 143 55" stroke="#806048" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Blush -->
+    <ellipse cx="118" cy="50" rx="5" ry="3" fill="#EAA090" opacity="0.5"/>
+    <ellipse cx="152" cy="50" rx="5" ry="3" fill="#EAA090" opacity="0.5"/>
+
+    <!-- Pixel 3: OKAY (Peach) -->
+    <rect x="32" y="90" width="62" height="62" rx="12" fill="#f7e2d9" stroke="#806048" stroke-width="2.5"/>
+    <!-- Dot eyes -->
+    <circle cx="52" cy="114" r="3.5" fill="#806048"/>
+    <circle cx="76" cy="114" r="3.5" fill="#806048"/>
+    <!-- Flat mouth -->
+    <line x1="56" y1="128" x2="72" y2="128" stroke="#806048" stroke-width="2" stroke-linecap="round"/>
+    <!-- Blush -->
+    <ellipse cx="46" cy="122" rx="5" ry="3" fill="#EAA090" opacity="0.5"/>
+    <ellipse cx="80" cy="122" rx="5" ry="3" fill="#EAA090" opacity="0.5"/>
+
+    <!-- Pixel 4: LOW (Sky Blue) - No blush -->
+    <rect x="104" y="90" width="62" height="62" rx="12" fill="#c5dde8" stroke="#806048" stroke-width="2.5"/>
+    <!-- Sad eyes -->
+    <path d="M 120 114 Q 125 117 130 114" stroke="#806048" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 144 114 Q 149 117 154 114" stroke="#806048" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Small frown -->
+    <path d="M 127 130 Q 135 126 143 130" stroke="#806048" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Brand text: VT323 -->
+  <text x="100" y="192" text-anchor="middle" font-family="'VT323', monospace" font-size="38" font-weight="400" fill="#806048" letter-spacing="2">Pixie Journey</text>
+
+  <!-- Tagline: Nunito -->
+  <text x="100" y="212" text-anchor="middle" font-family="'Nunito', sans-serif" font-size="11" font-weight="500" fill="#6A5344" opacity="0.85">Your Life, Honestly Visualized</text>
+</svg>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Your PDFs | Pixie Journey</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .download-status {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .download-status .status-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .download-status .status-icon.loading { color: var(--sage); }
+        .download-status .status-icon.success { color: var(--sage); }
+        .download-status .status-icon.error { color: var(--salmon, #E8A598); }
+        .download-status h2 {
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 0.75rem;
+        }
+        .download-status p {
+            color: #6B7280;
+            max-width: 440px;
+            line-height: 1.6;
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            width: 100%;
+            max-width: 480px;
+        }
+        .file-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.875rem 1.25rem;
+            margin-bottom: 0.5rem;
+            background: var(--cream, #F9F7F4);
+            border-radius: 10px;
+            border: 1px solid #E5E7EB;
+        }
+        .file-list li .file-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--midnight, #2C4A52);
+        }
+        .file-list li a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--sage, #7A9B90);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .file-list li a:hover { opacity: 0.85; }
+        .downloads-remaining {
+            font-size: 0.8rem;
+            color: #9CA3AF;
+            margin-top: 0.5rem;
+        }
+        .retry-link {
+            display: inline-block;
+            margin-top: 1.25rem;
+            color: var(--sage, #7A9B90);
+            font-weight: 600;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .fa-spinner { animation: spin 1s linear infinite; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-cubes">
+                    <div class="cube cube-1"><div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-d"></div></div></div>
+                    <div class="cube cube-2"><div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-smile"></div></div></div>
+                    <div class="cube cube-3"><div class="face"><div class="eyes"><div class="eye-dot"></div><div class="eye-dot"></div></div><div class="mouth-flat"></div></div></div>
+                    <div class="cube cube-4"><div class="face"><div class="eyes"><div class="eye-sad"></div><div class="eye-sad"></div></div><div class="mouth-frown"></div></div></div>
+                </div>
+                <span class="logo-pixel">Pixie</span><span class="logo-journey">Journey</span>
+            </a>
+            <nav class="main-nav">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="free-tracking-pdfs.html" class="nav-cta">Get Free PDFs</a>
+            </nav>
+
+    <main id="main-content">
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section class="section">
+        <div class="section-inner">
+            <div id="download-area" class="download-status">
+                <div class="status-icon loading">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
+                <h2>Preparing your downloads...</h2>
+                <p>Hang tight, we're generating your download links.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- APP CTA -->
+    <section class="section section-alt">
+        <div class="section-inner text-center">
+            <p>Love the trackers? The Pixie Journey app is coming in 2026 with digital versions and more.</p>
+            <a href="waitlist.html" class="btn btn-secondary" style="margin-top: 1rem;"><i class="fa-solid fa-bell"></i> Join the App Waitlist</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+        </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <p class="footer-brand">Pixie Journey</p>
+                    <p>Track your Life in Pixel</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy-safety.html">Privacy & Safety</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mailto:hello@pixiejourney.com">hello@pixiejourney.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pixie Journey. All rights reserved.</p>
+                <p>Made with <i class="fa-solid fa-heart" style="color: var(--salmon);"></i> in Australia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast" role="alert" aria-live="polite" id="toast">
+        <span class="toast-icon"><i class="fa-solid fa-check"></i></span>
+        <span id="toast-msg">Thanks!</span>
+    </div>
+
+    <script>
+    // Config — update SUPABASE_URL after project creation
+    const SUPABASE_URL = ''; // e.g. https://xxxxx.supabase.co
+    const DOWNLOAD_FUNCTION = SUPABASE_URL + '/functions/v1/download-pdfs';
+
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            var expanded = mainNav.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', expanded);
+        });
+    }
+
+    function showToast(msg) {
+        var toast = document.getElementById('toast');
+        document.getElementById('toast-msg').textContent = msg;
+        toast.classList.add('show');
+        setTimeout(function() { toast.classList.remove('show'); }, 3000);
+    }
+
+    function escapeHtml(str) {
+        var div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+
+    function renderError(title, message) {
+        var area = document.getElementById('download-area');
+        area.textContent = '';
+
+        var icon = document.createElement('div');
+        icon.className = 'status-icon error';
+        icon.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>';
+        area.appendChild(icon);
+
+        var h2 = document.createElement('h2');
+        h2.textContent = title;
+        area.appendChild(h2);
+
+        var p = document.createElement('p');
+        p.textContent = message;
+        area.appendChild(p);
+
+        var link = document.createElement('a');
+        link.href = 'free-tracking-pdfs.html';
+        link.className = 'retry-link';
+        link.innerHTML = '<i class="fa-solid fa-arrow-left"></i> Request a new download link';
+        area.appendChild(link);
+    }
+
+    function renderSuccess(files, remaining) {
+        var area = document.getElementById('download-area');
+        area.textContent = '';
+
+        var icon = document.createElement('div');
+        icon.className = 'status-icon success';
+        icon.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+        area.appendChild(icon);
+
+        var h2 = document.createElement('h2');
+        h2.textContent = 'Your PDFs are ready!';
+        area.appendChild(h2);
+
+        var desc = document.createElement('p');
+        desc.textContent = 'Click each file to download. Each PDF includes a bonus dot grid page on the back.';
+        area.appendChild(desc);
+
+        var ul = document.createElement('ul');
+        ul.className = 'file-list';
+        files.forEach(function(f) {
+            var li = document.createElement('li');
+            var nameSpan = document.createElement('span');
+            nameSpan.className = 'file-name';
+            nameSpan.textContent = f.name;
+            li.appendChild(nameSpan);
+            var a = document.createElement('a');
+            a.href = f.url;
+            a.setAttribute('download', '');
+            a.innerHTML = '<i class="fa-solid fa-download"></i> Download';
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+        area.appendChild(ul);
+
+        var rem = document.createElement('p');
+        rem.className = 'downloads-remaining';
+        rem.textContent = remaining + ' download' + (remaining !== 1 ? 's' : '') + ' remaining on this link';
+        area.appendChild(rem);
+
+        var tip = document.createElement('p');
+        tip.style.cssText = 'font-size: 0.85rem; color: #6B7280; margin-top: 1.25rem; max-width: 440px; line-height: 1.5;';
+        tip.innerHTML = '<strong>Printing tip:</strong> Set your printer to "Actual size" (not "Fit to page") for best results. For double-sided printing, use "Flip on long edge." <a href="faq.html#free-tracking-pdfs" style="color: var(--sage, #7A9B90);">More printing help</a>';
+        area.appendChild(tip);
+
+        var license = document.createElement('p');
+        license.style.cssText = 'font-size: 0.8rem; color: #9CA3AF; margin-top: 0.75rem;';
+        license.textContent = 'Personal use + classroom/clinic printing allowed. Not for resale or redistribution.';
+        area.appendChild(license);
+    }
+
+    async function validateAndDownload() {
+        const params = new URLSearchParams(window.location.search);
+        const token = params.get('token');
+
+        if (!token) {
+            renderError(
+                'No download token',
+                'This page requires a valid download link. Enter your email to get one.'
+            );
+            return;
+        }
+
+        if (!SUPABASE_URL) {
+            // Dev/preview mode — show placeholder
+            document.getElementById('download-area').innerHTML = `
+                <div class="status-icon success">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h2>Download system ready</h2>
+                <p>The download flow is built but waiting for Supabase project configuration. Set <code>SUPABASE_URL</code> in download.html to activate.</p>
+            `;
+            return;
+        }
+
+        try {
+            const res = await fetch(DOWNLOAD_FUNCTION, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ token }),
+            });
+
+            const data = await res.json();
+
+            if (!res.ok) {
+                const titles = {
+                    'EXPIRED': 'Link expired',
+                    'LIMIT_REACHED': 'Download limit reached',
+                    'INVALID_TOKEN': 'Invalid link',
+                    'DEACTIVATED': 'Link deactivated',
+                };
+                renderError(
+                    titles[data.code] || 'Download unavailable',
+                    data.error || 'Something went wrong. Please try again.'
+                );
+                return;
+            }
+
+            renderSuccess(data.files, data.downloads_remaining);
+        } catch (err) {
+            console.error('Download error:', err);
+            renderError(
+                'Connection error',
+                'Could not reach the download server. Please check your connection and try again.'
+            );
+        }
+    }
+
+    // Run on page load
+    validateAndDownload();
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /download.html
+Disallow: /thank-you.html
+
+Sitemap: https://pixiejourney.com/sitemap.xml
