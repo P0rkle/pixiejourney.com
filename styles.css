@@ -1587,9 +1587,9 @@ input:focus-visible,
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    background: #F4F9F7;
-    color: #2C4A52;
-    border: 1.5px solid #7A9B90;
+    background: #E8A090;
+    color: #fff;
+    border: 1.5px solid #E8A090;
     border-radius: 20px;
     padding: 0.4rem 0.9rem;
     font-size: 0.8rem;
@@ -1602,8 +1602,8 @@ input:focus-visible,
 }
 
 .pin-btn:hover {
-    background: #7A9B90;
-    border-color: #7A9B90;
+    background: #D4897A;
+    border-color: #D4897A;
     transform: scale(1.05);
     color: #fff;
 }
