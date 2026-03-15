@@ -1,0 +1,35 @@
+{
+    "name": "Pixie Journey",
+    "short_name": "Pixie Journey",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F9F7F4",
+    "theme_color": "#7BA89D",
+    "description": "Your Life, Honestly Visualized. Plan, track, and prepare.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
