@@ -66,15 +66,12 @@
     <section class="section section-alt" id="get-pdf">
         <div class="section-inner content-narrow">
             <div class="email-box">
-                <h2><i class="fa-solid fa-download"></i> Get This Free Sleep Tracker Printable</h2>
-                <p>Enter your email and we'll send you the print-ready PDF (plus all 4 trackers in our collection).</p>
-                <form class="email-form" onsubmit="handleSubmit(event)">
-                    <label for="email-pdf" class="sr-only">you@example.com</label>
-                    <input type="email" id="email-pdf" class="input" placeholder="you@example.com" required>
-                    <button type="submit" class="btn btn-primary">Email me the PDF</button>
-                </form>
-                <p class="email-note">No spam. One delivery email, then optional updates. Unsubscribe anytime.</p>
-                <p class="email-license">Personal use + classroom/clinic printing allowed. Not for resale or redistribution.</p>
+                <h2><i class="fa-solid fa-download"></i> Download This Free Sleep Tracker</h2>
+                <p>Click below to download the print-ready PDF (A4, 300 DPI).</p>
+
+                <a href="assets/printables/lalah-sleep-potion-tracker.pdf" download class="btn btn-primary" style="display: block; text-align: center; margin-top: 1rem;"><i class="fa-solid fa-download"></i> Download Sleep Potion Tracker (PDF)</a>
+
+                <p class="email-license" style="margin-top: 1rem;">Personal use + classroom/clinic printing allowed. Not for resale or redistribution.</p>
             </div>
         </div>
     </section>
@@ -93,15 +90,12 @@
 
     </main>
 
-    <footer class="site-footer"><div class="footer-inner"><div class="footer-grid"><div class="footer-section"><p class="footer-brand">Pixie Journey</p><p>Track your Life in Pixels</p></div><div class="footer-section"><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li></ul></div><div class="footer-section"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="privacy-safety.html">Privacy &amp; Safety</a></li></ul></div><div class="footer-section"><h4>Support</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="mailto:hello@pixiejourney.com">hello@pixiejourney.com</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Pixie Journey. All rights reserved.</p><p>Made with <i class="fa-solid fa-heart" style="color: var(--salmon);"></i> in Australia</p></div></div></footer>
+    <footer class="site-footer"><div class="footer-inner"><div class="footer-grid"><div class="footer-section"><p class="footer-brand">Pixie Journey</p><p>Colour Your Days. See the Pattern.</p></div><div class="footer-section"><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li></ul></div><div class="footer-section"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="privacy-safety.html">Privacy &amp; Safety</a></li></ul></div><div class="footer-section"><h4>Support</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="mailto:hello@pixiejourney.com">hello@pixiejourney.com</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Pixie Journey. All rights reserved.</p><p>Made with <i class="fa-solid fa-heart" style="color: var(--salmon);"></i> in Australia</p></div></div></footer>
 
     <div class="toast" role="alert" aria-live="polite" id="toast"><span class="toast-icon"><i class="fa-solid fa-check"></i></span><span id="toast-msg">Thanks!</span></div>
 
     <script>
     const mobileMenuToggle=document.querySelector('.mobile-menu-toggle');const mainNav=document.querySelector('.main-nav');if(mobileMenuToggle){mobileMenuToggle.addEventListener('click',()=>{mainNav.classList.toggle('active');mobileMenuToggle.setAttribute('aria-expanded',mainNav.classList.contains('active'));});}
-    const SUPABASE_URL='';
-    function handleSubmit(e){e.preventDefault();var ei=document.getElementById('email-pdf');var btn=e.target.querySelector('button[type="submit"]');var em=ei.value.trim();if(!em)return;btn.disabled=true;btn.textContent='Sending...';if(!SUPABASE_URL){showToast('Thanks! Download system activating soon.');ei.value='';btn.disabled=false;btn.textContent='Email me the PDF';return;}fetch(SUPABASE_URL+'/functions/v1/request-pdfs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,source:'sleep-potion-tracker'})}).then(function(r){return r.json()}).then(function(d){if(d.success){showToast(d.message||'Check your inbox!');ei.value='';}else{showToast(d.error||'Something went wrong.');}}).catch(function(){showToast('Connection error.');}).finally(function(){btn.disabled=false;btn.textContent='Email me the PDF';});}
-    function showToast(msg){var t=document.getElementById('toast');document.getElementById('toast-msg').textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},3000);}
     </script>
 </body>
 </html>

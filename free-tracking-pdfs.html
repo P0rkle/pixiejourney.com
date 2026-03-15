@@ -59,7 +59,7 @@
     <!-- PAGE HEADER -->
     <section class="page-header">
         <h1>Free Printable Bullet Journal Trackers &amp; Coloring Pages</h1>
-        <p class="page-subtitle">Printable mood trackers, sleep trackers, habit trackers, and creative coloring trackers designed to make self-tracking fun and visual. Enter your email and we'll send you the print-ready PDFs.</p>
+        <p class="page-subtitle">Printable mood trackers, sleep trackers, habit trackers, and creative coloring trackers designed to make self-tracking fun and visual. Click to download the print-ready PDFs.</p>
     </section>
 
     <!-- WHAT YOU GET -->
@@ -120,11 +120,11 @@
             <div class="steps-grid">
                 <div class="step">
                     <span class="step-number">1</span>
-                    <p>Enter your email</p>
+                    <p>Choose a tracker</p>
                 </div>
                 <div class="step">
                     <span class="step-number">2</span>
-                    <p>We'll send you a download link</p>
+                    <p>Click the download button</p>
                 </div>
                 <div class="step">
                     <span class="step-number">3</span>
@@ -134,19 +134,21 @@
         </div>
     </section>
 
-    <!-- EMAIL FORM -->
+    <!-- DOWNLOAD SECTION -->
     <section class="section">
         <div class="section-inner content-narrow">
             <div class="email-box">
-                <h2><i class="fa-solid fa-download"></i> Get the Free Tracking PDFs</h2>
+                <h2><i class="fa-solid fa-download"></i> Download Free Tracking PDFs</h2>
+                <p>Click any tracker below to download the print-ready PDF (A4, 300 DPI).</p>
 
-                <form class="email-form" onsubmit="handleSubmit(event)">
-                    <label for="email-kit" class="sr-only">you@example.com</label>
-                    <input type="email" id="email-kit" class="input" placeholder="you@example.com" required>
-                    <button type="submit" class="btn btn-primary">Email me the PDFs</button>
-                </form>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+                    <a href="assets/printables/lalah-mood-star-tracker.pdf" download class="btn btn-primary" style="text-align: center;"><i class="fa-solid fa-download"></i> Mood Star Tracker (PDF)</a>
+                    <a href="assets/printables/lalah-sleep-potion-tracker.pdf" download class="btn btn-primary" style="text-align: center;"><i class="fa-solid fa-download"></i> Sleep Potion Tracker (PDF)</a>
+                    <a href="assets/printables/lalah-macaron-tracker-universal.pdf" download class="btn btn-primary" style="text-align: center;"><i class="fa-solid fa-download"></i> Macaron Habit Tracker (PDF)</a>
+                    <a href="assets/printables/lalah-patch-tracker-universal.pdf" download class="btn btn-primary" style="text-align: center;"><i class="fa-solid fa-download"></i> Garden Patch Tracker (PDF)</a>
+                </div>
 
-                <p class="email-note">We'll only email you about Pixie Journey downloads and early access. Unsubscribe anytime.</p>
+                <p class="email-license" style="margin-top: 1rem;">Personal use + classroom/clinic printing allowed. Not for resale or redistribution.</p>
             </div>
         </div>
     </section>
@@ -167,7 +169,7 @@
             <div class="footer-grid">
                 <div class="footer-section">
                     <p class="footer-brand">Pixie Journey</p>
-                    <p>Track your Life in Pixels</p>
+                    <p>Colour Your Days. See the Pattern.</p>
                 </div>
 
                 <div class="footer-section">
@@ -220,59 +222,6 @@
             var expanded = mainNav.classList.contains('active');
             mobileMenuToggle.setAttribute('aria-expanded', expanded);
         });
-    }
-
-    // Config — update SUPABASE_URL after project creation
-    const SUPABASE_URL = ''; // e.g. https://xxxxx.supabase.co
-    const REQUEST_PDFS_URL = SUPABASE_URL + '/functions/v1/request-pdfs';
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        var emailInput = document.getElementById('email-kit');
-        var btn = e.target.querySelector('button[type="submit"]');
-        var email = emailInput.value.trim();
-
-        if (!email) return;
-
-        btn.disabled = true;
-        btn.textContent = 'Sending...';
-
-        if (!SUPABASE_URL) {
-            showToast('Thanks! Download system activating soon.');
-            emailInput.value = '';
-            btn.disabled = false;
-            btn.textContent = 'Email me the PDFs';
-            return;
-        }
-
-        fetch(REQUEST_PDFS_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, source: 'free-tracking-pdfs' }),
-        })
-        .then(function(res) { return res.json(); })
-        .then(function(data) {
-            if (data.success) {
-                showToast(data.message || 'Check your inbox!');
-                emailInput.value = '';
-            } else {
-                showToast(data.error || 'Something went wrong. Try again.');
-            }
-        })
-        .catch(function() {
-            showToast('Connection error. Please try again.');
-        })
-        .finally(function() {
-            btn.disabled = false;
-            btn.textContent = 'Email me the PDFs';
-        });
-    }
-
-    function showToast(msg) {
-        var toast = document.getElementById('toast');
-        document.getElementById('toast-msg').textContent = msg;
-        toast.classList.add('show');
-        setTimeout(function() { toast.classList.remove('show'); }, 3000);
     }
     </script>
 </body>
