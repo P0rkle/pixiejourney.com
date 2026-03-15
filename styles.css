@@ -1581,6 +1581,75 @@ input:focus-visible,
 }
 
 /* =====================================================
+   PINTEREST SAVE BUTTON
+   ===================================================== */
+.pin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #E60023;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+    line-height: 1;
+}
+
+.pin-btn:hover {
+    background: #AD081B;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.pin-btn:focus-visible {
+    outline: 3px solid #7A9B90;
+    outline-offset: 2px;
+}
+
+.pin-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+/* Position pin button on preview cards */
+.preview-card .pin-btn {
+    margin-top: 0.4rem;
+}
+
+/* Position pin button on printable detail pages */
+.printable-detail .pin-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Card buttons row with pin */
+.card-buttons-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.card-buttons-row .card-buttons {
+    margin-top: 0;
+}
+
+@media print {
+    .pin-btn, .pin-wrapper { display: none !important; }
+}
+
+/* =====================================================
    ACCESSIBILITY: Reduced motion
    ===================================================== */
 @media (prefers-reduced-motion: reduce) {
