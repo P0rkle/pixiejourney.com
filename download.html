@@ -114,7 +114,7 @@
                 <a href="free-tracking-pdfs.html" class="nav-cta">Get Free PDFs</a>
             </nav>
 
-            <button class="mobile-menu-toggle" aria-label="Menu">
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
                 <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
         </div>
@@ -196,9 +196,8 @@
     </div>
 
     <script>
-    // Config — update SUPABASE_URL after project creation
-    const SUPABASE_URL = ''; // e.g. https://xxxxx.supabase.co
-    const DOWNLOAD_FUNCTION = SUPABASE_URL + '/functions/v1/download-pdfs';
+    // Downloads are no longer gated — redirect to free collection
+    window.location.replace('free-tracking-pdfs.html');
 
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mainNav = document.querySelector('.main-nav');
@@ -209,153 +208,6 @@
             mobileMenuToggle.setAttribute('aria-expanded', expanded);
         });
     }
-
-    function showToast(msg) {
-        var toast = document.getElementById('toast');
-        document.getElementById('toast-msg').textContent = msg;
-        toast.classList.add('show');
-        setTimeout(function() { toast.classList.remove('show'); }, 3000);
-    }
-
-    function escapeHtml(str) {
-        var div = document.createElement('div');
-        div.textContent = str;
-        return div.innerHTML;
-    }
-
-    function renderError(title, message) {
-        var area = document.getElementById('download-area');
-        area.textContent = '';
-
-        var icon = document.createElement('div');
-        icon.className = 'status-icon error';
-        icon.innerHTML = '<i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>';
-        area.appendChild(icon);
-
-        var h2 = document.createElement('h2');
-        h2.textContent = title;
-        area.appendChild(h2);
-
-        var p = document.createElement('p');
-        p.textContent = message;
-        area.appendChild(p);
-
-        var link = document.createElement('a');
-        link.href = 'free-tracking-pdfs.html';
-        link.className = 'retry-link';
-        link.innerHTML = '<i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Request a new download link';
-        area.appendChild(link);
-    }
-
-    function renderSuccess(files, remaining) {
-        var area = document.getElementById('download-area');
-        area.textContent = '';
-
-        var icon = document.createElement('div');
-        icon.className = 'status-icon success';
-        icon.innerHTML = '<i class="fa-solid fa-circle-check" aria-hidden="true"></i>';
-        area.appendChild(icon);
-
-        var h2 = document.createElement('h2');
-        h2.textContent = 'Your PDFs are ready!';
-        area.appendChild(h2);
-
-        var desc = document.createElement('p');
-        desc.textContent = 'Click each file to download. Each PDF includes a bonus dot grid page on the back.';
-        area.appendChild(desc);
-
-        var ul = document.createElement('ul');
-        ul.className = 'file-list';
-        files.forEach(function(f) {
-            var li = document.createElement('li');
-            var nameSpan = document.createElement('span');
-            nameSpan.className = 'file-name';
-            nameSpan.textContent = f.name;
-            li.appendChild(nameSpan);
-            var a = document.createElement('a');
-            a.href = f.url;
-            a.setAttribute('download', '');
-            a.innerHTML = '<i class="fa-solid fa-download" aria-hidden="true"></i> Download';
-            li.appendChild(a);
-            ul.appendChild(li);
-        });
-        area.appendChild(ul);
-
-        var rem = document.createElement('p');
-        rem.className = 'downloads-remaining';
-        rem.textContent = remaining + ' download' + (remaining !== 1 ? 's' : '') + ' remaining on this link';
-        area.appendChild(rem);
-
-        var tip = document.createElement('p');
-        tip.style.cssText = 'font-size: 0.85rem; color: #6B7280; margin-top: 1.25rem; max-width: 440px; line-height: 1.5;';
-        tip.innerHTML = '<strong>Printing tip:</strong> Set your printer to "Actual size" (not "Fit to page") for best results. For double-sided printing, use "Flip on long edge." <a href="faq.html#free-tracking-pdfs" style="color: var(--sage, #7A9B90);">More printing help</a>';
-        area.appendChild(tip);
-
-        var license = document.createElement('p');
-        license.style.cssText = 'font-size: 0.8rem; color: #9CA3AF; margin-top: 0.75rem;';
-        license.textContent = 'Personal use + classroom/clinic printing allowed. Not for resale or redistribution.';
-        area.appendChild(license);
-    }
-
-    async function validateAndDownload() {
-        const params = new URLSearchParams(window.location.search);
-        const token = params.get('token');
-
-        if (!token) {
-            renderError(
-                'No download token',
-                'This page requires a valid download link. Enter your email to get one.'
-            );
-            return;
-        }
-
-        if (!SUPABASE_URL) {
-            // Dev/preview mode — show placeholder
-            document.getElementById('download-area').innerHTML = `
-                <div class="status-icon success">
-                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                </div>
-                <h2>Download system ready</h2>
-                <p>The download flow is built but waiting for Supabase project configuration. Set <code>SUPABASE_URL</code> in download.html to activate.</p>
-            `;
-            return;
-        }
-
-        try {
-            const res = await fetch(DOWNLOAD_FUNCTION, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ token }),
-            });
-
-            const data = await res.json();
-
-            if (!res.ok) {
-                const titles = {
-                    'EXPIRED': 'Link expired',
-                    'LIMIT_REACHED': 'Download limit reached',
-                    'INVALID_TOKEN': 'Invalid link',
-                    'DEACTIVATED': 'Link deactivated',
-                };
-                renderError(
-                    titles[data.code] || 'Download unavailable',
-                    data.error || 'Something went wrong. Please try again.'
-                );
-                return;
-            }
-
-            renderSuccess(data.files, data.downloads_remaining);
-        } catch (err) {
-            console.error('Download error:', err);
-            renderError(
-                'Connection error',
-                'Could not reach the download server. Please check your connection and try again.'
-            );
-        }
-    }
-
-    // Run on page load
-    validateAndDownload();
     </script>
 </body>
 </html>
