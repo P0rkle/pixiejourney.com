@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Kawaii Mood Tracker Colouring Pages & Bullet Journal Printables | Pixie Journey</title>
-    <meta name="description" content="Download free kawaii mood tracker colouring pages and bullet journal printables from Pixie Journey. See your Life in Pixels, discover patterns sooner, and join the waitlist for the cosy tracking app.">
+    <title>Free Mood Tracker Coloring Pages & Printables | Pixie Journey</title>
+    <meta name="description" content="Free kawaii mood tracker coloring pages and bullet journal printables. Download print-ready PDFs and see your Life in Pixels.">
     <!-- keywords meta deprecated, removed -->
     <link rel="canonical" href="https://pixiejourney.com/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Free Kawaii Mood Tracker Colouring Pages & Bullet Journal Printables | Pixie Journey">
-    <meta property="og:description" content="Download free kawaii mood tracker colouring pages and bullet journal printables. See your Life in Pixels, discover patterns sooner, and join the waitlist for the cosy tracking app.">
+    <meta property="og:title" content="Free Mood Tracker Coloring Pages & Printables | Pixie Journey">
+    <meta property="og:description" content="Free kawaii mood tracker coloring pages and bullet journal printables. Download print-ready PDFs and see your Life in Pixels.">
     <meta property="og:url" content="https://pixiejourney.com/">
     <meta property="og:image" content="https://pixiejourney.com/assets/printables/mood-tracker-printable-bullet-journal-coloring-page.jpg">
     <meta property="og:image:width" content="800">
@@ -20,9 +20,12 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Free Kawaii Mood Tracker Colouring Pages & Bullet Journal Printables | Pixie Journey">
-    <meta name="twitter:description" content="Download free kawaii mood tracker colouring pages and bullet journal printables. See your Life in Pixels and discover patterns sooner.">
+    <meta name="twitter:title" content="Free Mood Tracker Coloring Pages & Printables | Pixie Journey">
+    <meta name="twitter:description" content="Free kawaii mood tracker coloring pages and bullet journal printables. Download print-ready PDFs and see your Life in Pixels.">
     <meta name="twitter:image" content="https://pixiejourney.com/assets/printables/mood-tracker-printable-bullet-journal-coloring-page.jpg">
+
+    <!-- Locale -->
+    <meta property="og:locale" content="en_AU">
 
     <!-- Pinterest -->
     <meta name="p:domain_verify" content="9005e930940bdb7e4ef538cdb58d4734">
@@ -35,7 +38,7 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="preload" as="image" href="assets/lalah-hero.png">
     <!-- Organization Schema -->
     <script type="application/ld+json">
     {
@@ -43,10 +46,22 @@
         "@type": "Organization",
         "name": "Pixie Journey",
         "url": "https://pixiejourney.com",
-        "logo": "https://pixiejourney.com/assets/og-image.jpg",
+        "logo": "https://pixiejourney.com/images/favicon.svg",
         "description": "A cosy Life in Pixels tracking system for bullet journal lovers. Free kawaii mood tracker colouring pages and printable trackers.",
         "email": "hello@pixiejourney.com",
-        "sameAs": []
+        "sameAs": [
+            "https://www.pinterest.com.au/pixiejourneyapp/"
+        ]
+    }
+    </script>
+
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Pixie Journey",
+        "url": "https://pixiejourney.com"
     }
     </script>
 
@@ -134,7 +149,7 @@
         
         <div class="hero-content">
             <div class="hero-mascot">
-                <img src="assets/lalah-hero.png" alt="Lalah the tracking pixie" class="hero-pixie-img" width="500" height="648">
+                <img src="assets/lalah-hero.png" alt="Lalah the tracking pixie" class="hero-pixie-img" width="500" height="648" fetchpriority="high" data-pin-nopin="true">
             </div>
             
             <p class="hero-tagline">Colour Your Days. See the Pattern.</p>
