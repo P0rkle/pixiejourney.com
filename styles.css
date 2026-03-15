@@ -1587,9 +1587,9 @@ input:focus-visible,
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    background: #E60023;
-    color: #fff;
-    border: none;
+    background: #F4F9F7;
+    color: #2C4A52;
+    border: 1.5px solid #7A9B90;
     border-radius: 20px;
     padding: 0.4rem 0.9rem;
     font-size: 0.8rem;
@@ -1597,12 +1597,13 @@ input:focus-visible,
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
     text-decoration: none;
-    transition: background 0.2s, transform 0.2s;
+    transition: background 0.2s, transform 0.2s, border-color 0.2s;
     line-height: 1;
 }
 
 .pin-btn:hover {
-    background: #AD081B;
+    background: #7A9B90;
+    border-color: #7A9B90;
     transform: scale(1.05);
     color: #fff;
 }
