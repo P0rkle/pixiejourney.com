@@ -37,7 +37,7 @@
                 </div>
                 <span class="logo-pixel">Pixie</span><span class="logo-journey">Journey</span>
             </a>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main navigation">
                 <a href="features.html">Features</a>
                 <a href="pricing.html">Pricing</a>
                 <a href="about.html">About</a>
@@ -45,15 +45,16 @@
                 <a href="free-tracking-pdfs.html" class="nav-cta">Get Free PDFs</a>
             </nav>
 
-    <main id="main-content">
             <button class="mobile-menu-toggle" aria-label="Menu">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
         </div>
     </header>
 
+    <main id="main-content">
+
     <!-- BREADCRUMBS -->
-    <nav class="breadcrumbs">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <i class="fa-solid fa-chevron-right"></i>
         <span>Join Early Access</span>
@@ -83,9 +84,11 @@
             <div class="email-box">
                 <h2><i class="fa-solid fa-bell"></i> Join the Waitlist</h2>
 
-                <form class="email-form" onsubmit="handleWaitlist(event)">
-                    <label for="email-waitlist" class="sr-only">you@example.com</label>
-                    <input type="email" id="email-waitlist" class="input" placeholder="you@example.com" required>
+                <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="_subject" value="New Pixie Journey Waitlist Signup">
+                    <input type="hidden" name="_next" value="https://pixiejourney.com/thank-you.html">
+                    <label for="email-waitlist" class="sr-only">Email address</label>
+                    <input type="email" id="email-waitlist" name="email" class="input" placeholder="you@example.com" required>
                     <button type="submit" class="btn btn-primary">Join the Waitlist</button>
                 </form>
 
@@ -163,22 +166,6 @@
             var expanded = mainNav.classList.contains('active');
             mobileMenuToggle.setAttribute('aria-expanded', expanded);
         });
-    }
-
-    function handleWaitlist(e) {
-        e.preventDefault();
-        var email = document.getElementById('email-waitlist').value.trim();
-        if (!email) return;
-        showToast('You\'re on the list!');
-        document.getElementById('email-waitlist').value = '';
-        setTimeout(function() { window.location.href = 'thank-you.html'; }, 1000);
-    }
-
-    function showToast(msg) {
-        var toast = document.getElementById('toast');
-        document.getElementById('toast-msg').textContent = msg;
-        toast.classList.add('show');
-        setTimeout(function() { toast.classList.remove('show'); }, 3000);
     }
     </script>
 </body>

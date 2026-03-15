@@ -28,6 +28,20 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Pixie Journey",
+        "url": "https://pixiejourney.com",
+        "logo": "https://pixiejourney.com/assets/og-image.jpg",
+        "description": "A cosy Life in Pixels tracking system for bullet journal lovers. Free kawaii mood tracker colouring pages and printable trackers.",
+        "email": "hello@pixiejourney.com",
+        "sameAs": []
+    }
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-nav">Skip to main content</a>
@@ -52,7 +66,7 @@
                 <a href="#get-pdfs" class="nav-cta">Get Free PDFs</a>
             </nav>
             <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
         </div>
     </header>
@@ -71,7 +85,7 @@
         
         <div class="hero-content">
             <div class="hero-mascot">
-                <img src="assets/lalah-hero.png" alt="Lalah the tracking pixie" class="hero-pixie-img">
+                <img src="assets/lalah-hero.png" alt="Lalah the tracking pixie" class="hero-pixie-img" width="500" height="648">
             </div>
             
             <p class="hero-tagline">Colour Your Days. See the Pattern.</p>
@@ -94,7 +108,7 @@
     <!-- EASY ENTRY -->
     <section class="section section-alt" id="easy-entry">
         <div class="section-inner">
-            <h2 class="section-title">Tap a Sticker. Done. <i class="fa-solid fa-sparkles"></i></h2>
+            <h2 class="section-title">Tap a Sticker. Done. <i class="fa-solid fa-sparkles" aria-hidden="true"></i></h2>
             <p class="section-subtitle">No endless dropdowns. No typing when you're tired. Just tap how you're feeling and watch your pixel light up.</p>
             
             <div class="entry-demo">
@@ -155,7 +169,7 @@
                 <p class="entry-note">Tap &bull; Done &bull; Move on</p>
             </div>
             
-            <p class="support-msg">Want to add a note? Go for it. Too tired? That's completely okay. <i class="fa-solid fa-heart" style="color: var(--salmon);"></i></p>
+            <p class="support-msg">Want to add a note? Go for it. Too tired? That's completely okay. <i class="fa-solid fa-heart" style="color: var(--salmon);" aria-hidden="true"></i></p>
         </div>
     </section>
 
@@ -177,7 +191,7 @@
             <h2 class="section-title">Sneak Peek</h2>
             <div class="teaser-content">
                 <div class="teaser-phone">
-                    <img loading="lazy" src="assets/screen-daily-logging-ui.png" alt="Pixie Journey mood tracking app — kawaii sticker-based daily logging with Life in Pixels calendar">
+                    <img loading="lazy" src="assets/screen-daily-logging-ui.png" alt="Pixie Journey mood tracking app — kawaii sticker-based daily logging with Life in Pixels calendar" width="540" height="860">
                 </div>
                 <div class="teaser-features">
                     <ul>
@@ -203,7 +217,7 @@
         </div>
         <div class="section-inner">
             <div class="content-card">
-                <h2>No streaks. No guilt. <i class="fa-solid fa-shield-heart"></i></h2>
+                <h2>No streaks. No guilt. <i class="fa-solid fa-shield-heart" aria-hidden="true"></i></h2>
                 <p class="large-text">Missed a day? Missed a week?</p>
                 <p>That's okay.</p>
                 <p>Blank squares are neutral. You can always fill them in later.</p>
@@ -217,16 +231,16 @@
         <div class="section-inner">
             <div class="lalah-intro">
                 <div class="lalah-image">
-                    <img loading="lazy" src="assets/stickers/LALAH_POSE_HAPPY_PRIMARY_WAND_V1.png" alt="Lalah the tracking pixie">
+                    <img loading="lazy" src="assets/stickers/LALAH_POSE_HAPPY_PRIMARY_WAND_V1.png" alt="Lalah the tracking pixie — kawaii mascot for mood and habit tracking" width="1080" height="1080">
                 </div>
                 <div class="lalah-text">
-                    <h2>Meet Lalah <i class="fa-solid fa-wand-magic-sparkles"></i></h2>
+                    <h2>Meet Lalah <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></h2>
                     <p class="intro-text">Your tiny tracking companion who makes logging actually comforting.</p>
                     <ul class="lalah-moods">
-                        <li><i class="fa-solid fa-face-smile"></i> Celebrates your wins</li>
-                        <li><i class="fa-solid fa-hands-holding-heart"></i> Supports you on tough days</li>
-                        <li><i class="fa-solid fa-sparkles"></i> Helps you see patterns emerge</li>
-                        <li><i class="fa-solid fa-heart"></i> Never judges, only understands</li>
+                        <li><i class="fa-solid fa-face-smile" aria-hidden="true"></i> Celebrates your wins</li>
+                        <li><i class="fa-solid fa-hands-holding-heart" aria-hidden="true"></i> Supports you on tough days</li>
+                        <li><i class="fa-solid fa-sparkles" aria-hidden="true"></i> Helps you see patterns emerge</li>
+                        <li><i class="fa-solid fa-heart" aria-hidden="true"></i> Never judges, only understands</li>
                     </ul>
                     <p>Lalah doesn't nag. She doesn't make you feel bad. She's just here to help you see your patterns.</p>
                     <p class="lalah-signature"><em>Lalah says: Colour Your Days. See the Pattern.</em></p>
@@ -238,32 +252,32 @@
     <!-- BULLET JOURNAL -->
     <section class="section" id="bujo">
         <div class="section-inner">
-            <h2 class="section-title">Like a Bullet Journal, But It Remembers <i class="fa-solid fa-book"></i></h2>
+            <h2 class="section-title">Like a Bullet Journal, But It Remembers <i class="fa-solid fa-book" aria-hidden="true"></i></h2>
             <p class="section-subtitle">Love the aesthetic of bullet journaling? Find it hard to keep up when life gets messy?</p>
             
             <div class="comparison-grid">
                 <div class="comparison-card bujo-card">
                     <h3>Paper Bullet Journal</h3>
                     <ul>
-                        <li><i class="fa-solid fa-check"></i> Beautiful Life in Pixels</li>
-                        <li><i class="fa-solid fa-check"></i> Kawaii sticker aesthetic</li>
-                        <li><i class="fa-solid fa-check"></i> Satisfying to fill in</li>
-                        <li class="con"><i class="fa-solid fa-xmark"></i> Guilt when you forget</li>
-                        <li class="con"><i class="fa-solid fa-xmark"></i> Lost pages = lost data</li>
-                        <li class="con"><i class="fa-solid fa-xmark"></i> Hand-drawing grids at 11pm</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Beautiful Life in Pixels</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Kawaii sticker aesthetic</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Satisfying to fill in</li>
+                        <li class="con"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Guilt when you forget</li>
+                        <li class="con"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Lost pages = lost data</li>
+                        <li class="con"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Hand-drawing grids at 11pm</li>
                     </ul>
                 </div>
                 <div class="comparison-card pixie-card">
                     <h3>Pixie Journey</h3>
                     <ul>
-                        <li><i class="fa-solid fa-check"></i> Beautiful Life in Pixels</li>
-                        <li><i class="fa-solid fa-check"></i> Kawaii sticker aesthetic</li>
-                        <li><i class="fa-solid fa-check"></i> Satisfying to fill in</li>
-                        <li><i class="fa-solid fa-check"></i> No guilt when you forget</li>
-                        <li><i class="fa-solid fa-check"></i> Data never lost</li>
-                        <li><i class="fa-solid fa-check"></i> No setup required</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Beautiful Life in Pixels</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Kawaii sticker aesthetic</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Satisfying to fill in</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> No guilt when you forget</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Data never lost</li>
+                        <li><i class="fa-solid fa-check" aria-hidden="true"></i> No setup required</li>
                     </ul>
-                    <p class="tagline">All the pretty, none of the pressure. <i class="fa-solid fa-heart"></i></p>
+                    <p class="tagline">All the pretty, none of the pressure. <i class="fa-solid fa-heart" aria-hidden="true"></i></p>
                 </div>
             </div>
         </div>
@@ -299,7 +313,7 @@
                 </div>
                 
                 <div class="price-card locked">
-                    <div class="locked-badge"><i class="fa-solid fa-lock"></i> Coming 2027</div>
+                    <div class="locked-badge"><i class="fa-solid fa-lock" aria-hidden="true"></i> Coming 2027</div>
                     <h3>Clinical</h3>
                     <div class="price">TBA</div>
                     <ul>
@@ -324,11 +338,11 @@
                 <div class="preview-card" onclick="openLightbox(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img loading="lazy" src="assets/printables/mood-tracker-printable-bullet-journal-coloring-page.jpg" alt="Mood star tracker printable coloring page for bullet journal">
+                            <img loading="lazy" src="assets/printables/mood-tracker-printable-bullet-journal-coloring-page.jpg" alt="Mood star tracker printable coloring page for bullet journal" width="800" height="1131">
                             <span>Mood Star Tracker Colouring Page</span>
                         </div>
                         <div class="flip-card-back">
-                            <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable bullet journal page A4">
+                            <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable bullet journal page A4" width="800" height="1131">
                             <span>+ Dot Grid Notes Page</span>
                         </div>
                     </div>
@@ -337,11 +351,11 @@
                 <div class="preview-card" onclick="openLightbox(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img loading="lazy" src="assets/printables/sleep-tracker-printable-bullet-journal-coloring-page.jpg" alt="Sleep potion tracker printable coloring page for bullet journal">
+                            <img loading="lazy" src="assets/printables/sleep-tracker-printable-bullet-journal-coloring-page.jpg" alt="Sleep potion tracker printable coloring page for bullet journal" width="800" height="1131">
                             <span>Sleep Potion Tracker Colouring Page</span>
                         </div>
                         <div class="flip-card-back">
-                            <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable bullet journal page A4">
+                            <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable bullet journal page A4" width="800" height="1131">
                             <span>+ Dot Grid Notes Page</span>
                         </div>
                     </div>
@@ -350,11 +364,11 @@
                 <div class="preview-card" onclick="openLightbox(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img loading="lazy" src="assets/printables/habit-tracker-printable-macaron-bullet-journal.jpg" alt="Macaron habit tracker printable coloring page for bullet journal">
+                            <img loading="lazy" src="assets/printables/habit-tracker-printable-macaron-bullet-journal.jpg" alt="Macaron habit tracker printable coloring page for bullet journal" width="800" height="1131">
                             <span>Macaron Universal Tracker Colouring Page</span>
                         </div>
                         <div class="flip-card-back">
-                            <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable bullet journal page A4">
+                            <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable bullet journal page A4" width="800" height="1131">
                             <span>+ Dot Grid Notes Page</span>
                         </div>
                     </div>
@@ -363,11 +377,11 @@
                 <div class="preview-card" onclick="openLightbox(this)">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img loading="lazy" src="assets/printables/garden-tracker-printable-bullet-journal-coloring-page.jpg" alt="Garden patch tracker printable coloring page for bullet journal">
+                            <img loading="lazy" src="assets/printables/garden-tracker-printable-bullet-journal-coloring-page.jpg" alt="Garden patch tracker printable coloring page for bullet journal" width="800" height="1131">
                             <span>Garden Patch Universal Tracker Colouring Page</span>
                         </div>
                         <div class="flip-card-back">
-                            <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable bullet journal page A4">
+                            <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable bullet journal page A4" width="800" height="1131">
                             <span>+ Dot Grid Notes Page</span>
                         </div>
                     </div>
@@ -376,7 +390,7 @@
             </div>
             
             <div class="dot-grid-bonus">
-                <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable page for bullet journal A4" class="dot-grid-thumb" onclick="openLightbox(this)">
+                <img loading="lazy" src="assets/printables/dot-grid-printable-bullet-journal-a4.jpg" alt="Free dot grid printable page for bullet journal A4" class="dot-grid-thumb" onclick="openLightbox(this)" width="800" height="1131">
                 <div class="dot-grid-info">
                     <h3>Bonus: Free Dot Grid Paper</h3>
                     <p>5mm dot grid for bullet journaling, notes, or extra tracking. Available in A4 and A5. 300 DPI, print-ready. Works with any planner or binder.</p>
@@ -384,7 +398,7 @@
                 </div>
             </div>
 
-            <p class="preview-note">Each tracker doubles as an adult colouring page &mdash; colour in Lalah's illustrations as you track your day. Enter your email below to receive all print-ready PDFs. Works with GoodNotes &amp; Notability too. <a href="free-tracking-pdfs.html">View all free printable trackers &rarr;</a></p>
+            <p class="preview-note">Each tracker doubles as an adult colouring page &mdash; colour in Lalah's illustrations as you track your day. Works with GoodNotes &amp; Notability too. <a href="free-tracking-pdfs.html">View all free printable trackers &rarr;</a></p>
         </div>
     </section>
 
@@ -416,7 +430,7 @@
         </div>
     </section>
 
-    <!-- EMAIL CAPTURE (PDFs) -->
+    <!-- DIRECT DOWNLOAD (PDFs) -->
     <section class="section" id="get-pdfs">
         <div class="section-inner">
             <div class="floating-circles">
@@ -425,16 +439,14 @@
             </div>
             
             <div class="email-box">
-                <h2><i class="fa-solid fa-download"></i> Get the Free PDFs</h2>
-                <p>Enter your email and we'll send you a download link for all 4 tracker PDFs.</p>
+                <h2><i class="fa-solid fa-download" aria-hidden="true"></i> Download Free PDFs</h2>
+                <p>All tracker PDFs are free &mdash; no email required. Download directly and start tracking today.</p>
                 
-                <form class="email-form" onsubmit="handleSubmit(event)">
-                    <label for="email-pdf" class="sr-only">you@example.com</label>
-                    <input type="email" id="email-pdf" class="input" placeholder="you@example.com" required>
-                    <button type="submit" class="btn btn-primary">Send me the PDFs</button>
-                </form>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin: 1.5rem 0;">
+                    <a href="free-tracking-pdfs.html" class="btn btn-primary">All Tracker PDFs</a>
+                    <a href="dot-grid-printable.html" class="btn btn-secondary">Dot Grid Pages</a>
+                </div>
                 
-                <p class="email-note">No spam. One delivery email, then optional updates. Unsubscribe anytime.</p>
                 <p class="email-license">Personal use + classroom/clinic printing allowed. Not for resale or redistribution.</p>
             </div>
         </div>
@@ -444,27 +456,29 @@
     <section class="section section-alt" id="waitlist">
         <div class="section-inner">
             <div class="waitlist-box">
-                <h2><i class="fa-solid fa-bell"></i> Join the Waitlist</h2>
+                <h2><i class="fa-solid fa-bell" aria-hidden="true"></i> Join the Waitlist</h2>
                 <p class="waitlist-benefits">Get notified at launch + lock in special pricing:</p>
                 
                 <div class="benefits-grid">
                     <div class="benefit">
-                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-bell" aria-hidden="true"></i>
                         <span>Launch day notification (Q3 2026)</span>
                     </div>
                     <div class="benefit">
-                        <i class="fa-solid fa-tag"></i>
+                        <i class="fa-solid fa-tag" aria-hidden="true"></i>
                         <span>Life+ Lifetime: $14.99 (save $35)</span>
                     </div>
                     <div class="benefit">
-                        <i class="fa-solid fa-gift"></i>
+                        <i class="fa-solid fa-gift" aria-hidden="true"></i>
                         <span>Referral rewards (earn free months)</span>
                     </div>
                 </div>
                 
-                <form class="email-form" onsubmit="handleWaitlist(event)">
-                    <label for="email-waitlist" class="sr-only">you@example.com</label>
-                    <input type="email" id="email-waitlist" class="input" placeholder="you@example.com" required>
+                <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="_subject" value="New Pixie Journey Waitlist Signup">
+                    <input type="hidden" name="_next" value="https://pixiejourney.com/thank-you.html">
+                    <label for="email-waitlist" class="sr-only">Email address</label>
+                    <input type="email" id="email-waitlist" name="email" class="input" placeholder="you@example.com" required>
                     <button type="submit" class="btn btn-primary">Join the Waitlist</button>
                 </form>
                 
@@ -526,7 +540,7 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2026 Pixie Journey. All rights reserved.</p>
-                <p>Made with <i class="fa-solid fa-heart" style="color: var(--salmon);"></i> in Australia</p>
+                <p>Made with <i class="fa-solid fa-heart" aria-hidden="true" style="color: var(--salmon);"></i> in Australia</p>
             </div>
         </div>
     </footer>
@@ -536,12 +550,12 @@
         <button class="lightbox-close" aria-label="Close">&times;</button>
         <img loading="lazy" id="lightbox-img" src="" alt="Enlarged preview">
         <p class="lightbox-caption" id="lightbox-caption"></p>
-        <a href="#get-pdfs" class="btn btn-primary lightbox-cta" onclick="closeLightbox(event)">Get This PDF Free</a>
+        <a href="free-tracking-pdfs.html" class="btn btn-primary lightbox-cta">Download This PDF Free</a>
     </div>
 
     <!-- TOAST -->
     <div class="toast" role="alert" aria-live="polite" id="toast">
-        <span class="toast-icon"><i class="fa-solid fa-check"></i></span>
+        <span class="toast-icon"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
         <span id="toast-msg">Thanks!</span>
     </div>
 
@@ -558,7 +572,7 @@
     }
 
     // Keyboard-accessible preview cards
-    document.querySelectorAll('.flip-card').forEach(function(card) {
+    document.querySelectorAll('.preview-card').forEach(function(card) {
         card.setAttribute('tabindex', '0');
         card.setAttribute('role', 'button');
         card.setAttribute('aria-label', (card.querySelector('.flip-card-front span') || {}).textContent || 'View tracker preview');
@@ -570,95 +584,18 @@
         });
     });
 
-    // Config — update SUPABASE_URL after project creation
-    const SUPABASE_URL = ''; // e.g. https://xxxxx.supabase.co
-    const REQUEST_PDFS_URL = SUPABASE_URL + '/functions/v1/request-pdfs';
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        var emailInput = document.getElementById('email-pdf');
-        var btn = e.target.querySelector('button[type="submit"]');
-        var email = emailInput.value.trim();
-
-        if (!email) return;
-
-        btn.disabled = true;
-        btn.textContent = 'Sending...';
-
-        if (!SUPABASE_URL) {
-            showToast('Thanks! Download system activating soon.');
-            emailInput.value = '';
-            btn.disabled = false;
-            btn.textContent = 'Send me the PDFs';
-            return;
-        }
-
-        fetch(REQUEST_PDFS_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, source: 'homepage' }),
-        })
-        .then(function(res) { return res.json(); })
-        .then(function(data) {
-            if (data.success) {
-                showToast(data.message || 'Check your inbox!');
-                emailInput.value = '';
-            } else {
-                showToast(data.error || 'Something went wrong. Try again.');
+    // Also make dot-grid thumb keyboard-accessible
+    var dotGridThumb = document.querySelector('.dot-grid-thumb');
+    if (dotGridThumb) {
+        dotGridThumb.setAttribute('tabindex', '0');
+        dotGridThumb.setAttribute('role', 'button');
+        dotGridThumb.setAttribute('aria-label', 'View dot grid preview');
+        dotGridThumb.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openLightbox(dotGridThumb);
             }
-        })
-        .catch(function() {
-            showToast('Connection error. Please try again.');
-        })
-        .finally(function() {
-            btn.disabled = false;
-            btn.textContent = 'Send me the PDFs';
         });
-    }
-    
-    function handleWaitlist(e) {
-        e.preventDefault();
-        var email = document.getElementById('email-waitlist').value.trim();
-        if (!email) return;
-
-        if (!SUPABASE_URL) {
-            showToast('You\'re on the list!');
-            document.getElementById('email-waitlist').value = '';
-            window.location.href = 'thank-you.html';
-            return;
-        }
-
-        var btn = e.target.querySelector('button[type="submit"]');
-        btn.disabled = true;
-        btn.textContent = 'Joining...';
-
-        fetch(SUPABASE_URL + '/functions/v1/request-pdfs', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, source: 'waitlist' }),
-        })
-        .then(function(res) { return res.json(); })
-        .then(function(data) {
-            if (data.success) {
-                window.location.href = 'thank-you.html';
-            } else {
-                showToast(data.error || 'Something went wrong. Try again.');
-            }
-        })
-        .catch(function() {
-            showToast('Connection error. Please try again.');
-        })
-        .finally(function() {
-            btn.disabled = false;
-            btn.textContent = 'Join the Waitlist';
-        });
-    }
-    
-    function showToast(msg) {
-        var toast = document.getElementById('toast');
-        document.getElementById('toast-msg').textContent = msg;
-        toast.classList.add('show');
-        setTimeout(function() { toast.classList.remove('show'); }, 3000);
     }
 
     // Smooth scroll for anchor links
@@ -676,7 +613,9 @@
     });
 
     // Lightbox
+    var lightboxTrigger = null;
     function openLightbox(el) {
+        lightboxTrigger = el;
         var img = el.querySelector('.flip-card-front img') || el;
         var caption = el.querySelector('.flip-card-front span');
         if (img.src || img.getAttribute('src')) {
@@ -684,20 +623,47 @@
             document.getElementById('lightbox-caption').textContent = caption ? caption.textContent : '';
             document.getElementById('lightbox').classList.add('active');
             document.body.style.overflow = 'hidden';
+            // Focus trap: move focus to close button
+            setTimeout(function() {
+                document.querySelector('.lightbox-close').focus();
+            }, 100);
         }
     }
 
     function closeLightbox(e) {
-        if (e.target.classList.contains('lightbox-overlay') || e.target.classList.contains('lightbox-close') || e.target.classList.contains('lightbox-cta')) {
+        if (e.target.classList.contains('lightbox-overlay') || e.target.classList.contains('lightbox-close')) {
             document.getElementById('lightbox').classList.remove('active');
             document.body.style.overflow = '';
+            // Return focus to trigger element
+            if (lightboxTrigger) {
+                lightboxTrigger.focus();
+                lightboxTrigger = null;
+            }
         }
     }
+
+    // Focus trap within lightbox
+    document.getElementById('lightbox').addEventListener('keydown', function(e) {
+        if (e.key === 'Tab') {
+            var focusable = this.querySelectorAll('button, a[href]');
+            var first = focusable[0];
+            var last = focusable[focusable.length - 1];
+            if (e.shiftKey) {
+                if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+            } else {
+                if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+            }
+        }
+    });
 
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             document.getElementById('lightbox').classList.remove('active');
             document.body.style.overflow = '';
+            if (lightboxTrigger) {
+                lightboxTrigger.focus();
+                lightboxTrigger = null;
+            }
         }
     });
     </script>

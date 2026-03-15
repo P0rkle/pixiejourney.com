@@ -349,7 +349,7 @@ a { color: var(--outline-brown); }
 }
 .btn-primary {
     background: var(--btn-bg);
-    color: var(--outline-brown);
+    color: #3D4F3A;
 }
 .btn-secondary {
     background: var(--white);
@@ -405,7 +405,7 @@ a { color: var(--outline-brown); }
 }
 .hero-subtitle {
     font-size: 1.1rem;
-    color: var(--salmon);
+    color: #B5736A;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -693,7 +693,7 @@ a { color: var(--outline-brown); }
     gap: 0.5rem;
 }
 .comparison-card li i { width: 20px; }
-.comparison-card li.con { color: var(--mood-bad); }
+.comparison-card li.con { color: #C0584A; }
 .pixie-card { background: var(--mood-good); }
 .pixie-card .tagline {
     margin-top: 1rem;
@@ -720,6 +720,10 @@ a { color: var(--outline-brown); }
     opacity: 0;
     width: 0;
     height: 0;
+}
+.toggle-switch input:focus-visible + .toggle-slider {
+    outline: 3px solid #7A9B90;
+    outline-offset: 2px;
 }
 .toggle-slider {
     position: absolute;
@@ -1323,12 +1327,13 @@ input:checked + .toggle-slider:before { transform: translateX(28px); }
     margin-bottom: 1rem;
 }
 .crisis-warning {
-    background: #E85A5A;
+    background: #C0392B;
     color: white;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
     margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 .crisis-resources h3 {
     font-family: var(--font-display);
@@ -1588,4 +1593,42 @@ input:focus-visible,
     a { color: #000; text-decoration: underline; }
     a::after { content: " (" attr(href) ")"; font-size: 9pt; color: #666; }
     img { max-width: 100%; page-break-inside: avoid; }
+}
+
+/* =====================================================
+   ACCESSIBILITY: Scroll offset for sticky header
+   ===================================================== */
+[id] {
+    scroll-margin-top: 80px;
+}
+
+/* =====================================================
+   ACCESSIBILITY: High contrast mode
+   ===================================================== */
+@media (prefers-contrast: more) {
+    :root {
+        --outline-brown: #4A3520;
+        --text-brown: #3A2A1E;
+        --btn-bg: #b8d8c8;
+    }
+    .btn-primary { color: #1A2E18; }
+    .hero-subtitle { color: #8B4A3E; }
+    .comparison-card li.con { color: #9C3020; }
+    .crisis-warning { background: #8B0000; }
+    a { text-decoration: underline; }
+}
+
+@media (forced-colors: active) {
+    .btn, .nav-cta {
+        border: 2px solid ButtonText;
+    }
+    .crisis-warning {
+        border: 2px solid CanvasText;
+    }
+    .toggle-slider {
+        border: 2px solid ButtonText;
+    }
+    .skip-nav:focus {
+        outline: 2px solid Highlight;
+    }
 }
