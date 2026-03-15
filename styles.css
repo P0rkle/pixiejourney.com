@@ -28,6 +28,11 @@ body {
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 a { color: var(--outline-brown); }
 
 /* ===== HEADER ===== */
@@ -362,6 +367,27 @@ a { color: var(--outline-brown); }
 .btn-full {
     width: 100%;
     text-align: center;
+}
+.btn-sm {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0 var(--outline-brown);
+}
+
+/* Card descriptions + buttons for printable preview cards */
+.card-description {
+    font-size: 0.9rem;
+    color: var(--outline-brown);
+    margin: 0.5rem 0 0;
+    line-height: 1.4;
+}
+.card-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
 }
 
 /* ===== HERO ===== */

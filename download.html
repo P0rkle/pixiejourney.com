@@ -127,7 +127,7 @@
         <div class="section-inner">
             <div id="download-area" class="download-status">
                 <div class="status-icon loading">
-                    <i class="fa-solid fa-spinner"></i>
+                    <i class="fa-solid fa-spinner" aria-hidden="true"></i>
                 </div>
                 <h2>Preparing your downloads...</h2>
                 <p>Hang tight, we're generating your download links.</p>
@@ -139,7 +139,7 @@
     <section class="section section-alt">
         <div class="section-inner text-center">
             <p>Love the trackers? The Pixie Journey app is coming in 2026 with digital versions and more.</p>
-            <a href="waitlist.html" class="btn btn-secondary" style="margin-top: 1rem;"><i class="fa-solid fa-bell"></i> Join the App Waitlist</a>
+            <a href="waitlist.html" class="btn btn-secondary" style="margin-top: 1rem;"><i class="fa-solid fa-bell" aria-hidden="true"></i> Join the App Waitlist</a>
         </div>
     </section>
 
@@ -184,14 +184,14 @@
 
             <div class="footer-bottom">
                 <p>&copy; 2026 Pixie Journey. All rights reserved.</p>
-                <p>Made with <i class="fa-solid fa-heart" style="color: var(--salmon);"></i> in Australia</p>
+                <p>Made with <i class="fa-solid fa-heart" aria-hidden="true" style="color: var(--salmon);"></i> in Australia</p>
             </div>
         </div>
     </footer>
 
     <!-- TOAST -->
     <div class="toast" role="alert" aria-live="polite" id="toast">
-        <span class="toast-icon"><i class="fa-solid fa-check"></i></span>
+        <span class="toast-icon"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
         <span id="toast-msg">Thanks!</span>
     </div>
 
@@ -229,7 +229,7 @@
 
         var icon = document.createElement('div');
         icon.className = 'status-icon error';
-        icon.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>';
+        icon.innerHTML = '<i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>';
         area.appendChild(icon);
 
         var h2 = document.createElement('h2');
@@ -243,7 +243,7 @@
         var link = document.createElement('a');
         link.href = 'free-tracking-pdfs.html';
         link.className = 'retry-link';
-        link.innerHTML = '<i class="fa-solid fa-arrow-left"></i> Request a new download link';
+        link.innerHTML = '<i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Request a new download link';
         area.appendChild(link);
     }
 
@@ -253,7 +253,7 @@
 
         var icon = document.createElement('div');
         icon.className = 'status-icon success';
-        icon.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+        icon.innerHTML = '<i class="fa-solid fa-circle-check" aria-hidden="true"></i>';
         area.appendChild(icon);
 
         var h2 = document.createElement('h2');
@@ -275,7 +275,7 @@
             var a = document.createElement('a');
             a.href = f.url;
             a.setAttribute('download', '');
-            a.innerHTML = '<i class="fa-solid fa-download"></i> Download';
+            a.innerHTML = '<i class="fa-solid fa-download" aria-hidden="true"></i> Download';
             li.appendChild(a);
             ul.appendChild(li);
         });
@@ -313,7 +313,7 @@
             // Dev/preview mode — show placeholder
             document.getElementById('download-area').innerHTML = `
                 <div class="status-icon success">
-                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                 </div>
                 <h2>Download system ready</h2>
                 <p>The download flow is built but waiting for Supabase project configuration. Set <code>SUPABASE_URL</code> in download.html to activate.</p>
