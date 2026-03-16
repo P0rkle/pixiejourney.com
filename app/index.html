@@ -67,6 +67,9 @@
                     <span class="sticker-label">Bad</span>
                 </div>
             </div>
+            <div class="context-input-wrapper" id="mood-context">
+                <textarea class="context-input" id="mood-context-input" placeholder="Why this mood? (optional)"></textarea>
+            </div>
         </div>
 
         <!-- Sleep -->
@@ -113,6 +116,9 @@
                     <span class="sticker-label">Awful</span>
                 </div>
             </div>
+            <div class="context-input-wrapper" id="sleep-context">
+                <textarea class="context-input" id="sleep-context-input" placeholder="Sleep notes (optional)"></textarea>
+            </div>
         </div>
 
         <!-- Binary Sticker -->
@@ -120,11 +126,14 @@
             <span id="binary-label-display">Took Meds</span>
             <button id="binary-btn" class="binary-sticker" data-state="null" aria-label="Toggle binary sticker"></button>
         </div>
+        <div class="context-input-wrapper" id="binary-context">
+            <textarea class="context-input" id="binary-context-input" placeholder="Any details? (optional)"></textarea>
+        </div>
 
-        <!-- Context Note -->
+        <!-- Context Note (Layer 2 diary) -->
         <div class="card">
             <h2>What's behind today's numbers?</h2>
-            <textarea id="context-note" class="context-input" rows="3" placeholder="The why matters more than the what..."></textarea>
+            <textarea id="context-note" class="context-input diary" rows="3" placeholder="The why matters more than the what..."></textarea>
         </div>
 
         <!-- Save -->

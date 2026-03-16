@@ -68,6 +68,9 @@ const MOOD_COLORS = {
     5: '#ffe9b3', 4: '#d0e6db', 3: '#f7e2d9', 2: '#c5dde8', 1: '#eaa090'
 };
 
+const MOOD_LABELS = { 5: 'Great', 4: 'Good', 3: 'Okay', 2: 'Low', 1: 'Bad' };
+const SLEEP_LABELS = { 5: 'Great', 4: 'Good', 3: 'Okay', 2: 'Poor', 1: 'Awful' };
+
 // ─── Navigation ───────────────────────────────────────────────
 
 function showScreen(id) {
@@ -93,14 +96,49 @@ function loadDailyEntry() {
         item.classList.toggle('selected', level === currentMood);
     });
 
+    // Mood context
+    const moodCtx = document.getElementById('mood-context');
+    const moodCtxInput = document.getElementById('mood-context-input');
+    if (currentMood) {
+        moodCtx.classList.add('visible');
+        moodCtxInput.placeholder = `Why ${MOOD_LABELS[currentMood]}? (optional)`;
+    } else {
+        moodCtx.classList.remove('visible');
+    }
+    moodCtxInput.value = entry ? (entry.moodContext || '') : '';
+
     // Sleep
     document.querySelectorAll('#sleep-row .sticker-item').forEach(item => {
         const level = parseInt(item.dataset.level);
         item.classList.toggle('selected', level === currentSleep);
     });
 
+    // Sleep context
+    const sleepCtx = document.getElementById('sleep-context');
+    const sleepCtxInput = document.getElementById('sleep-context-input');
+    if (currentSleep) {
+        sleepCtx.classList.add('visible');
+        sleepCtxInput.placeholder = `${SLEEP_LABELS[currentSleep]} sleep — notes (optional)`;
+    } else {
+        sleepCtx.classList.remove('visible');
+    }
+    sleepCtxInput.value = entry ? (entry.sleepContext || '') : '';
+
     // Binary
     updateBinaryDisplay();
+
+    // Binary context
+    const binaryCtx = document.getElementById('binary-context');
+    const binaryCtxInput = document.getElementById('binary-context-input');
+    if (currentBinary !== null) {
+        binaryCtx.classList.add('visible');
+        binaryCtxInput.placeholder = currentBinary
+            ? `${getBinaryLabel()} — any details?`
+            : `Why not ${getBinaryLabel()}? (optional)`;
+    } else {
+        binaryCtx.classList.remove('visible');
+    }
+    binaryCtxInput.value = entry ? (entry.binaryContext || '') : '';
 
     // Binary label
     document.getElementById('binary-label-display').textContent = getBinaryLabel();
@@ -118,9 +156,12 @@ function saveDailyEntry() {
     const entry = {
         date: dateKey(currentDate),
         mood: currentMood,
+        moodContext: document.getElementById('mood-context-input').value || null,
         sleep: currentSleep,
+        sleepContext: document.getElementById('sleep-context-input').value || null,
         binary: currentBinary,
         binaryLabel: getBinaryLabel(),
+        binaryContext: document.getElementById('binary-context-input').value || null,
         contextNote: document.getElementById('context-note').value || null,
         updatedAt: new Date().toISOString(),
     };
@@ -220,6 +261,17 @@ document.addEventListener('DOMContentLoaded', () => {
             currentMood = currentMood === level ? null : level;
             document.querySelectorAll('#mood-row .sticker-item').forEach(i =>
                 i.classList.toggle('selected', parseInt(i.dataset.level) === currentMood));
+
+            // Show/hide mood context
+            const moodCtx = document.getElementById('mood-context');
+            const moodCtxInput = document.getElementById('mood-context-input');
+            if (currentMood) {
+                moodCtx.classList.add('visible');
+                moodCtxInput.placeholder = `Why ${MOOD_LABELS[currentMood]}? (optional)`;
+                moodCtxInput.focus();
+            } else {
+                moodCtx.classList.remove('visible');
+            }
         });
     });
 
@@ -230,6 +282,17 @@ document.addEventListener('DOMContentLoaded', () => {
             currentSleep = currentSleep === level ? null : level;
             document.querySelectorAll('#sleep-row .sticker-item').forEach(i =>
                 i.classList.toggle('selected', parseInt(i.dataset.level) === currentSleep));
+
+            // Show/hide sleep context
+            const sleepCtx = document.getElementById('sleep-context');
+            const sleepCtxInput = document.getElementById('sleep-context-input');
+            if (currentSleep) {
+                sleepCtx.classList.add('visible');
+                sleepCtxInput.placeholder = `${SLEEP_LABELS[currentSleep]} sleep — notes (optional)`;
+                sleepCtxInput.focus();
+            } else {
+                sleepCtx.classList.remove('visible');
+            }
         });
     });
 
@@ -239,6 +302,19 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (currentBinary === true) currentBinary = false;
         else currentBinary = null;
         updateBinaryDisplay();
+
+        // Show/hide binary context
+        const binaryCtx = document.getElementById('binary-context');
+        const binaryCtxInput = document.getElementById('binary-context-input');
+        if (currentBinary !== null) {
+            binaryCtx.classList.add('visible');
+            binaryCtxInput.placeholder = currentBinary
+                ? `${getBinaryLabel()} — any details?`
+                : `Why not ${getBinaryLabel()}? (optional)`;
+            binaryCtxInput.focus();
+        } else {
+            binaryCtx.classList.remove('visible');
+        }
     });
 
     // Save
