@@ -203,17 +203,10 @@
             </div>
         </div>
 
-        <!-- BINARY STICKER -->
+        <!-- BINARY STICKERS (a la carte) -->
         <div class="card">
-            <div class="binary-card">
-                <span id="binary-label-display">Took Meds</span>
-                <button class="binary-sticker" id="binary-btn" data-state="null" aria-label="Toggle binary sticker"></button>
-            </div>
-            <!-- Binary context -->
-            <div class="context-input-wrapper" id="binary-context">
-                <input type="text" class="context-input" id="binary-context-input"
-                       maxlength="100" placeholder="Any details? (optional)">
-            </div>
+            <h2><i class="fa-solid fa-check-double"></i> Stickers</h2>
+            <div id="binary-stickers-container"></div>
         </div>
 
         <!-- DIARY -->
@@ -222,83 +215,6 @@
             <textarea class="context-input diary" id="context-note"
                       maxlength="500"
                       placeholder="The why matters more than the what..."></textarea>
-        </div>
-
-        <!-- TEASER: Want more? -->
-        <div class="card teaser-card">
-            <div class="teaser-header">
-                <div class="teaser-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Want more?</div>
-            </div>
-
-            <!-- Battery teaser stickers -->
-            <div class="teaser-sticker-row">
-                <div class="sticker-battery-teaser">
-                    <div class="battery-fill high"></div>
-                    <span class="bat-blush left"></span>
-                    <span class="bat-blush right"></span>
-                    <div class="bat-face">
-                        <div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div>
-                        <div class="mouth-d"></div>
-                    </div>
-                </div>
-                <div class="sticker-battery-teaser">
-                    <div class="battery-fill good"></div>
-                    <span class="bat-blush left"></span>
-                    <span class="bat-blush right"></span>
-                    <div class="bat-face">
-                        <div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div>
-                        <div class="mouth-smile"></div>
-                    </div>
-                </div>
-                <div class="sticker-battery-teaser">
-                    <div class="battery-fill okay"></div>
-                    <span class="bat-blush left"></span>
-                    <span class="bat-blush right"></span>
-                    <div class="bat-face">
-                        <div class="eyes"><div class="eye-dot"></div><div class="eye-dot"></div></div>
-                        <div class="mouth-flat"></div>
-                    </div>
-                </div>
-                <div class="sticker-battery-teaser">
-                    <div class="battery-fill low"></div>
-                    <div class="bat-face">
-                        <div class="eyes"><div class="eye-dot"></div><div class="eye-dot"></div></div>
-                        <div class="mouth-small-frown"></div>
-                    </div>
-                </div>
-                <div class="sticker-battery-teaser">
-                    <div class="battery-fill drained"></div>
-                    <div class="bat-face">
-                        <div class="eyes"><div class="eye-x"></div><div class="eye-x"></div></div>
-                        <div class="mouth-frown"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="teaser-categories">
-                <strong>Energy</strong>, Hydration, Appetite, Social, Focus, Anxiety, Pain, Meds, Steps, Screen Time, Journaling, Gratitude, Reading, Meditation &amp; 50+ more...
-            </div>
-
-            <!-- AI Info Box -->
-            <div class="ai-info-box">
-                <div class="ai-info-header">
-                    <div class="ai-info-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                    <div class="ai-info-title">Pixie Insights</div>
-                    <span class="badge badge-life">Life+</span>
-                </div>
-                <div class="ai-info-desc">
-                    Track more categories to unlock AI-powered pattern detection. Pixie learns what affects your mood, sleep &amp; energy over time.
-                </div>
-                <div class="ai-recommendation">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <span>Example: "Your mood drops 2 days after poor sleep. Try adjusting bedtime by 30min."</span>
-                </div>
-            </div>
-
-            <div class="teaser-cta">
-                <button class="btn-upgrade">Unlock All &mdash; $4.99/mo</button>
-                <div class="upgrade-subtitle">Cancel anytime &bull; or $19.99 lifetime</div>
-            </div>
         </div>
 
         <!-- SAVE -->
@@ -364,10 +280,12 @@
 
     <div class="content">
         <div class="card">
-            <h2><i class="fa-solid fa-tag"></i> Binary Sticker Label</h2>
-            <input type="text" class="text-input" id="binary-label-input"
-                   maxlength="30" placeholder="e.g. Took Meds, Exercised, Journaled...">
-            <button class="btn-secondary" id="btn-save-label">Save Label</button>
+            <h2><i class="fa-solid fa-tags"></i> Sticker Labels</h2>
+            <p style="font-size: 13px; margin-bottom: 12px;">Edit, add, or remove your binary stickers.</p>
+            <div id="sticker-labels-editor"></div>
+            <button class="btn-secondary" id="btn-add-sticker" style="margin-top: 8px;">
+                <i class="fa-solid fa-plus"></i> Add Sticker
+            </button>
         </div>
 
         <div class="card">

@@ -388,25 +388,37 @@ body {
 .blush.right { right: 5px; }
 
 /* ═══════════════════════════════════════════════════════════════
-   BINARY STICKER
+   BINARY STICKERS (a la carte rows)
 ═══════════════════════════════════════════════════════════════ */
 
-.binary-card {
+.binary-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 6px 0;
+}
+.binary-row + .binary-row {
+    border-top: 1px solid var(--tan);
 }
 
-.binary-card span {
+.binary-label-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--outline-brown);
 }
+.binary-label-row i {
+    width: 20px;
+    text-align: center;
+    color: var(--text-brown);
+}
 
 .binary-sticker {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border-radius: var(--radius-sticker);
     border: 3px solid var(--outline-brown);
     background: var(--white);
@@ -419,6 +431,7 @@ body {
     color: var(--outline-brown);
     transition: background var(--transition-fast);
     -webkit-tap-highlight-color: transparent;
+    flex-shrink: 0;
 }
 
 .binary-sticker[data-state="true"] { background: var(--mood-good); }
@@ -427,6 +440,13 @@ body {
 .binary-sticker[data-state="false"]::after { content: '\2717'; }
 .binary-sticker[data-state="null"] { background: var(--white); }
 .binary-sticker[data-state="null"]::after { content: ''; }
+.binary-sticker[data-state="undefined"] { background: var(--white); }
+.binary-sticker[data-state="undefined"]::after { content: ''; }
+
+#binary-stickers-container .context-input-wrapper {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 
 /* ═══════════════════════════════════════════════════════════════
    CONTEXT INPUTS (per-sticker + diary)
@@ -478,220 +498,6 @@ body {
     padding: 12px;
     resize: vertical;
     border: 2px solid var(--outline-brown);
-}
-
-/* ═══════════════════════════════════════════════════════════════
-   TEASER CARD (Want more? / AI Insights)
-═══════════════════════════════════════════════════════════════ */
-
-.teaser-card {
-    background: var(--white);
-}
-
-.teaser-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.teaser-title {
-    font-family: var(--font-brand);
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--outline-brown);
-}
-
-/* Battery teaser stickers */
-.teaser-sticker-row {
-    display: flex;
-    gap: 8px;
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.teaser-sticker-row::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 40%;
-    background: linear-gradient(to right, transparent 0%, var(--white) 70%);
-    pointer-events: none;
-}
-
-.sticker-battery-teaser {
-    width: 28px;
-    height: 38px;
-    border-radius: 4px;
-    border: 2px solid var(--outline-brown);
-    background: #FAFAFA;
-    position: relative;
-    opacity: 0.7;
-}
-
-.sticker-battery-teaser::before {
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 4px;
-    background: var(--outline-brown);
-    border-radius: 2px 2px 0 0;
-}
-
-.battery-fill {
-    position: absolute;
-    bottom: 2px;
-    left: 2px;
-    right: 2px;
-    border-radius: 2px;
-}
-.battery-fill.high { height: 85%; background: var(--mood-great); }
-.battery-fill.good { height: 68%; background: var(--mood-good); }
-.battery-fill.okay { height: 50%; background: var(--mood-okay); }
-.battery-fill.low { height: 32%; background: var(--mood-low); }
-.battery-fill.drained { height: 15%; background: var(--mood-bad); }
-
-.bat-face {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.bat-face .eyes { gap: 8px; }
-.bat-face .eye-squinty { width: 5px; height: 3px; border-width: 1.5px; }
-.bat-face .eye-dot { width: 3px; height: 3px; }
-.bat-face .eye-x { width: 5px; height: 5px; }
-.bat-face .eye-x::before, .bat-face .eye-x::after { width: 5px; height: 1.5px; }
-.bat-face .mouth-d { width: 4px; height: 3px; }
-.bat-face .mouth-smile { width: 5px; height: 3px; border-width: 1.5px; }
-.bat-face .mouth-flat { width: 4px; height: 1.5px; }
-.bat-face .mouth-small-frown { width: 5px; height: 3px; border-width: 1.5px; }
-.bat-face .mouth-frown { width: 6px; height: 3px; border-width: 1.5px; }
-
-.bat-blush {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: var(--blush-color);
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-}
-.bat-blush.left { left: 3px; }
-.bat-blush.right { right: 3px; }
-
-.teaser-categories {
-    font-size: 11px;
-    color: var(--text-brown);
-    line-height: 1.5;
-    margin-bottom: 12px;
-}
-.teaser-categories strong {
-    color: var(--outline-brown);
-}
-
-/* AI Info Box */
-.ai-info-box {
-    background: var(--input-bg);
-    border: 2px dashed var(--outline-brown);
-    border-radius: var(--radius-card);
-    padding: 14px;
-    margin-bottom: 12px;
-}
-
-.ai-info-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.ai-info-icon {
-    width: 32px;
-    height: 32px;
-    background: var(--mood-great);
-    border: 2px solid var(--outline-brown);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    color: var(--outline-brown);
-}
-
-.ai-info-title {
-    font-family: var(--font-brand);
-    font-size: 18px;
-    color: var(--outline-brown);
-    flex: 1;
-}
-
-.badge {
-    padding: 4px 10px;
-    border-radius: var(--radius-badge);
-    font-size: 11px;
-    font-weight: 700;
-    border: 2px solid var(--outline-brown);
-    color: var(--outline-brown);
-}
-.badge-life { background: var(--mood-great); }
-
-.ai-info-desc {
-    font-size: 13px;
-    color: var(--text-brown);
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-.ai-recommendation {
-    background: var(--mood-low);
-    border-radius: 10px;
-    padding: 10px 12px;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    font-size: 12px;
-    color: var(--outline-brown);
-}
-.ai-recommendation i { margin-top: 2px; flex-shrink: 0; }
-
-.teaser-cta {
-    text-align: center;
-}
-
-.btn-upgrade {
-    display: inline-block;
-    padding: 10px 16px;
-    background: var(--mood-good);
-    border: 2px solid var(--outline-brown);
-    border-radius: var(--radius-button);
-    font-family: var(--font-brand);
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--outline-brown);
-    cursor: pointer;
-    box-shadow: 3px 3px 0 var(--outline-brown);
-    transition: all var(--transition-fast);
-}
-.btn-upgrade:hover {
-    transform: translate(1px, 1px);
-    box-shadow: 2px 2px 0 var(--outline-brown);
-}
-
-.upgrade-subtitle {
-    font-size: 10px;
-    color: var(--text-brown);
-    margin-top: 6px;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -853,6 +659,51 @@ body {
 }
 .empty-dot {
     background: var(--tan);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SETTINGS — Sticker Label Editor
+═══════════════════════════════════════════════════════════════ */
+
+.label-editor-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.icon-picker-btn {
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--outline-brown);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--outline-brown);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    transition: background var(--transition-fast);
+}
+.icon-picker-btn:hover {
+    background: var(--mood-good);
+}
+
+.label-input {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+.delete-btn {
+    color: var(--mood-bad);
+    font-size: 12px;
+    padding: 6px;
+}
+.delete-btn:hover {
+    color: var(--outline-brown);
 }
 
 /* ═══════════════════════════════════════════════════════════════
