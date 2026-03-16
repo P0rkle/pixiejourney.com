@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pixie Journey</title>
+    <meta name="description" content="Your Life, Honestly Visualized. Track mood, sleep &amp; habits with kawaii stickers.">
+    <meta name="theme-color" content="#7BA89D">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&amp;family=Quicksand:wght@500;600;700&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 1: DAILY ENTRY
+═══════════════════════════════════════════════════════════════ -->
+<div id="screen-daily" class="screen active">
+
+    <!-- App Bar -->
+    <div class="app-bar">
+        <h1 id="date-header">16 March 2026</h1>
+        <div style="display: flex; gap: 8px;">
+            <button class="icon-btn" id="btn-calendar" aria-label="Calendar">
+                <i class="fa-solid fa-calendar-days"></i>
+            </button>
+            <button class="icon-btn" id="btn-settings" aria-label="Settings">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- MOOD -->
+        <div class="card">
+            <h2><i class="fa-solid fa-face-smile"></i> Mood</h2>
+            <div class="sticker-row" id="mood-row">
+                <!-- Great -->
+                <div class="sticker-item" data-level="5">
+                    <div class="sticker-mood great">
+                        <div class="blush left"></div>
+                        <div class="blush right"></div>
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye-squinty"></div>
+                                <div class="eye-squinty"></div>
+                            </div>
+                            <div class="mouth-d"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Great</span>
+                </div>
+                <!-- Good -->
+                <div class="sticker-item" data-level="4">
+                    <div class="sticker-mood good">
+                        <div class="blush left"></div>
+                        <div class="blush right"></div>
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye-squinty"></div>
+                                <div class="eye-squinty"></div>
+                            </div>
+                            <div class="mouth-smile"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Good</span>
+                </div>
+                <!-- Okay -->
+                <div class="sticker-item" data-level="3">
+                    <div class="sticker-mood okay">
+                        <div class="blush left"></div>
+                        <div class="blush right"></div>
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye-dot"></div>
+                                <div class="eye-dot"></div>
+                            </div>
+                            <div class="mouth-flat"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Okay</span>
+                </div>
+                <!-- Low -->
+                <div class="sticker-item" data-level="2">
+                    <div class="sticker-mood low">
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye-sad"></div>
+                                <div class="eye-sad"></div>
+                            </div>
+                            <div class="mouth-small-frown"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Low</span>
+                </div>
+                <!-- Bad -->
+                <div class="sticker-item" data-level="1">
+                    <div class="sticker-mood bad">
+                        <div class="face">
+                            <div class="eyes">
+                                <div class="eye-x"></div>
+                                <div class="eye-x"></div>
+                            </div>
+                            <div class="mouth-frown"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Bad</span>
+                </div>
+            </div>
+            <!-- Mood context -->
+            <div class="context-input-wrapper" id="mood-context">
+                <input type="text" class="context-input" id="mood-context-input"
+                       maxlength="100" placeholder="Why this mood? (optional)">
+            </div>
+        </div>
+
+        <!-- SLEEP -->
+        <div class="card">
+            <h2><i class="fa-solid fa-moon"></i> Sleep</h2>
+            <div class="sticker-row" id="sleep-row">
+                <!-- Great -->
+                <div class="sticker-item" data-level="5">
+                    <div class="sticker-sleep great">
+                        <span class="sleep-zzz">ZzZ</span>
+                        <div class="blush left"></div>
+                        <div class="blush right"></div>
+                        <div class="face sleep-face">
+                            <div class="eyes">
+                                <div class="eye-sleeping"></div>
+                                <div class="eye-sleeping"></div>
+                            </div>
+                            <div class="mouth-d"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Great</span>
+                </div>
+                <!-- Good -->
+                <div class="sticker-item" data-level="4">
+                    <div class="sticker-sleep good">
+                        <span class="sleep-zzz">zZ</span>
+                        <div class="blush left"></div>
+                        <div class="blush right"></div>
+                        <div class="face sleep-face">
+                            <div class="eyes">
+                                <div class="eye-sleeping"></div>
+                                <div class="eye-sleeping"></div>
+                            </div>
+                            <div class="mouth-smile"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Good</span>
+                </div>
+                <!-- Okay -->
+                <div class="sticker-item" data-level="3">
+                    <div class="sticker-sleep okay">
+                        <span class="sleep-zzz">z</span>
+                        <div class="blush left"></div>
+                        <div class="blush right"></div>
+                        <div class="face sleep-face">
+                            <div class="eyes">
+                                <div class="eye-dot"></div>
+                                <div class="eye-dot"></div>
+                            </div>
+                            <div class="mouth-flat"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Okay</span>
+                </div>
+                <!-- Poor -->
+                <div class="sticker-item" data-level="2">
+                    <div class="sticker-sleep poor">
+                        <div class="face sleep-face">
+                            <div class="eyes">
+                                <div class="eye-dot"></div>
+                                <div class="eye-dot"></div>
+                            </div>
+                            <div class="mouth-small-frown"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Poor</span>
+                </div>
+                <!-- Awful -->
+                <div class="sticker-item" data-level="1">
+                    <div class="sticker-sleep awful">
+                        <div class="face sleep-face">
+                            <div class="eyes">
+                                <div class="eye-x"></div>
+                                <div class="eye-x"></div>
+                            </div>
+                            <div class="mouth-frown"></div>
+                        </div>
+                    </div>
+                    <span class="sticker-label">Awful</span>
+                </div>
+            </div>
+            <!-- Sleep context -->
+            <div class="context-input-wrapper" id="sleep-context">
+                <input type="text" class="context-input" id="sleep-context-input"
+                       maxlength="100" placeholder="Sleep notes (optional)">
+            </div>
+        </div>
+
+        <!-- BINARY STICKERS (a la carte) -->
+        <div class="card">
+            <h2><i class="fa-solid fa-check-double"></i> Stickers</h2>
+            <div id="binary-stickers-container"></div>
+        </div>
+
+        <!-- DIARY -->
+        <div class="card">
+            <h2><i class="fa-solid fa-pen-to-square"></i> Diary</h2>
+            <textarea class="context-input diary" id="context-note"
+                      maxlength="500"
+                      placeholder="The why matters more than the what..."></textarea>
+        </div>
+
+        <!-- SAVE -->
+        <button class="btn-primary" id="btn-save">
+            <i class="fa-solid fa-floppy-disk"></i> Save Today
+        </button>
+        <div class="save-hint">Data saved in your browser</div>
+
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 2: MONTH VIEW
+═══════════════════════════════════════════════════════════════ -->
+<div id="screen-month" class="screen">
+    <div class="app-bar">
+        <button class="icon-btn" id="btn-month-back" aria-label="Back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <div class="month-nav">
+            <button class="icon-btn small" id="btn-prev-month" aria-label="Previous month">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <h1 id="month-title">March 2026</h1>
+            <button class="icon-btn small" id="btn-next-month" aria-label="Next month">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div style="width: 24px;"></div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <div class="day-headers">
+                <span>Mo</span><span>Tu</span><span>We</span><span>Th</span>
+                <span>Fr</span><span>Sa</span><span>Su</span>
+            </div>
+            <div class="pixel-grid" id="pixel-grid"></div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item"><div class="legend-dot" style="background: var(--mood-great);"></div> Great</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--mood-good);"></div> Good</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--mood-okay);"></div> Okay</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--mood-low);"></div> Low</div>
+            <div class="legend-item"><div class="legend-dot" style="background: var(--mood-bad);"></div> Bad</div>
+            <div class="legend-item"><div class="legend-dot empty-dot"></div> Empty</div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 3: SETTINGS
+═══════════════════════════════════════════════════════════════ -->
+<div id="screen-settings" class="screen">
+    <div class="app-bar">
+        <button class="icon-btn" id="btn-settings-back" aria-label="Back">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h1>Settings</h1>
+        <div style="width: 24px;"></div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2><i class="fa-solid fa-tags"></i> Sticker Labels</h2>
+            <p style="font-size: 13px; margin-bottom: 12px;">Edit, add, or remove your binary stickers.</p>
+            <div id="sticker-labels-editor"></div>
+            <button class="btn-secondary" id="btn-add-sticker" style="margin-top: 8px;">
+                <i class="fa-solid fa-plus"></i> Add Sticker
+            </button>
+        </div>
+
+        <div class="card">
+            <h2><i class="fa-solid fa-download"></i> Export Data</h2>
+            <p style="font-size: 13px; margin-bottom: 12px;">Download all your entries as a JSON file.</p>
+            <button class="btn-secondary" id="btn-export">
+                <i class="fa-solid fa-file-arrow-down"></i> Export JSON
+            </button>
+        </div>
+
+        <div class="version-footer">
+            <p>Pixie Journey v0.1.0-mvp</p>
+            <p>localStorage &bull; Option A</p>
+        </div>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast hidden" id="toast">Saved</div>
+
+<script src="app.js"></script>
+</body>
+</html>
