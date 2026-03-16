@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /download.html
 Disallow: /thank-you.html
+Disallow: /archive/
 
 Sitemap: https://pixiejourney.com/sitemap.xml
