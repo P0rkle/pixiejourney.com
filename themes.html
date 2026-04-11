@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WJ1EXX6HR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2WJ1EXX6HR');
+    </script>
+    <title>Pixie Journey Tracking Themes | Color Palettes &amp; Accessibility</title>
+    <meta name="description" content="Explore Pixie Journey's 5 tracking themes with accessible color palettes. Choose your style: Kawaii, Nordic, Amber, Easy on Eyes, or Bold & Clear — all designed for readability.">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pixie Journey Tracking Themes">
+    <meta property="og:description" content="Explore 5 beautiful &amp; accessible color themes for your tracking journey.">
+    <meta property="og:url" content="https://pixiejourney.com/themes.html">
+    <meta property="og:locale" content="en_AU">
+
+    <style>
+        .themes-hero {
+            background: linear-gradient(135deg, var(--mood-good) 0%, var(--mood-okay) 100%);
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .themes-hero h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-brown);
+            margin-bottom: 16px;
+        }
+
+        .themes-hero p {
+            font-size: 1.1rem;
+            color: var(--text-brown);
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-brown);
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--outline-brown);
+            padding-bottom: 12px;
+        }
+
+        .section h3 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-brown);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-brown);
+            margin-bottom: 16px;
+        }
+
+        /* Theme Grid */
+        .theme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 32px;
+        }
+
+        .theme-card {
+            background: var(--white);
+            border: 3px solid var(--outline-brown);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .theme-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 4px 4px 0 rgba(128, 96, 72, 0.2);
+        }
+
+        .theme-swatch-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            border-bottom: 3px solid var(--outline-brown);
+            min-height: 120px;
+        }
+
+        .theme-swatch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+
+        .theme-swatch:hover {
+            transform: scale(1.08);
+            z-index: 10;
+        }
+
+        .swatch-label {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-brown);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            white-space: nowrap;
+            bottom: 8px;
+        }
+
+        .theme-swatch:hover .swatch-label {
+            opacity: 1;
+        }
+
+        .theme-info {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .theme-badge {
+            display: inline-block;
+            background: var(--mood-good);
+            color: var(--text-brown);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            width: fit-content;
+        }
+
+        .theme-badge.cvd-friendly {
+            background: var(--mood-okay);
+        }
+
+        .theme-name {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-brown);
+            margin-bottom: 8px;
+        }
+
+        .theme-description {
+            font-size: 0.95rem;
+            color: var(--text-brown);
+            line-height: 1.6;
+            margin-bottom: 12px;
+            flex: 1;
+        }
+
+        .theme-mood-names {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+            margin-top: auto;
+        }
+
+        /* Accessible Themes Section */
+        .accessibility-banner {
+            background: linear-gradient(135deg, var(--mood-good) 0%, var(--mood-okay) 100%);
+            border: 3px solid var(--outline-brown);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .accessibility-banner h3 {
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .accessibility-banner p {
+            max-width: 800px;
+            margin: 16px auto;
+            font-size: 1.05rem;
+        }
+
+        .cvd-info {
+            background: var(--white);
+            border: 2px solid var(--outline-brown);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            text-align: left;
+        }
+
+        .cvd-info h4 {
+            font-family: 'Quicksand', sans-serif;
+            color: var(--text-brown);
+            margin-top: 0;
+        }
+
+        .cvd-info ul {
+            margin: 12px 0;
+            padding-left: 24px;
+        }
+
+        .cvd-info li {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .comparison-card {
+            background: var(--white);
+            border: 2px solid var(--outline-brown);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .comparison-card h4 {
+            font-family: 'Quicksand', sans-serif;
+            color: var(--text-brown);
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+
+        .comparison-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .comparison-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .comparison-card li:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-card i {
+            margin-right: 8px;
+            color: var(--mood-good);
+            font-weight: 600;
+        }
+
+        /* How to Choose */
+        .selector-guide {
+            background: var(--white);
+            border: 3px solid var(--outline-brown);
+            border-radius: 16px;
+            padding: 32px;
+            margin-top: 40px;
+        }
+
+        .selector-guide h3 {
+            margin-top: 0;
+        }
+
+        .selector-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .selector-option {
+            background: var(--white);
+            border: 2px solid var(--outline-brown);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .selector-option-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .selector-option-title {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            color: var(--text-brown);
+            margin-bottom: 8px;
+        }
+
+        .selector-option-desc {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Footer CTA */
+        .theme-footer-cta {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--mood-good) 0%, var(--mood-okay) 100%);
+            border-radius: 16px;
+            margin-top: 60px;
+        }
+
+        .theme-footer-cta h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .themes-nav-links {
+            margin-top: 20px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .themes-nav-links a {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--white);
+            border: 2px solid var(--outline-brown);
+            border-radius: 12px;
+            color: var(--text-brown);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .themes-nav-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 2px 2px 0 var(--outline-brown);
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-cubes">
+                    <div class="cube cube-1"><div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-d"></div></div></div>
+                    <div class="cube cube-2"><div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-smile"></div></div></div>
+                    <div class="cube cube-3"><div class="face"><div class="eyes"><div class="eye-dot"></div><div class="eye-dot"></div></div><div class="mouth-flat"></div></div></div>
+                    <div class="cube cube-4"><div class="face"><div class="eyes"><div class="eye-sad"></div><div class="eye-sad"></div></div><div class="mouth-frown"></div></div></div>
+                </div>
+                <span class="logo-pixel">Pixie</span><span class="logo-journey">Journey</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="lalahs-world.html">Lalah's World</a>
+                <a href="faq.html">FAQ</a>
+                <a href="index.html#get-pdfs" class="nav-cta">Get Free PDFs</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="themes-hero">
+            <h1><i class="fa-solid fa-palette" aria-hidden="true"></i> Tracking Themes</h1>
+            <p>Your life, your colours. Choose from 5 beautifully designed themes — each with thoughtfully selected colour palettes. All designed for clarity, readability, and joy.</p>
+        </section>
+
+        <div class="content-wrapper">
+
+            <!-- INTRO SECTION -->
+            <section class="section">
+                <h2>5 Themes, 5 Moods, One Pattern</h2>
+                <p>Every pixel in Pixie Journey is designed to feel right for you. Instead of forcing colour preferences, we've created five complete themes — each with a unique aesthetic and carefully tested colour palette.</p>
+                <p>Whether you prefer cosy kawaii aesthetics, cool Nordic tones, warm amber hues, or colour vision deficiency-friendly palettes, you'll find a theme that matches the way you see your world.</p>
+            </section>
+
+            <!-- THEMES GRID -->
+            <section class="section">
+                <h2>Our 5 Themes</h2>
+
+                <div class="theme-grid">
+                    <!-- Kawaii Theme -->
+                    <div class="theme-card">
+                        <div class="theme-swatch-container">
+                            <div class="theme-swatch" style="background: #ffe9b3;">
+                                <span class="swatch-label">Great</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #d0e6db;">
+                                <span class="swatch-label">Good</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #f7e2d9;">
+                                <span class="swatch-label">Okay</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #c5dde8;">
+                                <span class="swatch-label">Low</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #eaa090;">
+                                <span class="swatch-label">Bad</span>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-badge">Popular</span>
+                            <h3 class="theme-name">Kawaii</h3>
+                            <p class="theme-description">Soft, warm, and gently optimistic. Cute blush faces with peachy and minty tones that feel safe and approachable. Perfect for cosy tracking.</p>
+                            <p class="theme-mood-names">The default Pixie Journey theme</p>
+                        </div>
+                    </div>
+
+                    <!-- Nordic Theme -->
+                    <div class="theme-card">
+                        <div class="theme-swatch-container">
+                            <div class="theme-swatch" style="background: #B8D4E3;">
+                                <span class="swatch-label">Great</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #A3C4BC;">
+                                <span class="swatch-label">Good</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #E8E4E1;">
+                                <span class="swatch-label">Okay</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #D4C5B9;">
+                                <span class="swatch-label">Low</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #7A8B8B;">
+                                <span class="swatch-label">Bad</span>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-badge">Minimalist</span>
+                            <h3 class="theme-name">Nordic</h3>
+                            <p class="theme-description">Calm, cool, and understated. Muted blues, greens, and greys inspired by Scandinavian design. For those who prefer refined simplicity.</p>
+                            <p class="theme-mood-names">Serene Scandinavian palette</p>
+                        </div>
+                    </div>
+
+                    <!-- Amber Theme -->
+                    <div class="theme-card">
+                        <div class="theme-swatch-container">
+                            <div class="theme-swatch" style="background: #F5D89A;">
+                                <span class="swatch-label">Great</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #E8B86D;">
+                                <span class="swatch-label">Good</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #D4A574;">
+                                <span class="swatch-label">Okay</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #C19A6B;">
+                                <span class="swatch-label">Low</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #8B6914;">
+                                <span class="swatch-label">Bad</span>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-badge">Warm</span>
+                            <h3 class="theme-name">Amber</h3>
+                            <p class="theme-description">Golden, earthy, and richly textured. Warm bronzes and burnt siennas that evoke autumn light and natural warmth. For those who love warm tones.</p>
+                            <p class="theme-mood-names">Earthy, natural palette</p>
+                        </div>
+                    </div>
+
+                    <!-- Easy on Eyes (Colorblind) -->
+                    <div class="theme-card">
+                        <div class="theme-swatch-container">
+                            <div class="theme-swatch" style="background: #0173B2;">
+                                <span class="swatch-label">Great</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #DE8F05;">
+                                <span class="swatch-label">Good</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #CC78BC;">
+                                <span class="swatch-label">Okay</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #CA9161;">
+                                <span class="swatch-label">Low</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #56B4E9;">
+                                <span class="swatch-label">Bad</span>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-badge cvd-friendly"><i class="fa-solid fa-eye" aria-hidden="true"></i> CVD-Friendly</span>
+                            <h3 class="theme-name">Easy on Eyes</h3>
+                            <p class="theme-description">Designed for Deuteranopia (red-blind) and Protanopia (green-blind) colour vision. Clear distinction between all mood states.</p>
+                            <p class="theme-mood-names">Colorblind-optimized palette</p>
+                        </div>
+                    </div>
+
+                    <!-- Bold & Clear (Wong CVD Safe) -->
+                    <div class="theme-card">
+                        <div class="theme-swatch-container">
+                            <div class="theme-swatch" style="background: #E69F00;">
+                                <span class="swatch-label">Great</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #56B4E9;">
+                                <span class="swatch-label">Good</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #009E73;">
+                                <span class="swatch-label">Okay</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #F0E442;">
+                                <span class="swatch-label">Low</span>
+                            </div>
+                            <div class="theme-swatch" style="background: #D55E00;">
+                                <span class="swatch-label">Bad</span>
+                            </div>
+                        </div>
+                        <div class="theme-info">
+                            <span class="theme-badge cvd-friendly"><i class="fa-solid fa-universal-access" aria-hidden="true"></i> Maximum Contrast</span>
+                            <h3 class="theme-name">Bold & Clear</h3>
+                            <p class="theme-description">The Wong colour-blind safe palette with maximum distinction. Supports all types of colour vision deficiency including Tritanopia.</p>
+                            <p class="theme-mood-names">Universal CVD-safe palette</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACCESSIBILITY SECTION -->
+            <section class="accessibility-banner">
+                <h3><i class="fa-solid fa-eye" aria-hidden="true"></i> Colour Vision Accessibility</h3>
+                <p>Colour blindness affects millions worldwide. Easy on Eyes and Bold & Clear are specifically designed to be distinguishable for people with colour vision deficiency (CVD).</p>
+
+                <div class="cvd-info">
+                    <h4>What is Colour Vision Deficiency?</h4>
+                    <p>Colour vision deficiency (CVD), commonly called "colourblindness," is a hereditary condition affecting colour perception. It's not darkness — people with CVD see colours differently, not less.</p>
+                    <ul>
+                        <li><strong>Protanopia (Red-Blind):</strong> ~1% of males. Difficulty distinguishing reds from greens. Reds appear darker.</li>
+                        <li><strong>Deuteranopia (Green-Blind):</strong> ~1% of males. Similar to protanopia but through a different mechanism.</li>
+                        <li><strong>Tritanopia (Blue-Yellow Blind):</strong> ~0.01% of all people. Difficulty distinguishing blues from yellows.</li>
+                    </ul>
+                </div>
+
+                <p><strong>Both Easy on Eyes and Bold & Clear have been tested</strong> using colour blindness simulators (Coblis) and contrast checkers (WebAIM) to ensure maximum readability for all users.</p>
+            </section>
+
+            <!-- HOW TO CHOOSE -->
+            <section class="section selector-guide">
+                <h3><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i> How to Choose Your Theme</h3>
+                <p>Theme selection is personal. Here's how to pick:</p>
+
+                <div class="selector-options">
+                    <div class="selector-option">
+                        <span class="selector-option-icon"><i class="fa-solid fa-heart" aria-hidden="true"></i></span>
+                        <div class="selector-option-title">Aesthetic Appeal</div>
+                        <div class="selector-option-desc">Pick the colours that make you happy to look at, day after day.</div>
+                    </div>
+                    <div class="selector-option">
+                        <span class="selector-option-icon"><i class="fa-solid fa-glasses" aria-hidden="true"></i></span>
+                        <div class="selector-option-title">Visual Comfort</div>
+                        <div class="selector-option-desc">Choose based on contrast and readability in your lighting conditions.</div>
+                    </div>
+                    <div class="selector-option">
+                        <span class="selector-option-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></span>
+                        <div class="selector-option-title">Easy to Switch</div>
+                        <div class="selector-option-desc">Change your theme anytime in Settings. No tracking impact — all data stays the same.</div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 24px; text-align: center;"><strong>💡 Tip:</strong> Try each theme for a few days. Your eyes will tell you which one feels right.</p>
+            </section>
+
+            <!-- FEATURES COMPARISON -->
+            <section class="section">
+                <h2>Theme Features at a Glance</h2>
+
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <h4>Kawaii, Nordic, Amber</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Beautiful, aesthetic-focused palettes</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Great for daily visual enjoyment</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> High contrast support</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mood state clarity</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card">
+                        <h4>Easy on Eyes</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Deuteranopia optimized</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Protanopia optimized</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Clear distinction between states</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Accessible + beautiful</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card">
+                        <h4>Bold & Clear</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> All CVD types supported</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Maximum contrast ratio</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Tritanopia optimized</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Scientifically tested</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TEAM STATEMENTS -->
+            <section class="section">
+                <h2>Why Theme Diversity Matters</h2>
+                <p>At Pixie Journey, we believe your tracking app should match your vision—literally and figuratively.</p>
+
+                <blockquote style="border-left: 4px solid var(--mood-good); padding-left: 20px; margin: 24px 0; font-style: italic; color: #666;">
+                    "One colour palette doesn't fit everyone. Not because of preference, but because vision is neurological. We're committed to accessibility from design, not as an afterthought."
+                </blockquote>
+
+                <p>That's why <strong>every theme</strong> has been tested for:</p>
+                <ul>
+                    <li><strong>Contrast ratios</strong> — WCAG AAA standards</li>
+                    <li><strong>Colour blindness simulation</strong> — Coblis CVD simulators</li>
+                    <li><strong>Readability</strong> — Real user testing</li>
+                    <li><strong>Aesthetic appeal</strong> — Because tracking should feel good, not clinical</li>
+                </ul>
+            </section>
+
+            <!-- FOOTER CTA -->
+            <section class="theme-footer-cta">
+                <h3>Ready to Pick Your Theme?</h3>
+                <p>Theme selection happens during signup in the app. You can always change it later — no impact on your data.</p>
+
+                <div class="themes-nav-links">
+                    <a href="index.html">Back to Home</a>
+                    <a href="features.html">Explore Features</a>
+                    <a href="index.html#waitlist">Join the Waitlist</a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <p class="footer-brand">Pixie Journey</p>
+                    <p>Colour Your Days. See the Pattern.</p>
+                    <p>Track your Life in Pixels.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="lalahs-world.html">Lalah's World</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy-safety.html">Privacy & Safety</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mailto:hello@pixiejourney.com">hello@pixiejourney.com</a></li>
+                        <li><a href="https://au.pinterest.com/pixiejourneytracker/" target="_blank" rel="noopener"><i class="fa-brands fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pixie Journey. All rights reserved.</p>
+                <p>Made with <i class="fa-solid fa-heart" aria-hidden="true" style="color: var(--salmon);"></i> in Australia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                var expanded = mainNav.classList.contains('active');
+                mobileMenuToggle.setAttribute('aria-expanded', expanded);
+            });
+        }
+    </script>
+</body>
+</html>

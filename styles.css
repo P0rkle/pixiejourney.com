@@ -1728,3 +1728,658 @@ input:focus-visible,
         outline: 2px solid Highlight;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   SHOP PAGE
+═══════════════════════════════════════════════════════════════ */
+
+.shop-tagline {
+    font-family: var(--font-pixel);
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--outline-brown);
+    margin-top: 0.5rem;
+}
+
+/* Coming Soon Banner */
+.coming-soon-banner {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--mood-low);
+    border: 3px solid var(--outline-brown);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 4px 4px 0 var(--outline-brown);
+}
+
+.coming-soon-banner .btn-banner {
+    background: var(--mood-okay);
+}
+
+.coming-soon-banner > i {
+    font-size: 2rem;
+    color: var(--outline-brown);
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.coming-soon-banner h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.coming-soon-banner p {
+    margin-bottom: 1rem;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: var(--white);
+    border: 3px solid var(--outline-brown);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 3px 3px 0 var(--outline-brown);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.product-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--outline-brown);
+}
+
+.hero-product {
+    border-color: var(--salmon);
+    box-shadow: 4px 4px 0 var(--salmon);
+}
+
+.hero-product:hover {
+    box-shadow: 6px 6px 0 var(--salmon);
+}
+
+.product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: var(--font-pixel);
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    background: var(--mood-good);
+    border: 2px solid var(--outline-brown);
+    border-radius: 8px;
+    color: var(--outline-brown);
+    z-index: 2;
+}
+
+.badge-bridge { background: var(--mood-okay); }
+.badge-system { background: var(--mood-low); }
+.badge-core { background: var(--mood-great); }
+
+.popular-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-family: var(--font-pixel);
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    background: var(--salmon);
+    border: 2px solid var(--outline-brown);
+    border-radius: 8px;
+    color: var(--white);
+    z-index: 2;
+}
+
+.product-image-placeholder {
+    height: 200px;
+    background: var(--tan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: var(--outline-brown);
+    opacity: 0.5;
+}
+
+.product-image-placeholder i {
+    font-size: 3rem;
+}
+
+.coming-label {
+    font-family: var(--font-pixel);
+    font-size: 0.9rem;
+}
+
+.product-info {
+    padding: 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--outline-brown);
+    margin-bottom: 0.25rem;
+}
+
+.product-tagline {
+    font-family: var(--font-pixel);
+    font-size: 1rem;
+    color: var(--salmon);
+    margin-bottom: 0.75rem;
+}
+
+.product-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.product-detail {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-brown);
+}
+
+.product-detail i {
+    width: 18px;
+    text-align: center;
+    margin-right: 6px;
+    color: var(--salmon);
+}
+
+.product-pricing {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin: 1rem 0 0.5rem;
+    flex-wrap: wrap;
+}
+
+.product-price {
+    font-family: var(--font-pixel);
+    font-size: 2rem;
+    color: var(--outline-brown);
+}
+
+.product-rrp {
+    font-family: var(--font-pixel);
+    font-size: 1rem;
+    color: var(--text-brown);
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.product-savings {
+    font-family: var(--font-pixel);
+    font-size: 0.9rem;
+    background: var(--mood-good);
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--outline-brown);
+    color: var(--outline-brown);
+}
+
+.product-math {
+    font-size: 0.8rem;
+    color: var(--text-brown);
+    opacity: 0.7;
+    margin-bottom: 0.75rem;
+}
+
+.btn-greyed {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Add-On Grid */
+.addon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.addon-card {
+    background: var(--white);
+    border: 2px solid var(--outline-brown);
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 2px 2px 0 var(--outline-brown);
+    text-align: center;
+}
+
+.addon-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 0.75rem;
+    background: var(--mood-okay);
+    border: 2px solid var(--outline-brown);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--outline-brown);
+}
+
+.addon-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.addon-card p {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.addon-price {
+    font-family: var(--font-pixel);
+    font-size: 1.5rem;
+    color: var(--outline-brown);
+}
+
+/* Craftsmanship Grid */
+.craft-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.craft-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.craft-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 1rem;
+    background: var(--mood-great);
+    border: 2px solid var(--outline-brown);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--outline-brown);
+}
+
+.craft-item h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.craft-item p {
+    font-size: 0.9rem;
+}
+
+/* Shop Teaser (Homepage) */
+.shop-teaser-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.shop-teaser-card {
+    background: var(--white);
+    border: 2px solid var(--outline-brown);
+    border-radius: 16px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 2px 2px 0 var(--outline-brown);
+    transition: transform 0.15s;
+}
+
+.shop-teaser-card:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 var(--outline-brown);
+}
+
+.shop-teaser-hero {
+    border-color: var(--salmon);
+    box-shadow: 2px 2px 0 var(--salmon);
+}
+
+.shop-teaser-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 0.75rem;
+    background: var(--mood-okay);
+    border: 2px solid var(--outline-brown);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--outline-brown);
+}
+
+.shop-teaser-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.shop-teaser-card p {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.shop-teaser-price {
+    font-family: var(--font-pixel);
+    font-size: 1.25rem;
+    color: var(--outline-brown);
+}
+
+.shop-teaser-price small {
+    font-size: 0.85rem;
+    color: var(--salmon);
+}
+
+.shop-tagline-home {
+    font-family: var(--font-pixel);
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--outline-brown);
+    margin-bottom: 1rem;
+}
+
+#shop-teaser {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .coming-soon-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .coming-soon-banner > i {
+        margin: 0 auto;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LALAH'S WORLD & STORIES PAGES
+═══════════════════════════════════════════════════════════════ */
+
+/* Eyebrow text above page title */
+.eyebrow {
+    font-family: var(--font-pixel);
+    font-size: 1rem;
+    color: var(--text-brown);
+    opacity: 0.7;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
+}
+
+/* Character Cards */
+.character-card {
+    background: var(--white);
+    border: 3px solid var(--outline-brown);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 3px 3px 0 var(--outline-brown);
+    margin-bottom: 1.5rem;
+}
+
+.character-header {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+}
+
+.character-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--mood-okay);
+    border: 2px solid var(--outline-brown);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--outline-brown);
+    flex-shrink: 0;
+}
+
+.character-header h3 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--outline-brown);
+    margin-bottom: 0.15rem;
+}
+
+.character-tag {
+    font-family: var(--font-pixel);
+    font-size: 0.9rem;
+    color: var(--text-brown);
+    opacity: 0.7;
+}
+
+.character-role {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--salmon);
+}
+
+.character-body p {
+    margin-bottom: 0.75rem;
+}
+
+.character-facts {
+    list-style: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--bg-warm-white);
+    border-radius: 12px;
+    border: 1px solid var(--tan);
+}
+
+.character-facts li {
+    padding: 0.3rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.character-facts li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: var(--salmon);
+    font-weight: 700;
+}
+
+/* Brand Quote */
+.brand-quote {
+    text-align: center;
+    padding: 2rem;
+    border-left: 4px solid var(--salmon);
+    background: var(--white);
+    border-radius: 0 16px 16px 0;
+}
+
+.brand-quote p {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--outline-brown);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.brand-quote cite {
+    font-family: var(--font-pixel);
+    font-size: 0.9rem;
+    color: var(--text-brown);
+    opacity: 0.7;
+    font-style: normal;
+}
+
+/* Coming Soon Tag */
+.coming-soon-tag {
+    display: inline-block;
+    font-family: var(--font-pixel);
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    background: var(--mood-great);
+    border: 1px solid var(--outline-brown);
+    border-radius: 8px;
+    color: var(--outline-brown);
+    margin-bottom: 0.75rem;
+}
+
+/* Story Blocks */
+.story-block {
+    background: var(--white);
+    border: 2px solid var(--tan);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-block h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--outline-brown);
+    margin-bottom: 1.25rem;
+}
+
+.story-body p {
+    margin-bottom: 0.35rem;
+    line-height: 1.7;
+}
+
+.story-pattern {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--salmon);
+    font-family: var(--font-pixel);
+    font-size: 0.9rem;
+    color: var(--text-brown);
+    opacity: 0.7;
+}
+
+.story-pattern i {
+    color: var(--salmon);
+    margin-right: 0.4rem;
+}
+
+/* Wildlife Info Boxes */
+.story-wildlife {
+    border-color: var(--outline-brown);
+    border-width: 2px;
+}
+
+.wildlife-info {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background: var(--bg-warm-white);
+    border-radius: 12px;
+    border: 1px solid var(--tan);
+}
+
+.wildlife-info h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--outline-brown);
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.wildlife-info h4:first-child {
+    margin-top: 0;
+}
+
+.wildlife-info h4 i {
+    margin-right: 0.4rem;
+    color: var(--salmon);
+}
+
+.wildlife-info ul {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.wildlife-info ul li {
+    padding: 0.2rem 0 0.2rem 1.25rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.wildlife-info ul li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: var(--outline-brown);
+}
+
+.rescue-number {
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background: var(--mood-great);
+    border-radius: 8px;
+    border: 1px solid var(--outline-brown);
+    font-size: 0.95rem;
+}
+
+.rescue-number i {
+    margin-right: 0.4rem;
+}
+
+.wildlife-tip {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--outline-brown);
+}
+
+.wildlife-tip i {
+    color: var(--mood-great);
+    margin-right: 0.4rem;
+}
+
+.wildlife-note {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-brown);
+}
+
+.story-closing {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-style: italic;
+    color: var(--text-brown);
+}
+
+.story-closing p {
+    margin-bottom: 0.25rem;
+}

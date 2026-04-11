@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pixie Journey</title>
+    <meta name="description" content="Your Life, Honestly Visualized. Track mood, sleep &amp; habits with kawaii stickers.">
+    <meta name="theme-color" content="#7BA89D">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&amp;family=Quicksand:wght@500;600;700&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating Background Circles -->
+<div class="floating-circles">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+    <div class="circle circle-4"></div>
+    <div class="circle circle-5"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 1: DAILY ENTRY (LOG)
+═══════════════════════════════════════════════════════════════ -->
+<div id="screen-daily" class="screen active">
+
+    <!-- Header Bar -->
+    <div class="header-bar">
+        <button class="nav-btn" id="btn-back-daily" aria-label="Back">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="date-selector">
+            <button class="date-arrow" id="btn-prev-day" aria-label="Previous day">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <span class="date-display" id="date-header">Sat, Mar 17</span>
+            <button class="date-arrow" id="btn-next-day" aria-label="Next day">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <span class="today-badge" id="today-badge">TODAY</span>
+    </div>
+
+    <div class="content" id="daily-content">
+
+        <!-- MOOD + SLEEP CARD -->
+        <div class="section-card">
+
+            <!-- MOOD -->
+            <div class="category-section" id="mood-section">
+                <div class="section-header" data-toggle="mood">
+                    <div class="section-title"><i class="fa-solid fa-face-smile"></i> Mood</div>
+                    <i class="fa-solid fa-chevron-down section-chevron" id="mood-chevron"></i>
+                </div>
+                <div class="sticker-row" id="mood-row">
+                    <div class="sticker-wrapper" data-category="mood" data-level="5">
+                        <div class="sticker-mood great">
+                            <span class="blush left"></span>
+                            <span class="blush right"></span>
+                            <div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-d"></div></div>
+                        </div>
+                        <div class="sticker-label">Great</div>
+                    </div>
+                    <div class="sticker-wrapper" data-category="mood" data-level="4">
+                        <div class="sticker-mood good">
+                            <span class="blush left"></span>
+                            <span class="blush right"></span>
+                            <div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-smile"></div></div>
+                        </div>
+                        <div class="sticker-label">Good</div>
+                    </div>
+                    <div class="sticker-wrapper" data-category="mood" data-level="3">
+                        <div class="sticker-mood okay">
+                            <span class="blush left"></span>
+                            <span class="blush right"></span>
+                            <div class="face"><div class="eyes"><div class="eye-dot"></div><div class="eye-dot"></div></div><div class="mouth-flat"></div></div>
+                        </div>
+                        <div class="sticker-label">Okay</div>
+                    </div>
+                    <div class="sticker-wrapper" data-category="mood" data-level="2">
+                        <div class="sticker-mood low">
+                            <div class="face"><div class="eyes"><div class="eye-sad"></div><div class="eye-sad"></div></div><div class="mouth-small-frown"></div></div>
+                        </div>
+                        <div class="sticker-label">Low</div>
+                    </div>
+                    <div class="sticker-wrapper" data-category="mood" data-level="1">
+                        <div class="sticker-mood bad">
+                            <div class="face"><div class="eyes"><div class="eye-x"></div><div class="eye-x"></div></div><div class="mouth-frown"></div></div>
+                        </div>
+                        <div class="sticker-label">Bad</div>
+                    </div>
+                </div>
+                <div class="context-input-wrapper" id="mood-context">
+                    <input type="text" class="context-input" id="mood-context-input" maxlength="100" placeholder="Why this mood? (optional)">
+                </div>
+            </div>
+
+            <hr class="category-divider">
+
+            <!-- SLEEP -->
+            <div class="category-section" id="sleep-section">
+                <div class="section-header" data-toggle="sleep">
+                    <div class="section-title"><i class="fa-solid fa-moon"></i> Sleep</div>
+                    <i class="fa-solid fa-chevron-down section-chevron" id="sleep-chevron"></i>
+                </div>
+                <div class="sticker-row" id="sleep-row">
+                    <div class="sticker-wrapper" data-category="sleep" data-level="5">
+                        <div class="sticker-sleep great">
+                            <span class="blush left"></span>
+                            <span class="blush right"></span>
+                            <span class="sleep-z">zzZ</span>
+                            <div class="face sleep-face"><div class="eyes"><div class="eye-sleeping"></div><div class="eye-sleeping"></div></div><div class="mouth-d"></div></div>
+                        </div>
+                        <div class="sticker-label">Great</div>
+                    </div>
+                    <div class="sticker-wrapper" data-category="sleep" data-level="4">
+                        <div class="sticker-sleep good">
+                            <span class="blush left"></span>
+                            <span class="blush right"></span>
+                            <span class="sleep-z">zZ</span>
+                            <div class="face sleep-face"><div class="eyes"><div class="eye-sleeping"></div><div class="eye-sleeping"></div></div><div class="mouth-smile"></div></div>
+                        </div>
+                        <div class="sticker-label">Good</div>
+                    </div>
+                    <div class="sticker-wrapper" data-category="sleep" data-level="3">
+                        <div class="sticker-sleep okay">
+                            <span class="blush left"></span>
+                            <span class="blush right"></span>
+                            <div class="face sleep-face"><div class="eyes"><div class="eye-dot"></div><div class="eye-dot"></div></div><div class="mouth-flat"></div></div>
+                        </div>
+                        <div class="sticker-label">Okay</div>
+                    </div>
+                    <div class="sticker-wrapper" data-category="sleep" data-level="2">
+                        <div class="sticker-sleep poor">
+                            <div class="face sleep-face"><div class="eyes"><div class="eye-sad"></div><div class="eye-sad"></div></div><div class="mouth-small-frown"></div></div>
+                        </div>
+                        <div class="sticker-label">Bad</div>
+                    </div>
+                    <div class="sticker-wrapper" data-category="sleep" data-level="1">
+                        <div class="sticker-sleep awful">
+                            <div class="face sleep-face"><div class="eyes"><div class="eye-x"></div><div class="eye-x"></div></div><div class="mouth-frown"></div></div>
+                        </div>
+                        <div class="sticker-label">None</div>
+                    </div>
+                </div>
+                <!-- Sleep Hours +/- -->
+                <div class="sleep-hours-wrapper" id="sleep-hours">
+                    <div class="sleep-hours-row">
+                        <span class="hours-label">Hours slept</span>
+                        <div class="hours-controls">
+                            <button class="hours-btn" id="btn-hours-minus" aria-label="Decrease hours"><i class="fa-solid fa-minus"></i></button>
+                            <div class="hours-display">
+                                <span class="hours-value" id="hours-value">0</span>
+                                <span class="hours-unit">hrs</span>
+                            </div>
+                            <button class="hours-btn" id="btn-hours-plus" aria-label="Increase hours"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="context-input-wrapper" id="sleep-context">
+                    <input type="text" class="context-input" id="sleep-context-input" maxlength="100" placeholder="Sleep notes (optional)">
+                </div>
+            </div>
+
+            <hr class="category-divider">
+
+            <!-- BINARY STICKERS -->
+            <div class="category-section" id="binary-section">
+                <div class="section-header" data-toggle="binary">
+                    <div class="section-title"><i class="fa-solid fa-check-double"></i> Stickers</div>
+                    <i class="fa-solid fa-chevron-down section-chevron" id="binary-chevron"></i>
+                </div>
+                <div class="legend-row">
+                    <div class="legend-item"><div class="legend-swatch white"></div><span>Not logged</span></div>
+                    <div class="legend-item"><div class="legend-swatch rainbow"></div><span>Did it</span></div>
+                    <div class="legend-item"><div class="legend-swatch coral"></div><span>Didn't</span></div>
+                </div>
+                <div class="binary-stickers-row" id="binary-stickers-container"></div>
+                <div class="context-input-wrapper binary-context" id="binary-context-area">
+                    <input type="text" class="context-input" id="binary-context-input" maxlength="100" placeholder="Details (optional)">
+                </div>
+            </div>
+        </div>
+
+        <!-- DIARY -->
+        <div class="diary-card">
+            <div class="diary-header">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <div class="diary-title">Diary</div>
+            </div>
+            <textarea class="diary-input" id="context-note" maxlength="500" placeholder="Dear Diary,..."></textarea>
+        </div>
+
+    </div>
+
+    <!-- Save Bar (Fixed) -->
+    <div class="save-bar">
+        <button class="save-btn" id="btn-save"><i class="fa-solid fa-floppy-disk"></i> Save Entry</button>
+        <div class="save-hint">Tap stickers to log &bull; Tap again to remove</div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 2: MONTH VIEW
+═══════════════════════════════════════════════════════════════ -->
+<div id="screen-month" class="screen">
+
+    <div class="content" id="month-content">
+        <!-- Header -->
+        <div class="header">
+            <button class="nav-btn" id="btn-prev-month" aria-label="Previous month">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <h1 class="month-title" id="month-title">March 2026</h1>
+            <button class="nav-btn" id="btn-next-month" aria-label="Next month">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Mood Grid -->
+        <div class="sticker-grid-card">
+            <div class="grid-title"><i class="fa-solid fa-face-smile"></i> Mood</div>
+            <div class="weekday-row">
+                <div class="weekday-header">M</div><div class="weekday-header">T</div><div class="weekday-header">W</div>
+                <div class="weekday-header">T</div><div class="weekday-header">F</div><div class="weekday-header">S</div><div class="weekday-header">S</div>
+            </div>
+            <div class="sticker-grid" id="mood-grid"></div>
+        </div>
+
+        <!-- Sleep Grid -->
+        <div class="sticker-grid-card">
+            <div class="grid-title"><i class="fa-solid fa-bed"></i> Sleep</div>
+            <div class="weekday-row">
+                <div class="weekday-header">M</div><div class="weekday-header">T</div><div class="weekday-header">W</div>
+                <div class="weekday-header">T</div><div class="weekday-header">F</div><div class="weekday-header">S</div><div class="weekday-header">S</div>
+            </div>
+            <div class="sticker-grid" id="sleep-grid"></div>
+        </div>
+
+        <!-- Binary Sticker Grids (dynamic) -->
+        <div id="binary-grids-container"></div>
+
+        <!-- Legend -->
+        <div class="legend-card">
+            <div class="legend-row-month">
+                <div class="legend-item"><div class="legend-swatch great"></div><span>Great</span></div>
+                <div class="legend-item"><div class="legend-swatch good"></div><span>Good</span></div>
+                <div class="legend-item"><div class="legend-swatch okay"></div><span>Okay</span></div>
+                <div class="legend-item"><div class="legend-swatch low"></div><span>Low</span></div>
+                <div class="legend-item"><div class="legend-swatch bad"></div><span>Bad</span></div>
+            </div>
+            <div class="legend-row-month">
+                <div class="legend-item"><div class="legend-swatch" style="background: #d0e6db;"></div><span>Did it</span></div>
+                <div class="legend-item"><div class="legend-swatch" style="background: #f8b0b0;"></div><span>Didn't</span></div>
+            </div>
+        </div>
+
+        <!-- Month Summary -->
+        <div class="summary-card">
+            <div class="summary-title"><i class="fa-solid fa-chart-pie"></i> <span id="summary-month-label">March</span> Summary</div>
+            <div class="summary-stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="stat-logged">0%</div>
+                    <div class="stat-label">Logged</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="stat-mood">--</div>
+                    <div class="stat-label">Avg Mood</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="stat-sleep">--</div>
+                    <div class="stat-label">Avg Sleep</div>
+                </div>
+            </div>
+            <div class="logging-message" id="logging-message">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span id="logging-message-text">Start logging to see your patterns!</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 3: SETTINGS
+═══════════════════════════════════════════════════════════════ -->
+<div id="screen-settings" class="screen">
+
+    <!-- Header -->
+    <div class="settings-screen-header">
+        <h1 class="settings-header-title">Settings</h1>
+    </div>
+
+    <div class="content" id="settings-content">
+
+        <!-- Stickers Section -->
+        <div class="settings-section">
+            <div class="settings-section-title">Stickers</div>
+            <div class="settings-card">
+                <div class="settings-row" id="btn-manage-stickers">
+                    <div class="settings-icon stickers"><i class="fa-solid fa-star"></i></div>
+                    <div class="settings-info">
+                        <div class="settings-name">My Stickers</div>
+                        <div class="settings-desc">Edit, add, or remove your stickers</div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right settings-chevron"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sticker Editor (hidden by default) -->
+        <div class="settings-section" id="sticker-editor-section" style="display: none;">
+            <div class="settings-section-title">Edit Stickers</div>
+            <div class="section-card" style="padding: 12px;">
+                <div id="sticker-labels-editor"></div>
+                <button class="btn-add-sticker" id="btn-add-sticker">
+                    <i class="fa-solid fa-plus"></i> Add Sticker
+                </button>
+            </div>
+        </div>
+
+        <!-- Data Section -->
+        <div class="settings-section">
+            <div class="settings-section-title">Data</div>
+            <div class="settings-card">
+                <div class="settings-row" id="btn-export">
+                    <div class="settings-icon export"><i class="fa-solid fa-download"></i></div>
+                    <div class="settings-info">
+                        <div class="settings-name">Export Data</div>
+                        <div class="settings-desc">Download all entries as JSON</div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right settings-chevron"></i>
+                </div>
+                <div class="settings-row" id="btn-clear-data">
+                    <div class="settings-icon delete"><i class="fa-solid fa-trash"></i></div>
+                    <div class="settings-info">
+                        <div class="settings-name">Clear All Data</div>
+                        <div class="settings-desc">Permanently delete all entries</div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right settings-chevron"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support Section -->
+        <div class="settings-section">
+            <div class="settings-section-title">Support</div>
+            <div class="settings-card">
+                <div class="settings-row" onclick="window.open('https://pixiejourney.com/faq.html','_blank')">
+                    <div class="settings-icon help"><i class="fa-solid fa-circle-question"></i></div>
+                    <div class="settings-info">
+                        <div class="settings-name">Help & FAQ</div>
+                        <div class="settings-desc">Get answers to common questions</div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right settings-chevron"></i>
+                </div>
+                <div class="settings-row" onclick="window.open('https://pixiejourney.com/contact.html','_blank')">
+                    <div class="settings-icon help"><i class="fa-solid fa-comment"></i></div>
+                    <div class="settings-info">
+                        <div class="settings-name">Send Feedback</div>
+                        <div class="settings-desc">Tell us what you think</div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right settings-chevron"></i>
+                </div>
+                <div class="settings-row" onclick="window.open('https://pixiejourney.com/about.html','_blank')">
+                    <div class="settings-icon about"><i class="fa-solid fa-info-circle"></i></div>
+                    <div class="settings-info">
+                        <div class="settings-name">About</div>
+                        <div class="settings-desc">Version, terms, privacy policy</div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right settings-chevron"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Version Footer -->
+        <div class="version-footer">
+            <div class="version-logo">Pixie Journey</div>
+            <div>v0.1.0-mvp &bull; localStorage</div>
+            <div>Made with love in Melbourne</div>
+        </div>
+    </div>
+</div>
+
+<!-- BOTTOM NAVIGATION -->
+<div class="bottom-nav" id="bottom-nav">
+    <div class="nav-item active" data-screen="screen-daily">
+        <i class="fa-solid fa-sun"></i>
+        <span>Day</span>
+    </div>
+    <div class="nav-item" data-screen="screen-month">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span>Month</span>
+    </div>
+    <div class="nav-item" data-screen="screen-settings">
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast hidden" id="toast">Saved</div>
+
+<script src="app.js"></script>
+</body>
+</html>

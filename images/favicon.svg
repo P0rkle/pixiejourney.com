@@ -1,36 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-
-  <!-- slight playful tilt -->
-  <g transform="rotate(-3 32 32)">
-
-    <!-- top-left : Great -->
-    <rect x="6" y="6" width="24" height="24"
-          fill="#ffe9b3"
-          stroke="#6b4e2e"
-          stroke-width="3"
-          rx="2"/>
-
-    <!-- top-right : Good -->
-    <rect x="34" y="6" width="24" height="24"
-          fill="#d0e6db"
-          stroke="#6b4e2e"
-          stroke-width="3"
-          rx="2"/>
-
-    <!-- bottom-left : Okay -->
-    <rect x="6" y="34" width="24" height="24"
-          fill="#f7e2d9"
-          stroke="#6b4e2e"
-          stroke-width="3"
-          rx="2"/>
-
-    <!-- bottom-right : Low -->
-    <rect x="34" y="34" width="24" height="24"
-          fill="#c5dde8"
-          stroke="#6b4e2e"
-          stroke-width="3"
-          rx="2"/>
-
-  </g>
-
+  <!-- Pixel "P" with mood colors, white outline, transparent background -->
+  <!-- Row 1: mood-great yellow -->
+  <rect x="16" y="8"  width="8" height="8" fill="#ffe9b3" stroke="#806048" stroke-width="1"/>
+  <rect x="24" y="8"  width="8" height="8" fill="#ffe9b3" stroke="#806048" stroke-width="1"/>
+  <rect x="32" y="8"  width="8" height="8" fill="#ffe9b3" stroke="#806048" stroke-width="1"/>
+  <!-- Row 2: mood-great yellow -->
+  <rect x="16" y="16" width="8" height="8" fill="#ffe9b3" stroke="#806048" stroke-width="1"/>
+  <rect x="40" y="16" width="8" height="8" fill="#ffe9b3" stroke="#806048" stroke-width="1"/>
+  <!-- Row 3: mood-good green -->
+  <rect x="16" y="24" width="8" height="8" fill="#d0e6db" stroke="#806048" stroke-width="1"/>
+  <rect x="40" y="24" width="8" height="8" fill="#d0e6db" stroke="#806048" stroke-width="1"/>
+  <!-- Row 4: mood-good green -->
+  <rect x="16" y="32" width="8" height="8" fill="#d0e6db" stroke="#806048" stroke-width="1"/>
+  <rect x="24" y="32" width="8" height="8" fill="#d0e6db" stroke="#806048" stroke-width="1"/>
+  <rect x="32" y="32" width="8" height="8" fill="#d0e6db" stroke="#806048" stroke-width="1"/>
+  <!-- Row 5: mood-okay peach -->
+  <rect x="16" y="40" width="8" height="8" fill="#f7e2d9" stroke="#806048" stroke-width="1"/>
+  <!-- Row 6: mood-low blue -->
+  <rect x="16" y="48" width="8" height="8" fill="#c5dde8" stroke="#806048" stroke-width="1"/>
 </svg>

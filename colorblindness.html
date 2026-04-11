@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WJ1EXX6HR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2WJ1EXX6HR');
+    </script>
+    <title>Colorblindness & Pixie Journey Themes | Accessibility</title>
+    <meta name="description" content="Explore how Pixie Journey supports colorblind users with accessible themes. Learn about the 3 main types of color vision deficiency and how our color palettes are designed for everyone.">
+
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .colorblindness-hero {
+            background: linear-gradient(135deg, var(--mood-good) 0%, var(--mood-okay) 100%);
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-brown);
+            margin-bottom: 16px;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--text-brown);
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .content-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-brown);
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--outline-brown);
+            padding-bottom: 12px;
+        }
+
+        .section h3 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-brown);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-brown);
+            margin-bottom: 16px;
+        }
+
+        /* CVD Types Grid */
+        .cvd-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .cvd-card {
+            background: var(--white);
+            border: 3px solid var(--outline-brown);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cvd-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(128, 96, 72, 0.15);
+        }
+
+        .cvd-card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .cvd-icon {
+            font-size: 3rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .prevalence {
+            background: var(--mood-okay);
+            padding: 12px;
+            border-radius: 8px;
+            margin: 16px 0;
+            font-weight: 600;
+            color: var(--text-brown);
+        }
+
+        /* Themes Grid */
+        .theme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .theme-card {
+            background: var(--white);
+            border: 3px solid var(--outline-brown);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .theme-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .theme-swatch {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 100px;
+            border-bottom: 3px solid var(--outline-brown);
+        }
+
+        .color-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'VT323', monospace;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .theme-info {
+            padding: 16px;
+        }
+
+        .theme-info h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.2rem;
+        }
+
+        .theme-info p {
+            margin: 0;
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 3px solid var(--outline-brown);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 2px solid var(--outline-brown);
+        }
+
+        .comparison-table th {
+            background: var(--mood-good);
+            font-weight: 700;
+            color: var(--text-brown);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tbody tr:nth-child(even) {
+            background: var(--bg-warm-white);
+        }
+
+        /* Quick Facts */
+        .quick-facts {
+            background: var(--content-peach);
+            border-left: 6px solid var(--outline-brown);
+            padding: 24px;
+            border-radius: 8px;
+            margin: 24px 0;
+        }
+
+        .quick-facts ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .quick-facts li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            color: var(--text-brown);
+        }
+
+        /* Accessibility Note */
+        .accessibility-note {
+            background: var(--mood-good);
+            border: 2px solid var(--outline-brown);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+
+        .accessibility-note strong {
+            color: var(--outline-brown);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .cvd-grid,
+            .theme-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px;
+            }
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <div class="logo-cubes">
+                    <div class="cube cube-1"><div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-d"></div></div></div>
+                    <div class="cube cube-2"><div class="face"><div class="eyes"><div class="eye-squinty"></div><div class="eye-squinty"></div></div><div class="mouth-smile"></div></div></div>
+                    <div class="cube cube-3"><div class="face"><div class="eyes"><div class="eye-dot"></div><div class="eye-dot"></div></div><div class="mouth-flat"></div></div></div>
+                    <div class="cube cube-4"><div class="face"><div class="eyes"><div class="eye-sad"></div><div class="eye-sad"></div></div><div class="mouth-frown"></div></div></div>
+                </div>
+                <span class="logo-pixel">Pixie</span><span class="logo-journey">Journey</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="lalahs-world.html">Lalah's World</a>
+                <a href="faq.html">FAQ</a>
+                <a href="free-tracking-pdfs.html" class="nav-cta">Get Free PDFs</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <div class="colorblindness-hero">
+            <div class="hero-content">
+                <h1>Colorblindness & Pixie Journey</h1>
+                <p>Designed for everyone. Learn how our accessible themes support color vision deficiency.</p>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- INTRODUCTION -->
+            <section class="section">
+                <h2>Why Accessibility Matters</h2>
+                <p>Approximately <strong>1 in 12 men</strong> and <strong>1 in 200 women</strong> experience some form of color vision deficiency (colorblindness). At Pixie Journey, we believe beautiful tracking apps should be accessible to everyone—which is why we've designed our <strong>Earth Coral mood palette</strong> with color vision deficiency in mind.</p>
+                <p>Color alone should never be the only way to convey information. That's why we combine our carefully chosen hues with text labels, patterns, and clear visual hierarchy to ensure everyone can use Pixie Journey effectively.</p>
+            </section>
+
+            <!-- TYPES OF COLORBLINDNESS -->
+            <section class="section">
+                <h2>Understanding Color Vision Deficiency</h2>
+                <p>There are actually <strong>three main types of color vision deficiency</strong>, plus variations in severity. Each affects how people perceive certain color combinations:</p>
+
+                <div class="cvd-grid">
+                    <!-- Protanopia -->
+                    <div class="cvd-card">
+                        <span class="cvd-icon">🔴</span>
+                        <h3>Protanopia</h3>
+                        <p><strong>Red-blind</strong></p>
+                        <p>Difficulty distinguishing red from green and brown.</p>
+                        <div class="prevalence">1% of males<br>0.01% of females</div>
+                        <p><small>People with protanopia see reds, oranges, yellows, and browns as shades of yellow or brown. Greens appear as white or light colors.</small></p>
+                    </div>
+
+                    <!-- Deuteranopia -->
+                    <div class="cvd-card">
+                        <span class="cvd-icon">🟢</span>
+                        <h3>Deuteranopia</h3>
+                        <p><strong>Green-blind</strong></p>
+                        <p>Difficulty distinguishing green from red, brown, and yellow.</p>
+                        <div class="prevalence">1% of males<br>0.01% of females</div>
+                        <p><small>The most common form of red-green colorblindness. Greens appear as shades of yellow or red, creating similar challenges to protanopia.</small></p>
+                    </div>
+
+                    <!-- Tritanopia -->
+                    <div class="cvd-card">
+                        <span class="cvd-icon">🔵</span>
+                        <h3>Tritanopia</h3>
+                        <p><strong>Blue-yellow blind</strong></p>
+                        <p>Difficulty distinguishing blue from yellow.</p>
+                        <div class="prevalence">0.01% of all people</div>
+                        <p><small>The rarest form. People with tritanopia see blue as pink/red and yellow as pale pink or white.</small></p>
+                    </div>
+                </div>
+
+                <div class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <ul>
+                        <li><strong>Total prevalence:</strong> ~1 in 8 people have some form of color vision deficiency</li>
+                        <li><strong>Males vs. females:</strong> Red-green colorblindness affects men ~16x more often than women (genetic inheritance)</li>
+                        <li><strong>Severity varies:</strong> Some people have mild difficulty; others have complete color blindness (achromatopsia)</li>
+                        <li><strong>Age-related:</strong> Color vision can also diminish with age or as a side effect of certain medications</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- COMPARISON TABLE -->
+            <section class="section">
+                <h2>How Different Types See Color</h2>
+                <p>Below is a simplified guide to how each type of color vision deficiency affects color perception:</p>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Color Type</th>
+                            <th>Protanopia (Red-blind)</th>
+                            <th>Deuteranopia (Green-blind)</th>
+                            <th>Tritanopia (Blue-yellow)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Red</strong></td>
+                            <td>Dull yellow or brown</td>
+                            <td>Dull yellow or brown</td>
+                            <td>Red or pink</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Green</strong></td>
+                            <td>White or light yellow</td>
+                            <td>Yellow or orange-red</td>
+                            <td>Green</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Blue</strong></td>
+                            <td>Blue</td>
+                            <td>Blue</td>
+                            <td>Pink or red</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Yellow</strong></td>
+                            <td>Yellow</td>
+                            <td>Yellow</td>
+                            <td>White or pale pink</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Purple</strong></td>
+                            <td>Blue</td>
+                            <td>Blue</td>
+                            <td>Red or pink</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- PIXIE JOURNEY THEMES -->
+            <section class="section">
+                <h2>Pixie Journey's Color System</h2>
+                <p>Our design uses a carefully tested <strong>Earth Coral palette</strong> with organized color tiers to maximize accessibility across all types of color vision:</p>
+
+                <div class="theme-grid">
+                    <!-- Earth Coral Palette (Cozy Warm) -->
+                    <div class="theme-card">
+                        <div class="theme-swatch">
+                            <div class="color-block" style="background: #FFE9B3;">Great</div>
+                            <div class="color-block" style="background: #D0E6DB;">Good</div>
+                            <div class="color-block" style="background: #F7E2D9;">Okay</div>
+                        </div>
+                        <div class="theme-info">
+                            <h3>Earth Coral</h3>
+                            <p><strong>5 distinct mood states:</strong> Great (yellow), Good (sage), Okay (peach), Low (taupe), Bad (salmon). Each has sufficient luminance contrast for deuteranopia and protanopia users.</p>
+                        </div>
+                    </div>
+
+                    <!-- Extended Palette (Tier System) -->
+                    <div class="theme-card">
+                        <div class="theme-swatch">
+                            <div class="color-block" style="background: #C5DDE8;">Sky Mist</div>
+                            <div class="color-block" style="background: #98B4A0;">Dusty Sage</div>
+                            <div class="color-block" style="background: #E8D9C4;">Warm Sand</div>
+                        </div>
+                        <div class="theme-info">
+                            <h3>Extended Palette</h3>
+                            <p><strong>Use-case specific colors:</strong> Sky Mist (info/secondary), Dusty Sage (success/progress), Warm Sand (highlights/hover). All tested against CVD simulations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accessibility-note">
+                    <strong>🎨 Earth Coral Design Philosophy:</strong> Every mood state and UI component combines multiple accessibility layers:
+                    <ul style="margin: 12px 0 0 0; padding-left: 20px;">
+                        <li>Distinct luminance values: Each mood (Great, Good, Okay, Low, Bad) has tested contrast ratios</li>
+                        <li>Hue variety: Uses yellow (Great), sage (Good), peach (Okay), taupe (Low), salmon (Bad) for multiple hue channels</li>
+                        <li>Text labels: All color states are labeled—never relying on color alone</li>
+                        <li>Tested palettes: Extended tier system (Sky Mist, Dusty Sage, Warm Sand, etc.) for UI components</li>
+                        <li>CVD simulation: All colors validated against protanopia, deuteranopia, and tritanopia simulations</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- TESTING & SIMULATION -->
+            <section class="section">
+                <h2>How We Test for Accessibility</h2>
+                <p>Pixie Journey's colors were tested using industry-standard tools to ensure usability across all types of color vision deficiency. We use simulation software to view our interface through the eyes of someone with each CVD type.</p>
+
+                <h3>Tools We Use:</h3>
+                <ul>
+                    <li><strong>Coblis (Color Blindness Simulator):</strong> Simulates how our interface appears to people with protanopia, deuteranopia, and tritanopia</li>
+                    <li><strong>WebAIM Contrast Checker:</strong> Ensures text meets WCAG AA or AAA standards</li>
+                    <li><strong>Lighthouse Accessibility Audit:</strong> Checks for color-contrast and semantic HTML issues</li>
+                    <li><strong>User Testing:</strong> We collaborate with colorblind users in our product development process</li>
+                </ul>
+            </section>
+
+            <!-- FURTHER RESOURCES -->
+            <section class="section">
+                <h2>Learn More</h2>
+                <p>Want to dive deeper? Here are some excellent resources:</p>
+                <ul>
+                    <li><strong><a href="https://www.color-blindness.com/" target="_blank" rel="noopener noreferrer">Color-Blindness.com</a>:</strong> Comprehensive guide to color vision deficiency with simulations</li>
+                    <li><strong><a href="https://www.aoa.org/patients-and-public/eye-and-vision-problems/glossary-of-eye-and-vision-conditions/color-blindness" target="_blank" rel="noopener noreferrer">American Optometric Association</a>:</strong> Medical overview of color vision deficiency</li>
+                    <li><strong><a href="https://webaim.org/articles/contrast/" target="_blank" rel="noopener noreferrer">WebAIM Contrast & Color Accessibility</a>:</strong> Technical guidelines for accessible color use</li>
+                    <li><strong><a href="https://www.pixiejourney.com/faq.html">Pixie Journey FAQ</a>:</strong> Accessibility questions answered</li>
+                </ul>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="section" style="text-align: center; margin-bottom: 80px;">
+                <h2>Use Pixie Journey with Confidence</h2>
+                <p>Our core mission is to help everyone track their mood and habits beautifully. Whether you have perfect color vision or color vision deficiency, Pixie Journey is built for you.</p>
+                <div style="margin-top: 32px;">
+                    <a href="features.html" class="btn btn-primary" style="display: inline-block; margin-right: 12px;"><i class="fa-solid fa-star" aria-hidden="true"></i> Explore Features</a>
+                    <a href="pricing.html" class="btn btn-secondary" style="display: inline-block;"><i class="fa-solid fa-tag" aria-hidden="true"></i> View Pricing</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <p class="footer-brand">Pixie Journey</p>
+                    <p>Colour Your Days. See the Pattern.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a>
+                <a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a>
+                <a href="lalahs-world.html">Lalah's World</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy-safety.html">Privacy & Safety</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mailto:hello@pixiejourney.com">hello@pixiejourney.com</a></li>
+                        <li><a href="colorblindness.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pixie Journey. All rights reserved.</p>
+                <p>Made with <i class="fa-solid fa-heart" aria-hidden="true" style="color: var(--salmon);"></i> in Australia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            var expanded = mainNav.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', expanded);
+        });
+    }
+    </script>
+</body>
+</html>

@@ -14,6 +14,7 @@
     <title>404 — Page Not Found | Pixie Journey</title>
     <meta name="description" content="Oops! This page doesn't exist. Let Lalah help you find your way back.">
 
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +23,13 @@
     <link rel="stylesheet" href="/styles.css">
     <style>
         .error-page {
-            min-height: 80vh;
+            min-height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 40px 20px;
+            padding: 20px 16px;
             position: relative;
             overflow: hidden;
         }
@@ -36,11 +37,28 @@
         .error-mascot {
             width: 260px;
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 6px;
             animation: search 4s ease-in-out infinite;
             filter: drop-shadow(0 8px 24px rgba(122, 155, 144, 0.15));
         }
 
+        .error-code {
+            font-family: 'VT323', monospace;
+            font-size: 90px;
+            color: var(--primary-green, #7A9B90);
+            line-height: 1;
+            margin-bottom: 0px;
+            letter-spacing: 8px;
+            opacity: 0.85;
+        }
+
+        .error-title {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-brown);
+            margin-bottom: 6px;
+        }
         @keyframes search {
             0%, 100% { transform: translateY(0) rotate(0deg); }
             25% { transform: translateY(-8px) rotate(-3deg); }
@@ -111,7 +129,9 @@
             <nav class="main-nav" aria-label="Main navigation">
                 <a href="features.html">Features</a>
                 <a href="pricing.html">Pricing</a>
+                <a href="shop.html">Shop</a>
                 <a href="about.html">About</a>
+                <a href="lalahs-world.html">Lalah's World</a>
                 <a href="faq.html">FAQ</a>
                 <a href="free-tracking-pdfs.html" class="nav-cta">Get Free PDFs</a>
             </nav>
@@ -161,8 +181,10 @@
                     <h4>Product</h4>
                     <ul>
                         <li><a href="features.html">Features</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="pricing.html">Pricing</a>
+                <a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a>
+                <a href="lalahs-world.html">Lalah's World</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
