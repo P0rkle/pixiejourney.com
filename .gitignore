@@ -3,7 +3,7 @@
 # sqlite dbs) never register as "code changed" for repo tooling like
 # .claude/hooks/stop.sh's runtime verification gate.
 .agents/
-.claude/
+.claude/settings.local.json
 .codex/
 .cursor/
 .factory/
