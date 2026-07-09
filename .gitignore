@@ -1,0 +1,17 @@
+# Multi-agent / CLI tooling — not part of the deployed site.
+# Kept local so stray files in here (e.g. .ts hook plugins, .pyc caches,
+# sqlite dbs) never register as "code changed" for repo tooling like
+# .claude/hooks/stop.sh's runtime verification gate.
+.agents/
+.claude/
+.codex/
+.cursor/
+.factory/
+.forge/
+.opencode/
+.policy-tools/
+.uap/
+.uap.json
+.mcp.json
+opencode.json
+agents/
